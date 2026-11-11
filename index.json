@@ -5,9 +5,13 @@
     {
       "id": "naiwa",
       "name": "奶蛙"
+    },
+    {
+      "id": "blue-fish",
+      "name": "大肥鱼"
     }
   ],
-  "count": 267,
+  "count": 463,
   "items": [
     {
       "id": "naiwa-abstract",
@@ -4307,6 +4311,3142 @@
       "height": 540,
       "animated": true,
       "md5": "947e9653b773e52ff415e0a5679d07ac"
+    },
+    {
+      "id": "bluefish-wx-21da2b08",
+      "file": "stickers/blue-fish/bluefish-wx-21da2b08.gif",
+      "thumb": "thumbs/blue-fish/bluefish-wx-21da2b08.jpg",
+      "character": "blue-fish",
+      "tags": [
+        "大肥鱼"
+      ],
+      "source": "wechat-search",
+      "added": "2026-11-11",
+      "format": "gif",
+      "width": 418,
+      "height": 418,
+      "animated": true,
+      "md5": "21da2b08270e037aeb905d1a616f10eb"
+    },
+    {
+      "id": "bluefish-wx-68ce60ee",
+      "file": "stickers/blue-fish/bluefish-wx-68ce60ee.gif",
+      "thumb": "thumbs/blue-fish/bluefish-wx-68ce60ee.jpg",
+      "character": "blue-fish",
+      "tags": [
+        "大肥鱼"
+      ],
+      "source": "wechat-search",
+      "added": "2026-11-11",
+      "format": "gif",
+      "width": 140,
+      "height": 140,
+      "animated": false,
+      "md5": "68ce60ee0906c4db42e55aa092eb3681"
+    },
+    {
+      "id": "bluefish-wx-ca077b3c",
+      "file": "stickers/blue-fish/bluefish-wx-ca077b3c.gif",
+      "thumb": "thumbs/blue-fish/bluefish-wx-ca077b3c.jpg",
+      "character": "blue-fish",
+      "tags": [
+        "大肥鱼"
+      ],
+      "source": "wechat-search",
+      "added": "2026-11-11",
+      "format": "gif",
+      "width": 240,
+      "height": 240,
+      "animated": true,
+      "md5": "ca077b3c4958fa153c468191c5d6b388"
+    },
+    {
+      "id": "bluefish-wx-5ecbc862",
+      "file": "stickers/blue-fish/bluefish-wx-5ecbc862.gif",
+      "thumb": "thumbs/blue-fish/bluefish-wx-5ecbc862.jpg",
+      "character": "blue-fish",
+      "tags": [
+        "大肥鱼"
+      ],
+      "source": "wechat-search",
+      "added": "2026-11-11",
+      "format": "gif",
+      "width": 418,
+      "height": 418,
+      "animated": true,
+      "md5": "5ecbc8622cc8cca56ff1074ac7973bf9"
+    },
+    {
+      "id": "bluefish-wx-19682258",
+      "file": "stickers/blue-fish/bluefish-wx-19682258.gif",
+      "thumb": "thumbs/blue-fish/bluefish-wx-19682258.jpg",
+      "character": "blue-fish",
+      "tags": [
+        "大肥鱼"
+      ],
+      "source": "wechat-search",
+      "added": "2026-11-11",
+      "format": "gif",
+      "width": 140,
+      "height": 140,
+      "animated": false,
+      "md5": "196822585b83b5d1496484546f166c63"
+    },
+    {
+      "id": "bluefish-wx-16fb300b",
+      "file": "stickers/blue-fish/bluefish-wx-16fb300b.gif",
+      "thumb": "thumbs/blue-fish/bluefish-wx-16fb300b.jpg",
+      "character": "blue-fish",
+      "tags": [
+        "大肥鱼"
+      ],
+      "source": "wechat-search",
+      "added": "2026-11-11",
+      "format": "gif",
+      "width": 400,
+      "height": 401,
+      "animated": true,
+      "md5": "16fb300baf6c2163337c60c316f9394b"
+    },
+    {
+      "id": "bluefish-wx-f0105e78",
+      "file": "stickers/blue-fish/bluefish-wx-f0105e78.gif",
+      "thumb": "thumbs/blue-fish/bluefish-wx-f0105e78.jpg",
+      "character": "blue-fish",
+      "tags": [
+        "大肥鱼"
+      ],
+      "source": "wechat-search",
+      "added": "2026-11-11",
+      "format": "gif",
+      "width": 256,
+      "height": 255,
+      "animated": true,
+      "md5": "f0105e783b5bb1b4cc3c850c54cba9cb"
+    },
+    {
+      "id": "bluefish-wx-69d12b86",
+      "file": "stickers/blue-fish/bluefish-wx-69d12b86.gif",
+      "thumb": "thumbs/blue-fish/bluefish-wx-69d12b86.jpg",
+      "character": "blue-fish",
+      "tags": [
+        "大肥鱼"
+      ],
+      "source": "wechat-search",
+      "added": "2026-11-11",
+      "format": "gif",
+      "width": 140,
+      "height": 140,
+      "animated": false,
+      "md5": "69d12b86a269488dd9ed551c79c5f27e"
+    },
+    {
+      "id": "bluefish-wx-ce707c62",
+      "file": "stickers/blue-fish/bluefish-wx-ce707c62.gif",
+      "thumb": "thumbs/blue-fish/bluefish-wx-ce707c62.jpg",
+      "character": "blue-fish",
+      "tags": [
+        "大肥鱼"
+      ],
+      "source": "wechat-search",
+      "added": "2026-11-11",
+      "format": "gif",
+      "width": 329,
+      "height": 303,
+      "animated": true,
+      "md5": "ce707c62aaecb762d4ff7e368f8e626d"
+    },
+    {
+      "id": "bluefish-wx-9cce1c68",
+      "file": "stickers/blue-fish/bluefish-wx-9cce1c68.gif",
+      "thumb": "thumbs/blue-fish/bluefish-wx-9cce1c68.jpg",
+      "character": "blue-fish",
+      "tags": [
+        "大肥鱼"
+      ],
+      "source": "wechat-search",
+      "added": "2026-11-11",
+      "format": "gif",
+      "width": 140,
+      "height": 140,
+      "animated": false,
+      "md5": "9cce1c68797df9e305ff4f0a2dedae30"
+    },
+    {
+      "id": "bluefish-wx-1549a1df",
+      "file": "stickers/blue-fish/bluefish-wx-1549a1df.gif",
+      "thumb": "thumbs/blue-fish/bluefish-wx-1549a1df.jpg",
+      "character": "blue-fish",
+      "tags": [
+        "大肥鱼"
+      ],
+      "source": "wechat-search",
+      "added": "2026-11-11",
+      "format": "gif",
+      "width": 240,
+      "height": 240,
+      "animated": true,
+      "md5": "1549a1dfe8076b6b56cf1a9d9099e01f"
+    },
+    {
+      "id": "bluefish-wx-309384d0",
+      "file": "stickers/blue-fish/bluefish-wx-309384d0.gif",
+      "thumb": "thumbs/blue-fish/bluefish-wx-309384d0.jpg",
+      "character": "blue-fish",
+      "tags": [
+        "大肥鱼"
+      ],
+      "source": "wechat-search",
+      "added": "2026-11-11",
+      "format": "gif",
+      "width": 240,
+      "height": 240,
+      "animated": true,
+      "md5": "309384d0b21a781b4c03f5527d116939"
+    },
+    {
+      "id": "bluefish-wx-6afe1b0c",
+      "file": "stickers/blue-fish/bluefish-wx-6afe1b0c.gif",
+      "thumb": "thumbs/blue-fish/bluefish-wx-6afe1b0c.jpg",
+      "character": "blue-fish",
+      "tags": [
+        "大肥鱼"
+      ],
+      "source": "wechat-search",
+      "added": "2026-11-11",
+      "format": "gif",
+      "width": 140,
+      "height": 140,
+      "animated": false,
+      "md5": "6afe1b0c5b4af54e5173c1ea82897134"
+    },
+    {
+      "id": "bluefish-wx-b07db699",
+      "file": "stickers/blue-fish/bluefish-wx-b07db699.gif",
+      "thumb": "thumbs/blue-fish/bluefish-wx-b07db699.jpg",
+      "character": "blue-fish",
+      "tags": [
+        "大肥鱼"
+      ],
+      "source": "wechat-search",
+      "added": "2026-11-11",
+      "format": "gif",
+      "width": 140,
+      "height": 140,
+      "animated": false,
+      "md5": "b07db699e54dfa8be79f6364298e4de5"
+    },
+    {
+      "id": "bluefish-wx-02107353",
+      "file": "stickers/blue-fish/bluefish-wx-02107353.gif",
+      "thumb": "thumbs/blue-fish/bluefish-wx-02107353.jpg",
+      "character": "blue-fish",
+      "tags": [
+        "大肥鱼"
+      ],
+      "source": "wechat-search",
+      "added": "2026-11-11",
+      "format": "gif",
+      "width": 256,
+      "height": 255,
+      "animated": true,
+      "md5": "02107353d8c20c160387c69d1c5a1f2a"
+    },
+    {
+      "id": "bluefish-wx-126f1a2f",
+      "file": "stickers/blue-fish/bluefish-wx-126f1a2f.gif",
+      "thumb": "thumbs/blue-fish/bluefish-wx-126f1a2f.jpg",
+      "character": "blue-fish",
+      "tags": [
+        "大肥鱼"
+      ],
+      "source": "wechat-search",
+      "added": "2026-11-11",
+      "format": "gif",
+      "width": 140,
+      "height": 140,
+      "animated": false,
+      "md5": "126f1a2f94f5cb21ea20ee9201352e55"
+    },
+    {
+      "id": "bluefish-wx-29c55df5",
+      "file": "stickers/blue-fish/bluefish-wx-29c55df5.gif",
+      "thumb": "thumbs/blue-fish/bluefish-wx-29c55df5.jpg",
+      "character": "blue-fish",
+      "tags": [
+        "大肥鱼"
+      ],
+      "source": "wechat-search",
+      "added": "2026-11-11",
+      "format": "gif",
+      "width": 256,
+      "height": 255,
+      "animated": true,
+      "md5": "29c55df5ac90df54356e631a8dcc8a95"
+    },
+    {
+      "id": "bluefish-wx-b4dcfc43",
+      "file": "stickers/blue-fish/bluefish-wx-b4dcfc43.gif",
+      "thumb": "thumbs/blue-fish/bluefish-wx-b4dcfc43.jpg",
+      "character": "blue-fish",
+      "tags": [
+        "大肥鱼"
+      ],
+      "source": "wechat-search",
+      "added": "2026-11-11",
+      "format": "gif",
+      "width": 140,
+      "height": 140,
+      "animated": false,
+      "md5": "b4dcfc43dc4ea473edfddaa4d59d8a45"
+    },
+    {
+      "id": "bluefish-wx-1d60c2f9",
+      "file": "stickers/blue-fish/bluefish-wx-1d60c2f9.gif",
+      "thumb": "thumbs/blue-fish/bluefish-wx-1d60c2f9.jpg",
+      "character": "blue-fish",
+      "tags": [
+        "大肥鱼"
+      ],
+      "source": "wechat-search",
+      "added": "2026-11-11",
+      "format": "gif",
+      "width": 240,
+      "height": 240,
+      "animated": true,
+      "md5": "1d60c2f989cdf768df2866db4a596ef3"
+    },
+    {
+      "id": "bluefish-wx-180cc084",
+      "file": "stickers/blue-fish/bluefish-wx-180cc084.gif",
+      "thumb": "thumbs/blue-fish/bluefish-wx-180cc084.jpg",
+      "character": "blue-fish",
+      "tags": [
+        "大肥鱼"
+      ],
+      "source": "wechat-search",
+      "added": "2026-11-11",
+      "format": "gif",
+      "width": 240,
+      "height": 240,
+      "animated": true,
+      "md5": "180cc0843ee8e12b066381900f8ea4fa"
+    },
+    {
+      "id": "bluefish-wx-439187a5",
+      "file": "stickers/blue-fish/bluefish-wx-439187a5.gif",
+      "thumb": "thumbs/blue-fish/bluefish-wx-439187a5.jpg",
+      "character": "blue-fish",
+      "tags": [
+        "大肥鱼"
+      ],
+      "source": "wechat-search",
+      "added": "2026-11-11",
+      "format": "gif",
+      "width": 140,
+      "height": 140,
+      "animated": false,
+      "md5": "439187a578992ff906b4c9bb0382dc0c"
+    },
+    {
+      "id": "bluefish-wx-9e3fcbe8",
+      "file": "stickers/blue-fish/bluefish-wx-9e3fcbe8.gif",
+      "thumb": "thumbs/blue-fish/bluefish-wx-9e3fcbe8.jpg",
+      "character": "blue-fish",
+      "tags": [
+        "大肥鱼"
+      ],
+      "source": "wechat-search",
+      "added": "2026-11-11",
+      "format": "gif",
+      "width": 256,
+      "height": 255,
+      "animated": true,
+      "md5": "9e3fcbe89d45762279e9b8b8204ba76c"
+    },
+    {
+      "id": "bluefish-wx-e186cee7",
+      "file": "stickers/blue-fish/bluefish-wx-e186cee7.gif",
+      "thumb": "thumbs/blue-fish/bluefish-wx-e186cee7.jpg",
+      "character": "blue-fish",
+      "tags": [
+        "大肥鱼"
+      ],
+      "source": "wechat-search",
+      "added": "2026-11-11",
+      "format": "gif",
+      "width": 256,
+      "height": 255,
+      "animated": true,
+      "md5": "e186cee79f53407b59371e82f433455e"
+    },
+    {
+      "id": "bluefish-wx-b42cfcfb",
+      "file": "stickers/blue-fish/bluefish-wx-b42cfcfb.gif",
+      "thumb": "thumbs/blue-fish/bluefish-wx-b42cfcfb.jpg",
+      "character": "blue-fish",
+      "tags": [
+        "大肥鱼"
+      ],
+      "source": "wechat-search",
+      "added": "2026-11-11",
+      "format": "gif",
+      "width": 240,
+      "height": 240,
+      "animated": true,
+      "md5": "b42cfcfb6872c6e0438f0fe42f539557"
+    },
+    {
+      "id": "bluefish-wx-218f9d19",
+      "file": "stickers/blue-fish/bluefish-wx-218f9d19.gif",
+      "thumb": "thumbs/blue-fish/bluefish-wx-218f9d19.jpg",
+      "character": "blue-fish",
+      "tags": [
+        "大肥鱼"
+      ],
+      "source": "wechat-search",
+      "added": "2026-11-11",
+      "format": "gif",
+      "width": 140,
+      "height": 140,
+      "animated": false,
+      "md5": "218f9d19a3fcfbd59a4e400de45cf173"
+    },
+    {
+      "id": "bluefish-wx-4b2a6a11",
+      "file": "stickers/blue-fish/bluefish-wx-4b2a6a11.gif",
+      "thumb": "thumbs/blue-fish/bluefish-wx-4b2a6a11.jpg",
+      "character": "blue-fish",
+      "tags": [
+        "大肥鱼"
+      ],
+      "source": "wechat-search",
+      "added": "2026-11-11",
+      "format": "gif",
+      "width": 366,
+      "height": 346,
+      "animated": true,
+      "md5": "4b2a6a113d40d9246dd93f0304bedfc5"
+    },
+    {
+      "id": "bluefish-wx-6fbcaf4a",
+      "file": "stickers/blue-fish/bluefish-wx-6fbcaf4a.gif",
+      "thumb": "thumbs/blue-fish/bluefish-wx-6fbcaf4a.jpg",
+      "character": "blue-fish",
+      "tags": [
+        "大肥鱼"
+      ],
+      "source": "wechat-search",
+      "added": "2026-11-11",
+      "format": "gif",
+      "width": 140,
+      "height": 140,
+      "animated": false,
+      "md5": "6fbcaf4a31fe6ecb3a462ab4ef2198cc"
+    },
+    {
+      "id": "bluefish-wx-f84ea635",
+      "file": "stickers/blue-fish/bluefish-wx-f84ea635.gif",
+      "thumb": "thumbs/blue-fish/bluefish-wx-f84ea635.jpg",
+      "character": "blue-fish",
+      "tags": [
+        "大肥鱼"
+      ],
+      "source": "wechat-search",
+      "added": "2026-11-11",
+      "format": "gif",
+      "width": 140,
+      "height": 140,
+      "animated": false,
+      "md5": "f84ea63569e4c797abada9eb121308ab"
+    },
+    {
+      "id": "bluefish-wx-1b6d721a",
+      "file": "stickers/blue-fish/bluefish-wx-1b6d721a.gif",
+      "thumb": "thumbs/blue-fish/bluefish-wx-1b6d721a.jpg",
+      "character": "blue-fish",
+      "tags": [
+        "大肥鱼"
+      ],
+      "source": "wechat-search",
+      "added": "2026-11-11",
+      "format": "gif",
+      "width": 240,
+      "height": 240,
+      "animated": true,
+      "md5": "1b6d721a8ed029d69da4c15f34385a36"
+    },
+    {
+      "id": "bluefish-wx-24ee9fb2",
+      "file": "stickers/blue-fish/bluefish-wx-24ee9fb2.gif",
+      "thumb": "thumbs/blue-fish/bluefish-wx-24ee9fb2.jpg",
+      "character": "blue-fish",
+      "tags": [
+        "大肥鱼"
+      ],
+      "source": "wechat-search",
+      "added": "2026-11-11",
+      "format": "gif",
+      "width": 140,
+      "height": 140,
+      "animated": false,
+      "md5": "24ee9fb2e023b9382a986bb473f3b531"
+    },
+    {
+      "id": "bluefish-wx-57eda1d5",
+      "file": "stickers/blue-fish/bluefish-wx-57eda1d5.gif",
+      "thumb": "thumbs/blue-fish/bluefish-wx-57eda1d5.jpg",
+      "character": "blue-fish",
+      "tags": [
+        "大肥鱼"
+      ],
+      "source": "wechat-search",
+      "added": "2026-11-11",
+      "format": "gif",
+      "width": 140,
+      "height": 140,
+      "animated": false,
+      "md5": "57eda1d574503812ff6330d38b38755a"
+    },
+    {
+      "id": "bluefish-wx-3a8fa347",
+      "file": "stickers/blue-fish/bluefish-wx-3a8fa347.gif",
+      "thumb": "thumbs/blue-fish/bluefish-wx-3a8fa347.jpg",
+      "character": "blue-fish",
+      "tags": [
+        "大肥鱼"
+      ],
+      "source": "wechat-search",
+      "added": "2026-11-11",
+      "format": "gif",
+      "width": 240,
+      "height": 240,
+      "animated": true,
+      "md5": "3a8fa347432ed78cb768be8aa084acb6"
+    },
+    {
+      "id": "bluefish-wx-3cde7db8",
+      "file": "stickers/blue-fish/bluefish-wx-3cde7db8.gif",
+      "thumb": "thumbs/blue-fish/bluefish-wx-3cde7db8.jpg",
+      "character": "blue-fish",
+      "tags": [
+        "大肥鱼"
+      ],
+      "source": "wechat-search",
+      "added": "2026-11-11",
+      "format": "gif",
+      "width": 140,
+      "height": 140,
+      "animated": false,
+      "md5": "3cde7db829c9fa59f8ffa69484296d82"
+    },
+    {
+      "id": "bluefish-wx-1a6009db",
+      "file": "stickers/blue-fish/bluefish-wx-1a6009db.gif",
+      "thumb": "thumbs/blue-fish/bluefish-wx-1a6009db.jpg",
+      "character": "blue-fish",
+      "tags": [
+        "大肥鱼"
+      ],
+      "source": "wechat-search",
+      "added": "2026-11-11",
+      "format": "gif",
+      "width": 140,
+      "height": 140,
+      "animated": false,
+      "md5": "1a6009db0716c83b204866f44996b858"
+    },
+    {
+      "id": "bluefish-wx-99c8f22b",
+      "file": "stickers/blue-fish/bluefish-wx-99c8f22b.gif",
+      "thumb": "thumbs/blue-fish/bluefish-wx-99c8f22b.jpg",
+      "character": "blue-fish",
+      "tags": [
+        "大肥鱼"
+      ],
+      "source": "wechat-search",
+      "added": "2026-11-11",
+      "format": "gif",
+      "width": 500,
+      "height": 500,
+      "animated": true,
+      "md5": "99c8f22bbec74b33e5601ab08cae8504"
+    },
+    {
+      "id": "bluefish-wx-d60acaa1",
+      "file": "stickers/blue-fish/bluefish-wx-d60acaa1.gif",
+      "thumb": "thumbs/blue-fish/bluefish-wx-d60acaa1.jpg",
+      "character": "blue-fish",
+      "tags": [
+        "大肥鱼"
+      ],
+      "source": "wechat-search",
+      "added": "2026-11-11",
+      "format": "gif",
+      "width": 140,
+      "height": 140,
+      "animated": false,
+      "md5": "d60acaa1bc0506df0a94180fe2228417"
+    },
+    {
+      "id": "bluefish-wx-d38f81a3",
+      "file": "stickers/blue-fish/bluefish-wx-d38f81a3.gif",
+      "thumb": "thumbs/blue-fish/bluefish-wx-d38f81a3.jpg",
+      "character": "blue-fish",
+      "tags": [
+        "大肥鱼"
+      ],
+      "source": "wechat-search",
+      "added": "2026-11-11",
+      "format": "gif",
+      "width": 140,
+      "height": 140,
+      "animated": false,
+      "md5": "d38f81a3742d828254dc60c9863cdbac"
+    },
+    {
+      "id": "bluefish-wx-fc3e20fe",
+      "file": "stickers/blue-fish/bluefish-wx-fc3e20fe.gif",
+      "thumb": "thumbs/blue-fish/bluefish-wx-fc3e20fe.jpg",
+      "character": "blue-fish",
+      "tags": [
+        "大肥鱼"
+      ],
+      "source": "wechat-search",
+      "added": "2026-11-11",
+      "format": "gif",
+      "width": 240,
+      "height": 240,
+      "animated": true,
+      "md5": "fc3e20fed36c65f3c0b96533c34cfb43"
+    },
+    {
+      "id": "bluefish-wx-76f4b72a",
+      "file": "stickers/blue-fish/bluefish-wx-76f4b72a.gif",
+      "thumb": "thumbs/blue-fish/bluefish-wx-76f4b72a.jpg",
+      "character": "blue-fish",
+      "tags": [
+        "大肥鱼"
+      ],
+      "source": "wechat-search",
+      "added": "2026-11-11",
+      "format": "gif",
+      "width": 418,
+      "height": 418,
+      "animated": true,
+      "md5": "76f4b72a6ca80c11e80067217153879a"
+    },
+    {
+      "id": "bluefish-wx-acfae78a",
+      "file": "stickers/blue-fish/bluefish-wx-acfae78a.gif",
+      "thumb": "thumbs/blue-fish/bluefish-wx-acfae78a.jpg",
+      "character": "blue-fish",
+      "tags": [
+        "大肥鱼"
+      ],
+      "source": "wechat-search",
+      "added": "2026-11-11",
+      "format": "gif",
+      "width": 140,
+      "height": 140,
+      "animated": false,
+      "md5": "acfae78aeaea8f1ef53260f7ca2aec7b"
+    },
+    {
+      "id": "bluefish-wx-49209b0b",
+      "file": "stickers/blue-fish/bluefish-wx-49209b0b.gif",
+      "thumb": "thumbs/blue-fish/bluefish-wx-49209b0b.jpg",
+      "character": "blue-fish",
+      "tags": [
+        "大肥鱼"
+      ],
+      "source": "wechat-search",
+      "added": "2026-11-11",
+      "format": "gif",
+      "width": 140,
+      "height": 140,
+      "animated": false,
+      "md5": "49209b0b65d5a0f33f183920fb1f08b8"
+    },
+    {
+      "id": "bluefish-wx-5387bfb0",
+      "file": "stickers/blue-fish/bluefish-wx-5387bfb0.gif",
+      "thumb": "thumbs/blue-fish/bluefish-wx-5387bfb0.jpg",
+      "character": "blue-fish",
+      "tags": [
+        "大肥鱼"
+      ],
+      "source": "wechat-search",
+      "added": "2026-11-11",
+      "format": "gif",
+      "width": 140,
+      "height": 140,
+      "animated": false,
+      "md5": "5387bfb07623e4de532ad1279ebd3ac4"
+    },
+    {
+      "id": "bluefish-wx-2dfcbac3",
+      "file": "stickers/blue-fish/bluefish-wx-2dfcbac3.gif",
+      "thumb": "thumbs/blue-fish/bluefish-wx-2dfcbac3.jpg",
+      "character": "blue-fish",
+      "tags": [
+        "大肥鱼"
+      ],
+      "source": "wechat-search",
+      "added": "2026-11-11",
+      "format": "gif",
+      "width": 240,
+      "height": 240,
+      "animated": true,
+      "md5": "2dfcbac3426a9530db644ea1ec62bc5a"
+    },
+    {
+      "id": "bluefish-wx-a439add7",
+      "file": "stickers/blue-fish/bluefish-wx-a439add7.gif",
+      "thumb": "thumbs/blue-fish/bluefish-wx-a439add7.jpg",
+      "character": "blue-fish",
+      "tags": [
+        "大肥鱼"
+      ],
+      "source": "wechat-search",
+      "added": "2026-11-11",
+      "format": "gif",
+      "width": 500,
+      "height": 500,
+      "animated": true,
+      "md5": "a439add774c8c6152309436bc8aa1d84"
+    },
+    {
+      "id": "bluefish-wx-982c0f91",
+      "file": "stickers/blue-fish/bluefish-wx-982c0f91.gif",
+      "thumb": "thumbs/blue-fish/bluefish-wx-982c0f91.jpg",
+      "character": "blue-fish",
+      "tags": [
+        "大肥鱼"
+      ],
+      "source": "wechat-search",
+      "added": "2026-11-11",
+      "format": "gif",
+      "width": 140,
+      "height": 140,
+      "animated": false,
+      "md5": "982c0f91c93f40cd4105cbec3b363f2a"
+    },
+    {
+      "id": "bluefish-wx-560a8f65",
+      "file": "stickers/blue-fish/bluefish-wx-560a8f65.gif",
+      "thumb": "thumbs/blue-fish/bluefish-wx-560a8f65.jpg",
+      "character": "blue-fish",
+      "tags": [
+        "大肥鱼"
+      ],
+      "source": "wechat-search",
+      "added": "2026-11-11",
+      "format": "gif",
+      "width": 140,
+      "height": 140,
+      "animated": false,
+      "md5": "560a8f655ad8a2044eb37cdae0b17f2b"
+    },
+    {
+      "id": "bluefish-wx-986e5205",
+      "file": "stickers/blue-fish/bluefish-wx-986e5205.gif",
+      "thumb": "thumbs/blue-fish/bluefish-wx-986e5205.jpg",
+      "character": "blue-fish",
+      "tags": [
+        "大肥鱼"
+      ],
+      "source": "wechat-search",
+      "added": "2026-11-11",
+      "format": "gif",
+      "width": 240,
+      "height": 240,
+      "animated": true,
+      "md5": "986e52056702bec4933b9c555fbb9d40"
+    },
+    {
+      "id": "bluefish-wx-f0b46bc1",
+      "file": "stickers/blue-fish/bluefish-wx-f0b46bc1.gif",
+      "thumb": "thumbs/blue-fish/bluefish-wx-f0b46bc1.jpg",
+      "character": "blue-fish",
+      "tags": [
+        "大肥鱼"
+      ],
+      "source": "wechat-search",
+      "added": "2026-11-11",
+      "format": "gif",
+      "width": 240,
+      "height": 240,
+      "animated": true,
+      "md5": "f0b46bc1fa00ac52bac6577a19d0ab13"
+    },
+    {
+      "id": "bluefish-wx-ba01c9d8",
+      "file": "stickers/blue-fish/bluefish-wx-ba01c9d8.gif",
+      "thumb": "thumbs/blue-fish/bluefish-wx-ba01c9d8.jpg",
+      "character": "blue-fish",
+      "tags": [
+        "大肥鱼"
+      ],
+      "source": "wechat-search",
+      "added": "2026-11-11",
+      "format": "gif",
+      "width": 140,
+      "height": 140,
+      "animated": false,
+      "md5": "ba01c9d8d40b162920af96bbef834bc4"
+    },
+    {
+      "id": "bluefish-wx-394c33b0",
+      "file": "stickers/blue-fish/bluefish-wx-394c33b0.gif",
+      "thumb": "thumbs/blue-fish/bluefish-wx-394c33b0.jpg",
+      "character": "blue-fish",
+      "tags": [
+        "大肥鱼"
+      ],
+      "source": "wechat-search",
+      "added": "2026-11-11",
+      "format": "gif",
+      "width": 140,
+      "height": 140,
+      "animated": false,
+      "md5": "394c33b049558aac27c0414ccf66b029"
+    },
+    {
+      "id": "bluefish-wx-a50bea4c",
+      "file": "stickers/blue-fish/bluefish-wx-a50bea4c.gif",
+      "thumb": "thumbs/blue-fish/bluefish-wx-a50bea4c.jpg",
+      "character": "blue-fish",
+      "tags": [
+        "大肥鱼"
+      ],
+      "source": "wechat-search",
+      "added": "2026-11-11",
+      "format": "gif",
+      "width": 500,
+      "height": 500,
+      "animated": true,
+      "md5": "a50bea4c32ebc0862438f7fb5e896a8f"
+    },
+    {
+      "id": "bluefish-wx-cafe3b57",
+      "file": "stickers/blue-fish/bluefish-wx-cafe3b57.gif",
+      "thumb": "thumbs/blue-fish/bluefish-wx-cafe3b57.jpg",
+      "character": "blue-fish",
+      "tags": [
+        "大肥鱼"
+      ],
+      "source": "wechat-search",
+      "added": "2026-11-11",
+      "format": "gif",
+      "width": 140,
+      "height": 140,
+      "animated": false,
+      "md5": "cafe3b5757a2c6c90f821c8caefc0750"
+    },
+    {
+      "id": "bluefish-wx-3069f332",
+      "file": "stickers/blue-fish/bluefish-wx-3069f332.gif",
+      "thumb": "thumbs/blue-fish/bluefish-wx-3069f332.jpg",
+      "character": "blue-fish",
+      "tags": [
+        "大肥鱼"
+      ],
+      "source": "wechat-search",
+      "added": "2026-11-11",
+      "format": "gif",
+      "width": 140,
+      "height": 140,
+      "animated": false,
+      "md5": "3069f332b7add8a239964422c717eee9"
+    },
+    {
+      "id": "bluefish-wx-5d949a1c",
+      "file": "stickers/blue-fish/bluefish-wx-5d949a1c.gif",
+      "thumb": "thumbs/blue-fish/bluefish-wx-5d949a1c.jpg",
+      "character": "blue-fish",
+      "tags": [
+        "大肥鱼"
+      ],
+      "source": "wechat-search",
+      "added": "2026-11-11",
+      "format": "gif",
+      "width": 140,
+      "height": 140,
+      "animated": false,
+      "md5": "5d949a1c95f46b646429061eb0b4bf77"
+    },
+    {
+      "id": "bluefish-wx-1afc754f",
+      "file": "stickers/blue-fish/bluefish-wx-1afc754f.gif",
+      "thumb": "thumbs/blue-fish/bluefish-wx-1afc754f.jpg",
+      "character": "blue-fish",
+      "tags": [
+        "大肥鱼"
+      ],
+      "source": "wechat-search",
+      "added": "2026-11-11",
+      "format": "gif",
+      "width": 140,
+      "height": 140,
+      "animated": false,
+      "md5": "1afc754f43dc5f9332f6a2a041f161fc"
+    },
+    {
+      "id": "bluefish-wx-6a04cb12",
+      "file": "stickers/blue-fish/bluefish-wx-6a04cb12.gif",
+      "thumb": "thumbs/blue-fish/bluefish-wx-6a04cb12.jpg",
+      "character": "blue-fish",
+      "tags": [
+        "大肥鱼"
+      ],
+      "source": "wechat-search",
+      "added": "2026-11-11",
+      "format": "gif",
+      "width": 240,
+      "height": 240,
+      "animated": true,
+      "md5": "6a04cb12abebf995d3c77f9f752ff747"
+    },
+    {
+      "id": "bluefish-wx-ab96d5ab",
+      "file": "stickers/blue-fish/bluefish-wx-ab96d5ab.gif",
+      "thumb": "thumbs/blue-fish/bluefish-wx-ab96d5ab.jpg",
+      "character": "blue-fish",
+      "tags": [
+        "大肥鱼"
+      ],
+      "source": "wechat-search",
+      "added": "2026-11-11",
+      "format": "gif",
+      "width": 418,
+      "height": 418,
+      "animated": true,
+      "md5": "ab96d5ab64c750e129e2a725dcabd684"
+    },
+    {
+      "id": "bluefish-wx-da7583b1",
+      "file": "stickers/blue-fish/bluefish-wx-da7583b1.gif",
+      "thumb": "thumbs/blue-fish/bluefish-wx-da7583b1.jpg",
+      "character": "blue-fish",
+      "tags": [
+        "大肥鱼"
+      ],
+      "source": "wechat-search",
+      "added": "2026-11-11",
+      "format": "gif",
+      "width": 140,
+      "height": 140,
+      "animated": false,
+      "md5": "da7583b19a0a7155ea8464dc871cc8aa"
+    },
+    {
+      "id": "bluefish-wx-7f356c03",
+      "file": "stickers/blue-fish/bluefish-wx-7f356c03.gif",
+      "thumb": "thumbs/blue-fish/bluefish-wx-7f356c03.jpg",
+      "character": "blue-fish",
+      "tags": [
+        "大肥鱼"
+      ],
+      "source": "wechat-search",
+      "added": "2026-11-11",
+      "format": "gif",
+      "width": 140,
+      "height": 140,
+      "animated": false,
+      "md5": "7f356c03bcbfdfee522f0196ca150bde"
+    },
+    {
+      "id": "bluefish-wx-f6cd4df1",
+      "file": "stickers/blue-fish/bluefish-wx-f6cd4df1.gif",
+      "thumb": "thumbs/blue-fish/bluefish-wx-f6cd4df1.jpg",
+      "character": "blue-fish",
+      "tags": [
+        "大肥鱼"
+      ],
+      "source": "wechat-search",
+      "added": "2026-11-11",
+      "format": "gif",
+      "width": 140,
+      "height": 140,
+      "animated": false,
+      "md5": "f6cd4df1d18d69db396fb752cb211399"
+    },
+    {
+      "id": "bluefish-wx-7244fb73",
+      "file": "stickers/blue-fish/bluefish-wx-7244fb73.gif",
+      "thumb": "thumbs/blue-fish/bluefish-wx-7244fb73.jpg",
+      "character": "blue-fish",
+      "tags": [
+        "大肥鱼"
+      ],
+      "source": "wechat-search",
+      "added": "2026-11-11",
+      "format": "gif",
+      "width": 418,
+      "height": 418,
+      "animated": true,
+      "md5": "7244fb73b5097ffb44273295dbbff760"
+    },
+    {
+      "id": "bluefish-wx-e582c5b5",
+      "file": "stickers/blue-fish/bluefish-wx-e582c5b5.gif",
+      "thumb": "thumbs/blue-fish/bluefish-wx-e582c5b5.jpg",
+      "character": "blue-fish",
+      "tags": [
+        "大肥鱼"
+      ],
+      "source": "wechat-search",
+      "added": "2026-11-11",
+      "format": "gif",
+      "width": 140,
+      "height": 140,
+      "animated": false,
+      "md5": "e582c5b58661ba29ce9ea9d159f8f01e"
+    },
+    {
+      "id": "bluefish-wx-b62419fd",
+      "file": "stickers/blue-fish/bluefish-wx-b62419fd.gif",
+      "thumb": "thumbs/blue-fish/bluefish-wx-b62419fd.jpg",
+      "character": "blue-fish",
+      "tags": [
+        "大肥鱼"
+      ],
+      "source": "wechat-search",
+      "added": "2026-11-11",
+      "format": "gif",
+      "width": 140,
+      "height": 140,
+      "animated": false,
+      "md5": "b62419fde8ee84a76122ca52f913484f"
+    },
+    {
+      "id": "bluefish-wx-16025f00",
+      "file": "stickers/blue-fish/bluefish-wx-16025f00.gif",
+      "thumb": "thumbs/blue-fish/bluefish-wx-16025f00.jpg",
+      "character": "blue-fish",
+      "tags": [
+        "大肥鱼"
+      ],
+      "source": "wechat-search",
+      "added": "2026-11-11",
+      "format": "gif",
+      "width": 500,
+      "height": 500,
+      "animated": true,
+      "md5": "16025f00dafe9ac02f6e8978ac1f0fb6"
+    },
+    {
+      "id": "bluefish-wx-b73f800f",
+      "file": "stickers/blue-fish/bluefish-wx-b73f800f.gif",
+      "thumb": "thumbs/blue-fish/bluefish-wx-b73f800f.jpg",
+      "character": "blue-fish",
+      "tags": [
+        "大肥鱼"
+      ],
+      "source": "wechat-search",
+      "added": "2026-11-11",
+      "format": "gif",
+      "width": 140,
+      "height": 140,
+      "animated": false,
+      "md5": "b73f800fb9df4527d1d8a34df8a2aa20"
+    },
+    {
+      "id": "bluefish-wx-b88cbed3",
+      "file": "stickers/blue-fish/bluefish-wx-b88cbed3.gif",
+      "thumb": "thumbs/blue-fish/bluefish-wx-b88cbed3.jpg",
+      "character": "blue-fish",
+      "tags": [
+        "大肥鱼"
+      ],
+      "source": "wechat-search",
+      "added": "2026-11-11",
+      "format": "gif",
+      "width": 140,
+      "height": 140,
+      "animated": false,
+      "md5": "b88cbed393ba6ecdb7579b7daedcb81b"
+    },
+    {
+      "id": "bluefish-wx-f2e188b8",
+      "file": "stickers/blue-fish/bluefish-wx-f2e188b8.gif",
+      "thumb": "thumbs/blue-fish/bluefish-wx-f2e188b8.jpg",
+      "character": "blue-fish",
+      "tags": [
+        "大肥鱼"
+      ],
+      "source": "wechat-search",
+      "added": "2026-11-11",
+      "format": "gif",
+      "width": 500,
+      "height": 500,
+      "animated": true,
+      "md5": "f2e188b8190e2e720098f9ec27357c6d"
+    },
+    {
+      "id": "bluefish-wx-b08a5473",
+      "file": "stickers/blue-fish/bluefish-wx-b08a5473.gif",
+      "thumb": "thumbs/blue-fish/bluefish-wx-b08a5473.jpg",
+      "character": "blue-fish",
+      "tags": [
+        "大肥鱼"
+      ],
+      "source": "wechat-search",
+      "added": "2026-11-11",
+      "format": "gif",
+      "width": 140,
+      "height": 140,
+      "animated": false,
+      "md5": "b08a54737b53d0ba1684a92fdbd2ef70"
+    },
+    {
+      "id": "bluefish-wx-f6566c31",
+      "file": "stickers/blue-fish/bluefish-wx-f6566c31.gif",
+      "thumb": "thumbs/blue-fish/bluefish-wx-f6566c31.jpg",
+      "character": "blue-fish",
+      "tags": [
+        "大肥鱼"
+      ],
+      "source": "wechat-search",
+      "added": "2026-11-11",
+      "format": "gif",
+      "width": 140,
+      "height": 140,
+      "animated": false,
+      "md5": "f6566c315daa0bbcc5f3beb1556730ef"
+    },
+    {
+      "id": "bluefish-wx-7c6a3ade",
+      "file": "stickers/blue-fish/bluefish-wx-7c6a3ade.gif",
+      "thumb": "thumbs/blue-fish/bluefish-wx-7c6a3ade.jpg",
+      "character": "blue-fish",
+      "tags": [
+        "大肥鱼"
+      ],
+      "source": "wechat-search",
+      "added": "2026-11-11",
+      "format": "gif",
+      "width": 140,
+      "height": 140,
+      "animated": false,
+      "md5": "7c6a3ade0a36a8bd5e273802b7c80f22"
+    },
+    {
+      "id": "bluefish-wx-998d2b37",
+      "file": "stickers/blue-fish/bluefish-wx-998d2b37.gif",
+      "thumb": "thumbs/blue-fish/bluefish-wx-998d2b37.jpg",
+      "character": "blue-fish",
+      "tags": [
+        "大肥鱼"
+      ],
+      "source": "wechat-search",
+      "added": "2026-11-11",
+      "format": "gif",
+      "width": 140,
+      "height": 140,
+      "animated": false,
+      "md5": "998d2b37975a6646573e5ca9bd88ec4b"
+    },
+    {
+      "id": "bluefish-wx-e50ea10f",
+      "file": "stickers/blue-fish/bluefish-wx-e50ea10f.gif",
+      "thumb": "thumbs/blue-fish/bluefish-wx-e50ea10f.jpg",
+      "character": "blue-fish",
+      "tags": [
+        "大肥鱼"
+      ],
+      "source": "wechat-search",
+      "added": "2026-11-11",
+      "format": "gif",
+      "width": 500,
+      "height": 500,
+      "animated": true,
+      "md5": "e50ea10ff47b04572f87bd1b9729c9e6"
+    },
+    {
+      "id": "bluefish-wx-2a02252b",
+      "file": "stickers/blue-fish/bluefish-wx-2a02252b.gif",
+      "thumb": "thumbs/blue-fish/bluefish-wx-2a02252b.jpg",
+      "character": "blue-fish",
+      "tags": [
+        "大肥鱼"
+      ],
+      "source": "wechat-search",
+      "added": "2026-11-11",
+      "format": "gif",
+      "width": 140,
+      "height": 140,
+      "animated": false,
+      "md5": "2a02252b017874ca45f217ab2b2f80bc"
+    },
+    {
+      "id": "bluefish-wx-6b5f5744",
+      "file": "stickers/blue-fish/bluefish-wx-6b5f5744.gif",
+      "thumb": "thumbs/blue-fish/bluefish-wx-6b5f5744.jpg",
+      "character": "blue-fish",
+      "tags": [
+        "大肥鱼"
+      ],
+      "source": "wechat-search",
+      "added": "2026-11-11",
+      "format": "gif",
+      "width": 140,
+      "height": 140,
+      "animated": false,
+      "md5": "6b5f57449e117b25c6223b39d3080082"
+    },
+    {
+      "id": "bluefish-wx-935fe01c",
+      "file": "stickers/blue-fish/bluefish-wx-935fe01c.gif",
+      "thumb": "thumbs/blue-fish/bluefish-wx-935fe01c.jpg",
+      "character": "blue-fish",
+      "tags": [
+        "大肥鱼"
+      ],
+      "source": "wechat-search",
+      "added": "2026-11-11",
+      "format": "gif",
+      "width": 500,
+      "height": 500,
+      "animated": true,
+      "md5": "935fe01c419e8d5d554426ac2c1a84d9"
+    },
+    {
+      "id": "bluefish-wx-defbcae4",
+      "file": "stickers/blue-fish/bluefish-wx-defbcae4.gif",
+      "thumb": "thumbs/blue-fish/bluefish-wx-defbcae4.jpg",
+      "character": "blue-fish",
+      "tags": [
+        "大肥鱼"
+      ],
+      "source": "wechat-search",
+      "added": "2026-11-11",
+      "format": "gif",
+      "width": 140,
+      "height": 140,
+      "animated": false,
+      "md5": "defbcae4fcf415cfc7539afa41f9f4ed"
+    },
+    {
+      "id": "bluefish-wx-6869142d",
+      "file": "stickers/blue-fish/bluefish-wx-6869142d.gif",
+      "thumb": "thumbs/blue-fish/bluefish-wx-6869142d.jpg",
+      "character": "blue-fish",
+      "tags": [
+        "大肥鱼"
+      ],
+      "source": "wechat-search",
+      "added": "2026-11-11",
+      "format": "gif",
+      "width": 500,
+      "height": 500,
+      "animated": true,
+      "md5": "6869142d50f88a9cfe6299791cf0b151"
+    },
+    {
+      "id": "bluefish-wx-6bf85b00",
+      "file": "stickers/blue-fish/bluefish-wx-6bf85b00.gif",
+      "thumb": "thumbs/blue-fish/bluefish-wx-6bf85b00.jpg",
+      "character": "blue-fish",
+      "tags": [
+        "大肥鱼"
+      ],
+      "source": "wechat-search",
+      "added": "2026-11-11",
+      "format": "gif",
+      "width": 500,
+      "height": 500,
+      "animated": true,
+      "md5": "6bf85b001130b111d0c5142a244183ed"
+    },
+    {
+      "id": "bluefish-wx-2b507a2f",
+      "file": "stickers/blue-fish/bluefish-wx-2b507a2f.gif",
+      "thumb": "thumbs/blue-fish/bluefish-wx-2b507a2f.jpg",
+      "character": "blue-fish",
+      "tags": [
+        "大肥鱼"
+      ],
+      "source": "wechat-search",
+      "added": "2026-11-11",
+      "format": "gif",
+      "width": 140,
+      "height": 140,
+      "animated": false,
+      "md5": "2b507a2ffbe7c7717839842dc6052b3c"
+    },
+    {
+      "id": "bluefish-wx-58a89cf2",
+      "file": "stickers/blue-fish/bluefish-wx-58a89cf2.gif",
+      "thumb": "thumbs/blue-fish/bluefish-wx-58a89cf2.jpg",
+      "character": "blue-fish",
+      "tags": [
+        "大肥鱼"
+      ],
+      "source": "wechat-search",
+      "added": "2026-11-11",
+      "format": "gif",
+      "width": 140,
+      "height": 140,
+      "animated": false,
+      "md5": "58a89cf29c05036a99b297c42bcb8824"
+    },
+    {
+      "id": "bluefish-wx-6dfdc678",
+      "file": "stickers/blue-fish/bluefish-wx-6dfdc678.gif",
+      "thumb": "thumbs/blue-fish/bluefish-wx-6dfdc678.jpg",
+      "character": "blue-fish",
+      "tags": [
+        "大肥鱼"
+      ],
+      "source": "wechat-search",
+      "added": "2026-11-11",
+      "format": "gif",
+      "width": 418,
+      "height": 418,
+      "animated": true,
+      "md5": "6dfdc678998f1d7ebd270d2db2b87f3a"
+    },
+    {
+      "id": "bluefish-wx-2d10f408",
+      "file": "stickers/blue-fish/bluefish-wx-2d10f408.gif",
+      "thumb": "thumbs/blue-fish/bluefish-wx-2d10f408.jpg",
+      "character": "blue-fish",
+      "tags": [
+        "大肥鱼"
+      ],
+      "source": "wechat-search",
+      "added": "2026-11-11",
+      "format": "gif",
+      "width": 500,
+      "height": 500,
+      "animated": true,
+      "md5": "2d10f408f9a006bf1beea9c62fcb86ec"
+    },
+    {
+      "id": "bluefish-wx-882ac764",
+      "file": "stickers/blue-fish/bluefish-wx-882ac764.gif",
+      "thumb": "thumbs/blue-fish/bluefish-wx-882ac764.jpg",
+      "character": "blue-fish",
+      "tags": [
+        "大肥鱼"
+      ],
+      "source": "wechat-search",
+      "added": "2026-11-11",
+      "format": "gif",
+      "width": 140,
+      "height": 140,
+      "animated": false,
+      "md5": "882ac76451413f940fe6863e481e4ffe"
+    },
+    {
+      "id": "bluefish-wx-9572470d",
+      "file": "stickers/blue-fish/bluefish-wx-9572470d.gif",
+      "thumb": "thumbs/blue-fish/bluefish-wx-9572470d.jpg",
+      "character": "blue-fish",
+      "tags": [
+        "大肥鱼"
+      ],
+      "source": "wechat-search",
+      "added": "2026-11-11",
+      "format": "gif",
+      "width": 140,
+      "height": 140,
+      "animated": false,
+      "md5": "9572470d83424134138802698ebcceff"
+    },
+    {
+      "id": "bluefish-wx-dd3bd877",
+      "file": "stickers/blue-fish/bluefish-wx-dd3bd877.gif",
+      "thumb": "thumbs/blue-fish/bluefish-wx-dd3bd877.jpg",
+      "character": "blue-fish",
+      "tags": [
+        "大肥鱼"
+      ],
+      "source": "wechat-search",
+      "added": "2026-11-11",
+      "format": "gif",
+      "width": 418,
+      "height": 418,
+      "animated": true,
+      "md5": "dd3bd877c8fdb8a209becac6f4428b3e"
+    },
+    {
+      "id": "bluefish-wx-8c80c457",
+      "file": "stickers/blue-fish/bluefish-wx-8c80c457.gif",
+      "thumb": "thumbs/blue-fish/bluefish-wx-8c80c457.jpg",
+      "character": "blue-fish",
+      "tags": [
+        "大肥鱼"
+      ],
+      "source": "wechat-search",
+      "added": "2026-11-11",
+      "format": "gif",
+      "width": 140,
+      "height": 140,
+      "animated": false,
+      "md5": "8c80c457b17824905ce57f9a2c56c461"
+    },
+    {
+      "id": "bluefish-wx-4ed69c94",
+      "file": "stickers/blue-fish/bluefish-wx-4ed69c94.gif",
+      "thumb": "thumbs/blue-fish/bluefish-wx-4ed69c94.jpg",
+      "character": "blue-fish",
+      "tags": [
+        "大肥鱼"
+      ],
+      "source": "wechat-search",
+      "added": "2026-11-11",
+      "format": "gif",
+      "width": 500,
+      "height": 500,
+      "animated": true,
+      "md5": "4ed69c947749c062e80b59e00d45abf6"
+    },
+    {
+      "id": "bluefish-wx-f67e16f5",
+      "file": "stickers/blue-fish/bluefish-wx-f67e16f5.gif",
+      "thumb": "thumbs/blue-fish/bluefish-wx-f67e16f5.jpg",
+      "character": "blue-fish",
+      "tags": [
+        "大肥鱼"
+      ],
+      "source": "wechat-search",
+      "added": "2026-11-11",
+      "format": "gif",
+      "width": 140,
+      "height": 140,
+      "animated": false,
+      "md5": "f67e16f5d6147c7ec1a61f0b539c6a1e"
+    },
+    {
+      "id": "bluefish-wx-3af2e4af",
+      "file": "stickers/blue-fish/bluefish-wx-3af2e4af.gif",
+      "thumb": "thumbs/blue-fish/bluefish-wx-3af2e4af.jpg",
+      "character": "blue-fish",
+      "tags": [
+        "大肥鱼"
+      ],
+      "source": "wechat-search",
+      "added": "2026-11-11",
+      "format": "gif",
+      "width": 512,
+      "height": 512,
+      "animated": true,
+      "md5": "3af2e4afb9163718d722a7c457e09050"
+    },
+    {
+      "id": "bluefish-wx-ca2c5448",
+      "file": "stickers/blue-fish/bluefish-wx-ca2c5448.gif",
+      "thumb": "thumbs/blue-fish/bluefish-wx-ca2c5448.jpg",
+      "character": "blue-fish",
+      "tags": [
+        "大肥鱼"
+      ],
+      "source": "wechat-search",
+      "added": "2026-11-11",
+      "format": "gif",
+      "width": 140,
+      "height": 140,
+      "animated": false,
+      "md5": "ca2c54488f1a1e1ec5c8f21998f1e2fd"
+    },
+    {
+      "id": "bluefish-wx-d063a7dd",
+      "file": "stickers/blue-fish/bluefish-wx-d063a7dd.gif",
+      "thumb": "thumbs/blue-fish/bluefish-wx-d063a7dd.jpg",
+      "character": "blue-fish",
+      "tags": [
+        "大肥鱼"
+      ],
+      "source": "wechat-search",
+      "added": "2026-11-11",
+      "format": "gif",
+      "width": 140,
+      "height": 140,
+      "animated": false,
+      "md5": "d063a7dd564de1d0acc1efa00aaf002e"
+    },
+    {
+      "id": "bluefish-wx-e58f0a64",
+      "file": "stickers/blue-fish/bluefish-wx-e58f0a64.gif",
+      "thumb": "thumbs/blue-fish/bluefish-wx-e58f0a64.jpg",
+      "character": "blue-fish",
+      "tags": [
+        "大肥鱼"
+      ],
+      "source": "wechat-search",
+      "added": "2026-11-11",
+      "format": "gif",
+      "width": 500,
+      "height": 500,
+      "animated": true,
+      "md5": "e58f0a64fa77d742568f7cd0e333838d"
+    },
+    {
+      "id": "bluefish-wx-900ec309",
+      "file": "stickers/blue-fish/bluefish-wx-900ec309.gif",
+      "thumb": "thumbs/blue-fish/bluefish-wx-900ec309.jpg",
+      "character": "blue-fish",
+      "tags": [
+        "大肥鱼"
+      ],
+      "source": "wechat-search",
+      "added": "2026-11-11",
+      "format": "gif",
+      "width": 140,
+      "height": 140,
+      "animated": false,
+      "md5": "900ec30943d0c54d86d1d514be9dfc61"
+    },
+    {
+      "id": "bluefish-wx-da2a3126",
+      "file": "stickers/blue-fish/bluefish-wx-da2a3126.gif",
+      "thumb": "thumbs/blue-fish/bluefish-wx-da2a3126.jpg",
+      "character": "blue-fish",
+      "tags": [
+        "大肥鱼"
+      ],
+      "source": "wechat-search",
+      "added": "2026-11-11",
+      "format": "gif",
+      "width": 512,
+      "height": 512,
+      "animated": true,
+      "md5": "da2a3126d97553b04a0a77968117ee01"
+    },
+    {
+      "id": "bluefish-wx-a8dadfb3",
+      "file": "stickers/blue-fish/bluefish-wx-a8dadfb3.gif",
+      "thumb": "thumbs/blue-fish/bluefish-wx-a8dadfb3.jpg",
+      "character": "blue-fish",
+      "tags": [
+        "大肥鱼"
+      ],
+      "source": "wechat-search",
+      "added": "2026-11-11",
+      "format": "gif",
+      "width": 140,
+      "height": 140,
+      "animated": false,
+      "md5": "a8dadfb319e6e26351b4d340b69146cb"
+    },
+    {
+      "id": "bluefish-wx-a070bf23",
+      "file": "stickers/blue-fish/bluefish-wx-a070bf23.gif",
+      "thumb": "thumbs/blue-fish/bluefish-wx-a070bf23.jpg",
+      "character": "blue-fish",
+      "tags": [
+        "大肥鱼"
+      ],
+      "source": "wechat-search",
+      "added": "2026-11-11",
+      "format": "gif",
+      "width": 140,
+      "height": 140,
+      "animated": false,
+      "md5": "a070bf239c40ae3b54e41c213755f312"
+    },
+    {
+      "id": "bluefish-wx-2ddb6b95",
+      "file": "stickers/blue-fish/bluefish-wx-2ddb6b95.gif",
+      "thumb": "thumbs/blue-fish/bluefish-wx-2ddb6b95.jpg",
+      "character": "blue-fish",
+      "tags": [
+        "大肥鱼"
+      ],
+      "source": "wechat-search",
+      "added": "2026-11-11",
+      "format": "gif",
+      "width": 500,
+      "height": 500,
+      "animated": true,
+      "md5": "2ddb6b95ddb77e5af831f6e1cd0e1c36"
+    },
+    {
+      "id": "bluefish-wx-6e3ab2d5",
+      "file": "stickers/blue-fish/bluefish-wx-6e3ab2d5.gif",
+      "thumb": "thumbs/blue-fish/bluefish-wx-6e3ab2d5.jpg",
+      "character": "blue-fish",
+      "tags": [
+        "大肥鱼"
+      ],
+      "source": "wechat-search",
+      "added": "2026-11-11",
+      "format": "gif",
+      "width": 500,
+      "height": 500,
+      "animated": true,
+      "md5": "6e3ab2d55eb1c6727b927b8c60c8a476"
+    },
+    {
+      "id": "bluefish-wx-8afbf41c",
+      "file": "stickers/blue-fish/bluefish-wx-8afbf41c.gif",
+      "thumb": "thumbs/blue-fish/bluefish-wx-8afbf41c.jpg",
+      "character": "blue-fish",
+      "tags": [
+        "大肥鱼"
+      ],
+      "source": "wechat-search",
+      "added": "2026-11-11",
+      "format": "gif",
+      "width": 500,
+      "height": 500,
+      "animated": true,
+      "md5": "8afbf41cd67ec8727a178de79dd89aeb"
+    },
+    {
+      "id": "bluefish-wx-344d6bc4",
+      "file": "stickers/blue-fish/bluefish-wx-344d6bc4.gif",
+      "thumb": "thumbs/blue-fish/bluefish-wx-344d6bc4.jpg",
+      "character": "blue-fish",
+      "tags": [
+        "大肥鱼"
+      ],
+      "source": "wechat-search",
+      "added": "2026-11-11",
+      "format": "gif",
+      "width": 500,
+      "height": 500,
+      "animated": true,
+      "md5": "344d6bc4d6536c6f468f61cc6b4c1665"
+    },
+    {
+      "id": "bluefish-wx-16acf7a5",
+      "file": "stickers/blue-fish/bluefish-wx-16acf7a5.gif",
+      "thumb": "thumbs/blue-fish/bluefish-wx-16acf7a5.jpg",
+      "character": "blue-fish",
+      "tags": [
+        "大肥鱼"
+      ],
+      "source": "wechat-search",
+      "added": "2026-11-11",
+      "format": "gif",
+      "width": 500,
+      "height": 500,
+      "animated": true,
+      "md5": "16acf7a5dcb967eb4c88dfeac371c1e4"
+    },
+    {
+      "id": "bluefish-wx-9a23be1a",
+      "file": "stickers/blue-fish/bluefish-wx-9a23be1a.gif",
+      "thumb": "thumbs/blue-fish/bluefish-wx-9a23be1a.jpg",
+      "character": "blue-fish",
+      "tags": [
+        "大肥鱼"
+      ],
+      "source": "wechat-search",
+      "added": "2026-11-11",
+      "format": "gif",
+      "width": 140,
+      "height": 140,
+      "animated": false,
+      "md5": "9a23be1a86d7df0ea423e317e95a0262"
+    },
+    {
+      "id": "bluefish-wx-5234f3ab",
+      "file": "stickers/blue-fish/bluefish-wx-5234f3ab.gif",
+      "thumb": "thumbs/blue-fish/bluefish-wx-5234f3ab.jpg",
+      "character": "blue-fish",
+      "tags": [
+        "大肥鱼"
+      ],
+      "source": "wechat-search",
+      "added": "2026-11-11",
+      "format": "gif",
+      "width": 140,
+      "height": 140,
+      "animated": false,
+      "md5": "5234f3abb45b7342a60ea87e4dbd0b47"
+    },
+    {
+      "id": "bluefish-wx-1e5b29ee",
+      "file": "stickers/blue-fish/bluefish-wx-1e5b29ee.gif",
+      "thumb": "thumbs/blue-fish/bluefish-wx-1e5b29ee.jpg",
+      "character": "blue-fish",
+      "tags": [
+        "大肥鱼"
+      ],
+      "source": "wechat-search",
+      "added": "2026-11-11",
+      "format": "gif",
+      "width": 500,
+      "height": 500,
+      "animated": true,
+      "md5": "1e5b29ee3dad85c385e6cfce2e710bd2"
+    },
+    {
+      "id": "bluefish-wx-a7166e94",
+      "file": "stickers/blue-fish/bluefish-wx-a7166e94.gif",
+      "thumb": "thumbs/blue-fish/bluefish-wx-a7166e94.jpg",
+      "character": "blue-fish",
+      "tags": [
+        "大肥鱼"
+      ],
+      "source": "wechat-search",
+      "added": "2026-11-11",
+      "format": "gif",
+      "width": 140,
+      "height": 140,
+      "animated": false,
+      "md5": "a7166e94ba3e71537b8de39707303dcd"
+    },
+    {
+      "id": "bluefish-wx-3cceda9b",
+      "file": "stickers/blue-fish/bluefish-wx-3cceda9b.gif",
+      "thumb": "thumbs/blue-fish/bluefish-wx-3cceda9b.jpg",
+      "character": "blue-fish",
+      "tags": [
+        "大肥鱼"
+      ],
+      "source": "wechat-search",
+      "added": "2026-11-11",
+      "format": "gif",
+      "width": 500,
+      "height": 500,
+      "animated": true,
+      "md5": "3cceda9b4f55bcd34104192038e60a5e"
+    },
+    {
+      "id": "bluefish-wx-33626d11",
+      "file": "stickers/blue-fish/bluefish-wx-33626d11.gif",
+      "thumb": "thumbs/blue-fish/bluefish-wx-33626d11.jpg",
+      "character": "blue-fish",
+      "tags": [
+        "大肥鱼"
+      ],
+      "source": "wechat-search",
+      "added": "2026-11-11",
+      "format": "gif",
+      "width": 140,
+      "height": 140,
+      "animated": false,
+      "md5": "33626d11b065ea6a2abca666ba8e6921"
+    },
+    {
+      "id": "bluefish-wx-aa3e2dea",
+      "file": "stickers/blue-fish/bluefish-wx-aa3e2dea.gif",
+      "thumb": "thumbs/blue-fish/bluefish-wx-aa3e2dea.jpg",
+      "character": "blue-fish",
+      "tags": [
+        "大肥鱼"
+      ],
+      "source": "wechat-search",
+      "added": "2026-11-11",
+      "format": "gif",
+      "width": 140,
+      "height": 140,
+      "animated": false,
+      "md5": "aa3e2deac1801703662fe051278ac84e"
+    },
+    {
+      "id": "bluefish-wx-f31c9b0e",
+      "file": "stickers/blue-fish/bluefish-wx-f31c9b0e.gif",
+      "thumb": "thumbs/blue-fish/bluefish-wx-f31c9b0e.jpg",
+      "character": "blue-fish",
+      "tags": [
+        "大肥鱼"
+      ],
+      "source": "wechat-search",
+      "added": "2026-11-11",
+      "format": "gif",
+      "width": 350,
+      "height": 350,
+      "animated": true,
+      "md5": "f31c9b0e7110f2c2935dc96433c518b7"
+    },
+    {
+      "id": "bluefish-wx-ed948d49",
+      "file": "stickers/blue-fish/bluefish-wx-ed948d49.gif",
+      "thumb": "thumbs/blue-fish/bluefish-wx-ed948d49.jpg",
+      "character": "blue-fish",
+      "tags": [
+        "大肥鱼"
+      ],
+      "source": "wechat-search",
+      "added": "2026-11-11",
+      "format": "gif",
+      "width": 140,
+      "height": 140,
+      "animated": false,
+      "md5": "ed948d497a5162082df91444a3b62dc7"
+    },
+    {
+      "id": "bluefish-wx-bca57391",
+      "file": "stickers/blue-fish/bluefish-wx-bca57391.gif",
+      "thumb": "thumbs/blue-fish/bluefish-wx-bca57391.jpg",
+      "character": "blue-fish",
+      "tags": [
+        "大肥鱼"
+      ],
+      "source": "wechat-search",
+      "added": "2026-11-11",
+      "format": "gif",
+      "width": 512,
+      "height": 512,
+      "animated": true,
+      "md5": "bca57391858a4c0409aa742adec84fc1"
+    },
+    {
+      "id": "bluefish-wx-100fb5a9",
+      "file": "stickers/blue-fish/bluefish-wx-100fb5a9.gif",
+      "thumb": "thumbs/blue-fish/bluefish-wx-100fb5a9.jpg",
+      "character": "blue-fish",
+      "tags": [
+        "大肥鱼"
+      ],
+      "source": "wechat-search",
+      "added": "2026-11-11",
+      "format": "gif",
+      "width": 140,
+      "height": 140,
+      "animated": false,
+      "md5": "100fb5a9fbfcf503c5d6bfadb1f9cc40"
+    },
+    {
+      "id": "bluefish-wx-355050cd",
+      "file": "stickers/blue-fish/bluefish-wx-355050cd.gif",
+      "thumb": "thumbs/blue-fish/bluefish-wx-355050cd.jpg",
+      "character": "blue-fish",
+      "tags": [
+        "大肥鱼"
+      ],
+      "source": "wechat-search",
+      "added": "2026-11-11",
+      "format": "gif",
+      "width": 418,
+      "height": 418,
+      "animated": true,
+      "md5": "355050cd2a434e5c22705cf191281f0f"
+    },
+    {
+      "id": "bluefish-wx-f3c99c81",
+      "file": "stickers/blue-fish/bluefish-wx-f3c99c81.gif",
+      "thumb": "thumbs/blue-fish/bluefish-wx-f3c99c81.jpg",
+      "character": "blue-fish",
+      "tags": [
+        "大肥鱼"
+      ],
+      "source": "wechat-search",
+      "added": "2026-11-11",
+      "format": "gif",
+      "width": 500,
+      "height": 500,
+      "animated": true,
+      "md5": "f3c99c819a4467e37bfa9ea9b174c41c"
+    },
+    {
+      "id": "bluefish-wx-1e441199",
+      "file": "stickers/blue-fish/bluefish-wx-1e441199.gif",
+      "thumb": "thumbs/blue-fish/bluefish-wx-1e441199.jpg",
+      "character": "blue-fish",
+      "tags": [
+        "大肥鱼"
+      ],
+      "source": "wechat-search",
+      "added": "2026-11-11",
+      "format": "gif",
+      "width": 140,
+      "height": 140,
+      "animated": false,
+      "md5": "1e441199391b40ce42cee2d98ef9598f"
+    },
+    {
+      "id": "bluefish-wx-2b90f300",
+      "file": "stickers/blue-fish/bluefish-wx-2b90f300.gif",
+      "thumb": "thumbs/blue-fish/bluefish-wx-2b90f300.jpg",
+      "character": "blue-fish",
+      "tags": [
+        "大肥鱼"
+      ],
+      "source": "wechat-search",
+      "added": "2026-11-11",
+      "format": "gif",
+      "width": 500,
+      "height": 500,
+      "animated": true,
+      "md5": "2b90f300812fce4a1d5bad1658889d88"
+    },
+    {
+      "id": "bluefish-wx-82f05786",
+      "file": "stickers/blue-fish/bluefish-wx-82f05786.gif",
+      "thumb": "thumbs/blue-fish/bluefish-wx-82f05786.jpg",
+      "character": "blue-fish",
+      "tags": [
+        "大肥鱼"
+      ],
+      "source": "wechat-search",
+      "added": "2026-11-11",
+      "format": "gif",
+      "width": 140,
+      "height": 140,
+      "animated": false,
+      "md5": "82f05786a1e2d77f6b5702b11f7addd9"
+    },
+    {
+      "id": "bluefish-wx-6c6c0aab",
+      "file": "stickers/blue-fish/bluefish-wx-6c6c0aab.gif",
+      "thumb": "thumbs/blue-fish/bluefish-wx-6c6c0aab.jpg",
+      "character": "blue-fish",
+      "tags": [
+        "大肥鱼"
+      ],
+      "source": "wechat-search",
+      "added": "2026-11-11",
+      "format": "gif",
+      "width": 140,
+      "height": 140,
+      "animated": false,
+      "md5": "6c6c0aab74222ca0f2f65ad1bde071d1"
+    },
+    {
+      "id": "bluefish-wx-6a5eb130",
+      "file": "stickers/blue-fish/bluefish-wx-6a5eb130.gif",
+      "thumb": "thumbs/blue-fish/bluefish-wx-6a5eb130.jpg",
+      "character": "blue-fish",
+      "tags": [
+        "大肥鱼"
+      ],
+      "source": "wechat-search",
+      "added": "2026-11-11",
+      "format": "gif",
+      "width": 500,
+      "height": 500,
+      "animated": true,
+      "md5": "6a5eb13009c41b2ad936cfaa20f7f38e"
+    },
+    {
+      "id": "bluefish-wx-c7412415",
+      "file": "stickers/blue-fish/bluefish-wx-c7412415.gif",
+      "thumb": "thumbs/blue-fish/bluefish-wx-c7412415.jpg",
+      "character": "blue-fish",
+      "tags": [
+        "大肥鱼"
+      ],
+      "source": "wechat-search",
+      "added": "2026-11-11",
+      "format": "gif",
+      "width": 418,
+      "height": 418,
+      "animated": true,
+      "md5": "c7412415dace52527c15aa2058bb8d9e"
+    },
+    {
+      "id": "bluefish-wx-19cf7a3b",
+      "file": "stickers/blue-fish/bluefish-wx-19cf7a3b.gif",
+      "thumb": "thumbs/blue-fish/bluefish-wx-19cf7a3b.jpg",
+      "character": "blue-fish",
+      "tags": [
+        "大肥鱼"
+      ],
+      "source": "wechat-search",
+      "added": "2026-11-11",
+      "format": "gif",
+      "width": 500,
+      "height": 500,
+      "animated": true,
+      "md5": "19cf7a3b181e6ea2bff8b97a59afe3ab"
+    },
+    {
+      "id": "bluefish-wx-2243fdf7",
+      "file": "stickers/blue-fish/bluefish-wx-2243fdf7.gif",
+      "thumb": "thumbs/blue-fish/bluefish-wx-2243fdf7.jpg",
+      "character": "blue-fish",
+      "tags": [
+        "大肥鱼"
+      ],
+      "source": "wechat-search",
+      "added": "2026-11-11",
+      "format": "gif",
+      "width": 140,
+      "height": 140,
+      "animated": false,
+      "md5": "2243fdf74c6d00ae3375df0a81695750"
+    },
+    {
+      "id": "bluefish-wx-607787aa",
+      "file": "stickers/blue-fish/bluefish-wx-607787aa.gif",
+      "thumb": "thumbs/blue-fish/bluefish-wx-607787aa.jpg",
+      "character": "blue-fish",
+      "tags": [
+        "大肥鱼"
+      ],
+      "source": "wechat-search",
+      "added": "2026-11-11",
+      "format": "gif",
+      "width": 500,
+      "height": 500,
+      "animated": true,
+      "md5": "607787aa24a1beae80671fbebeebaffe"
+    },
+    {
+      "id": "bluefish-wx-90fcc599",
+      "file": "stickers/blue-fish/bluefish-wx-90fcc599.gif",
+      "thumb": "thumbs/blue-fish/bluefish-wx-90fcc599.jpg",
+      "character": "blue-fish",
+      "tags": [
+        "大肥鱼"
+      ],
+      "source": "wechat-search",
+      "added": "2026-11-11",
+      "format": "gif",
+      "width": 140,
+      "height": 140,
+      "animated": false,
+      "md5": "90fcc599bb86337c2c7c499ae05d7794"
+    },
+    {
+      "id": "bluefish-wx-641fea3c",
+      "file": "stickers/blue-fish/bluefish-wx-641fea3c.gif",
+      "thumb": "thumbs/blue-fish/bluefish-wx-641fea3c.jpg",
+      "character": "blue-fish",
+      "tags": [
+        "大肥鱼"
+      ],
+      "source": "wechat-search",
+      "added": "2026-11-11",
+      "format": "gif",
+      "width": 140,
+      "height": 140,
+      "animated": false,
+      "md5": "641fea3cf3b7e02dd11a36c1b522bd21"
+    },
+    {
+      "id": "bluefish-wx-e460b71b",
+      "file": "stickers/blue-fish/bluefish-wx-e460b71b.gif",
+      "thumb": "thumbs/blue-fish/bluefish-wx-e460b71b.jpg",
+      "character": "blue-fish",
+      "tags": [
+        "大肥鱼"
+      ],
+      "source": "wechat-search",
+      "added": "2026-11-11",
+      "format": "gif",
+      "width": 140,
+      "height": 140,
+      "animated": false,
+      "md5": "e460b71bb506403dd027246c45bda5fb"
+    },
+    {
+      "id": "bluefish-wx-b2b8214f",
+      "file": "stickers/blue-fish/bluefish-wx-b2b8214f.gif",
+      "thumb": "thumbs/blue-fish/bluefish-wx-b2b8214f.jpg",
+      "character": "blue-fish",
+      "tags": [
+        "大肥鱼"
+      ],
+      "source": "wechat-search",
+      "added": "2026-11-11",
+      "format": "gif",
+      "width": 140,
+      "height": 140,
+      "animated": false,
+      "md5": "b2b8214fa2436e4080ea320f47b841e5"
+    },
+    {
+      "id": "bluefish-wx-90d116ab",
+      "file": "stickers/blue-fish/bluefish-wx-90d116ab.gif",
+      "thumb": "thumbs/blue-fish/bluefish-wx-90d116ab.jpg",
+      "character": "blue-fish",
+      "tags": [
+        "大肥鱼"
+      ],
+      "source": "wechat-search",
+      "added": "2026-11-11",
+      "format": "gif",
+      "width": 140,
+      "height": 140,
+      "animated": false,
+      "md5": "90d116abfa5f7b9217b0894349c2b58b"
+    },
+    {
+      "id": "bluefish-wx-04540d63",
+      "file": "stickers/blue-fish/bluefish-wx-04540d63.gif",
+      "thumb": "thumbs/blue-fish/bluefish-wx-04540d63.jpg",
+      "character": "blue-fish",
+      "tags": [
+        "大肥鱼"
+      ],
+      "source": "wechat-search",
+      "added": "2026-11-11",
+      "format": "gif",
+      "width": 500,
+      "height": 500,
+      "animated": true,
+      "md5": "04540d636b425a986545d529e81d27f4"
+    },
+    {
+      "id": "bluefish-wx-d671ba39",
+      "file": "stickers/blue-fish/bluefish-wx-d671ba39.gif",
+      "thumb": "thumbs/blue-fish/bluefish-wx-d671ba39.jpg",
+      "character": "blue-fish",
+      "tags": [
+        "大肥鱼"
+      ],
+      "source": "wechat-search",
+      "added": "2026-11-11",
+      "format": "gif",
+      "width": 480,
+      "height": 480,
+      "animated": true,
+      "md5": "d671ba3967b777aaa295ce376c1404e4"
+    },
+    {
+      "id": "bluefish-wx-bbc9a41a",
+      "file": "stickers/blue-fish/bluefish-wx-bbc9a41a.gif",
+      "thumb": "thumbs/blue-fish/bluefish-wx-bbc9a41a.jpg",
+      "character": "blue-fish",
+      "tags": [
+        "大肥鱼"
+      ],
+      "source": "wechat-search",
+      "added": "2026-11-11",
+      "format": "gif",
+      "width": 500,
+      "height": 500,
+      "animated": true,
+      "md5": "bbc9a41a901674d57f70e7f025c0bfc5"
+    },
+    {
+      "id": "bluefish-wx-67e4badb",
+      "file": "stickers/blue-fish/bluefish-wx-67e4badb.gif",
+      "thumb": "thumbs/blue-fish/bluefish-wx-67e4badb.jpg",
+      "character": "blue-fish",
+      "tags": [
+        "大肥鱼"
+      ],
+      "source": "wechat-search",
+      "added": "2026-11-11",
+      "format": "gif",
+      "width": 140,
+      "height": 140,
+      "animated": false,
+      "md5": "67e4badbbe1ae9ca0920af0e2961e4d4"
+    },
+    {
+      "id": "bluefish-wx-0cd52cba",
+      "file": "stickers/blue-fish/bluefish-wx-0cd52cba.gif",
+      "thumb": "thumbs/blue-fish/bluefish-wx-0cd52cba.jpg",
+      "character": "blue-fish",
+      "tags": [
+        "大肥鱼"
+      ],
+      "source": "wechat-search",
+      "added": "2026-11-11",
+      "format": "gif",
+      "width": 500,
+      "height": 500,
+      "animated": true,
+      "md5": "0cd52cbafe60b8c8d56999aa10e49355"
+    },
+    {
+      "id": "bluefish-wx-4beae7d8",
+      "file": "stickers/blue-fish/bluefish-wx-4beae7d8.gif",
+      "thumb": "thumbs/blue-fish/bluefish-wx-4beae7d8.jpg",
+      "character": "blue-fish",
+      "tags": [
+        "大肥鱼"
+      ],
+      "source": "wechat-search",
+      "added": "2026-11-11",
+      "format": "gif",
+      "width": 500,
+      "height": 500,
+      "animated": true,
+      "md5": "4beae7d88f23189b47e402f184773455"
+    },
+    {
+      "id": "bluefish-wx-59f016bc",
+      "file": "stickers/blue-fish/bluefish-wx-59f016bc.gif",
+      "thumb": "thumbs/blue-fish/bluefish-wx-59f016bc.jpg",
+      "character": "blue-fish",
+      "tags": [
+        "大肥鱼"
+      ],
+      "source": "wechat-search",
+      "added": "2026-11-11",
+      "format": "gif",
+      "width": 140,
+      "height": 140,
+      "animated": false,
+      "md5": "59f016bc3ac435de7579a5eb218b7d0f"
+    },
+    {
+      "id": "bluefish-wx-1565c862",
+      "file": "stickers/blue-fish/bluefish-wx-1565c862.gif",
+      "thumb": "thumbs/blue-fish/bluefish-wx-1565c862.jpg",
+      "character": "blue-fish",
+      "tags": [
+        "大肥鱼"
+      ],
+      "source": "wechat-search",
+      "added": "2026-11-11",
+      "format": "gif",
+      "width": 140,
+      "height": 140,
+      "animated": false,
+      "md5": "1565c862b16cc0af449be0937c508ec1"
+    },
+    {
+      "id": "bluefish-wx-aab3d045",
+      "file": "stickers/blue-fish/bluefish-wx-aab3d045.gif",
+      "thumb": "thumbs/blue-fish/bluefish-wx-aab3d045.jpg",
+      "character": "blue-fish",
+      "tags": [
+        "大肥鱼"
+      ],
+      "source": "wechat-search",
+      "added": "2026-11-11",
+      "format": "gif",
+      "width": 480,
+      "height": 480,
+      "animated": true,
+      "md5": "aab3d045386854372ae51f104d83fb55"
+    },
+    {
+      "id": "bluefish-wx-01054420",
+      "file": "stickers/blue-fish/bluefish-wx-01054420.gif",
+      "thumb": "thumbs/blue-fish/bluefish-wx-01054420.jpg",
+      "character": "blue-fish",
+      "tags": [
+        "大肥鱼"
+      ],
+      "source": "wechat-search",
+      "added": "2026-11-11",
+      "format": "gif",
+      "width": 500,
+      "height": 500,
+      "animated": true,
+      "md5": "01054420c37aac0720856f242554baa2"
+    },
+    {
+      "id": "bluefish-wx-1670f2e9",
+      "file": "stickers/blue-fish/bluefish-wx-1670f2e9.gif",
+      "thumb": "thumbs/blue-fish/bluefish-wx-1670f2e9.jpg",
+      "character": "blue-fish",
+      "tags": [
+        "大肥鱼"
+      ],
+      "source": "wechat-search",
+      "added": "2026-11-11",
+      "format": "gif",
+      "width": 500,
+      "height": 500,
+      "animated": true,
+      "md5": "1670f2e956e032af305e2a316a961987"
+    },
+    {
+      "id": "bluefish-wx-efd7aaf1",
+      "file": "stickers/blue-fish/bluefish-wx-efd7aaf1.gif",
+      "thumb": "thumbs/blue-fish/bluefish-wx-efd7aaf1.jpg",
+      "character": "blue-fish",
+      "tags": [
+        "大肥鱼"
+      ],
+      "source": "wechat-search",
+      "added": "2026-11-11",
+      "format": "gif",
+      "width": 500,
+      "height": 500,
+      "animated": true,
+      "md5": "efd7aaf174019a5dbbeeacbacb85d999"
+    },
+    {
+      "id": "bluefish-wx-b96191a9",
+      "file": "stickers/blue-fish/bluefish-wx-b96191a9.gif",
+      "thumb": "thumbs/blue-fish/bluefish-wx-b96191a9.jpg",
+      "character": "blue-fish",
+      "tags": [
+        "大肥鱼"
+      ],
+      "source": "wechat-search",
+      "added": "2026-11-11",
+      "format": "gif",
+      "width": 140,
+      "height": 140,
+      "animated": false,
+      "md5": "b96191a9e139d59a618182f01b606afa"
+    },
+    {
+      "id": "bluefish-wx-8b9848b4",
+      "file": "stickers/blue-fish/bluefish-wx-8b9848b4.gif",
+      "thumb": "thumbs/blue-fish/bluefish-wx-8b9848b4.jpg",
+      "character": "blue-fish",
+      "tags": [
+        "大肥鱼"
+      ],
+      "source": "wechat-search",
+      "added": "2026-11-11",
+      "format": "gif",
+      "width": 140,
+      "height": 140,
+      "animated": false,
+      "md5": "8b9848b4d7e647dba40f63a68c9ed02b"
+    },
+    {
+      "id": "bluefish-wx-c0e60761",
+      "file": "stickers/blue-fish/bluefish-wx-c0e60761.gif",
+      "thumb": "thumbs/blue-fish/bluefish-wx-c0e60761.jpg",
+      "character": "blue-fish",
+      "tags": [
+        "大肥鱼"
+      ],
+      "source": "wechat-search",
+      "added": "2026-11-11",
+      "format": "gif",
+      "width": 140,
+      "height": 140,
+      "animated": false,
+      "md5": "c0e607614bfeac69fa22e3619b5e5d20"
+    },
+    {
+      "id": "bluefish-wx-aa5e925b",
+      "file": "stickers/blue-fish/bluefish-wx-aa5e925b.gif",
+      "thumb": "thumbs/blue-fish/bluefish-wx-aa5e925b.jpg",
+      "character": "blue-fish",
+      "tags": [
+        "大肥鱼"
+      ],
+      "source": "wechat-search",
+      "added": "2026-11-11",
+      "format": "gif",
+      "width": 140,
+      "height": 140,
+      "animated": false,
+      "md5": "aa5e925b0bfc3807f69cd3019fd4c3b7"
+    },
+    {
+      "id": "bluefish-wx-4b20e0b5",
+      "file": "stickers/blue-fish/bluefish-wx-4b20e0b5.gif",
+      "thumb": "thumbs/blue-fish/bluefish-wx-4b20e0b5.jpg",
+      "character": "blue-fish",
+      "tags": [
+        "大肥鱼"
+      ],
+      "source": "wechat-search",
+      "added": "2026-11-11",
+      "format": "gif",
+      "width": 140,
+      "height": 140,
+      "animated": false,
+      "md5": "4b20e0b54d388b107a9b369173aef288"
+    },
+    {
+      "id": "bluefish-wx-92f66e98",
+      "file": "stickers/blue-fish/bluefish-wx-92f66e98.gif",
+      "thumb": "thumbs/blue-fish/bluefish-wx-92f66e98.jpg",
+      "character": "blue-fish",
+      "tags": [
+        "大肥鱼"
+      ],
+      "source": "wechat-search",
+      "added": "2026-11-11",
+      "format": "gif",
+      "width": 500,
+      "height": 500,
+      "animated": true,
+      "md5": "92f66e98384250932d1ff2b482dbd7af"
+    },
+    {
+      "id": "bluefish-wx-f41e1747",
+      "file": "stickers/blue-fish/bluefish-wx-f41e1747.gif",
+      "thumb": "thumbs/blue-fish/bluefish-wx-f41e1747.jpg",
+      "character": "blue-fish",
+      "tags": [
+        "大肥鱼"
+      ],
+      "source": "wechat-search",
+      "added": "2026-11-11",
+      "format": "gif",
+      "width": 140,
+      "height": 140,
+      "animated": false,
+      "md5": "f41e1747ee021c1d32826df7b0affcc2"
+    },
+    {
+      "id": "bluefish-wx-c0f26fb2",
+      "file": "stickers/blue-fish/bluefish-wx-c0f26fb2.gif",
+      "thumb": "thumbs/blue-fish/bluefish-wx-c0f26fb2.jpg",
+      "character": "blue-fish",
+      "tags": [
+        "大肥鱼"
+      ],
+      "source": "wechat-search",
+      "added": "2026-11-11",
+      "format": "gif",
+      "width": 500,
+      "height": 500,
+      "animated": true,
+      "md5": "c0f26fb2f5054af3466adf45c0c6a48c"
+    },
+    {
+      "id": "bluefish-wx-c22f1486",
+      "file": "stickers/blue-fish/bluefish-wx-c22f1486.gif",
+      "thumb": "thumbs/blue-fish/bluefish-wx-c22f1486.jpg",
+      "character": "blue-fish",
+      "tags": [
+        "大肥鱼"
+      ],
+      "source": "wechat-search",
+      "added": "2026-11-11",
+      "format": "gif",
+      "width": 140,
+      "height": 140,
+      "animated": false,
+      "md5": "c22f1486087c37a24f6bccd872ed92b6"
+    },
+    {
+      "id": "bluefish-wx-85c40e66",
+      "file": "stickers/blue-fish/bluefish-wx-85c40e66.gif",
+      "thumb": "thumbs/blue-fish/bluefish-wx-85c40e66.jpg",
+      "character": "blue-fish",
+      "tags": [
+        "大肥鱼"
+      ],
+      "source": "wechat-search",
+      "added": "2026-11-11",
+      "format": "gif",
+      "width": 512,
+      "height": 512,
+      "animated": true,
+      "md5": "85c40e66e95f9772e5d04a0578daab2d"
+    },
+    {
+      "id": "bluefish-wx-9f29d4dd",
+      "file": "stickers/blue-fish/bluefish-wx-9f29d4dd.gif",
+      "thumb": "thumbs/blue-fish/bluefish-wx-9f29d4dd.jpg",
+      "character": "blue-fish",
+      "tags": [
+        "大肥鱼"
+      ],
+      "source": "wechat-search",
+      "added": "2026-11-11",
+      "format": "gif",
+      "width": 500,
+      "height": 500,
+      "animated": true,
+      "md5": "9f29d4dd481061407dc7479b31246607"
+    },
+    {
+      "id": "bluefish-wx-4c120a4c",
+      "file": "stickers/blue-fish/bluefish-wx-4c120a4c.gif",
+      "thumb": "thumbs/blue-fish/bluefish-wx-4c120a4c.jpg",
+      "character": "blue-fish",
+      "tags": [
+        "大肥鱼"
+      ],
+      "source": "wechat-search",
+      "added": "2026-11-11",
+      "format": "gif",
+      "width": 350,
+      "height": 350,
+      "animated": true,
+      "md5": "4c120a4c08aed5b89d9b709c0f2ef51e"
+    },
+    {
+      "id": "bluefish-wx-966229b4",
+      "file": "stickers/blue-fish/bluefish-wx-966229b4.gif",
+      "thumb": "thumbs/blue-fish/bluefish-wx-966229b4.jpg",
+      "character": "blue-fish",
+      "tags": [
+        "大肥鱼"
+      ],
+      "source": "wechat-search",
+      "added": "2026-11-11",
+      "format": "gif",
+      "width": 500,
+      "height": 500,
+      "animated": true,
+      "md5": "966229b4b12270ae92af7e913635c6fe"
+    },
+    {
+      "id": "bluefish-wx-446a52a2",
+      "file": "stickers/blue-fish/bluefish-wx-446a52a2.gif",
+      "thumb": "thumbs/blue-fish/bluefish-wx-446a52a2.jpg",
+      "character": "blue-fish",
+      "tags": [
+        "大肥鱼"
+      ],
+      "source": "wechat-search",
+      "added": "2026-11-11",
+      "format": "gif",
+      "width": 140,
+      "height": 140,
+      "animated": false,
+      "md5": "446a52a2dbc08778f1e870d5273156d6"
+    },
+    {
+      "id": "bluefish-wx-efdeb4a5",
+      "file": "stickers/blue-fish/bluefish-wx-efdeb4a5.gif",
+      "thumb": "thumbs/blue-fish/bluefish-wx-efdeb4a5.jpg",
+      "character": "blue-fish",
+      "tags": [
+        "大肥鱼"
+      ],
+      "source": "wechat-search",
+      "added": "2026-11-11",
+      "format": "gif",
+      "width": 140,
+      "height": 140,
+      "animated": false,
+      "md5": "efdeb4a52ca3f10f22fd49bf98b8ba68"
+    },
+    {
+      "id": "bluefish-wx-20676644",
+      "file": "stickers/blue-fish/bluefish-wx-20676644.gif",
+      "thumb": "thumbs/blue-fish/bluefish-wx-20676644.jpg",
+      "character": "blue-fish",
+      "tags": [
+        "大肥鱼"
+      ],
+      "source": "wechat-search",
+      "added": "2026-11-11",
+      "format": "gif",
+      "width": 500,
+      "height": 500,
+      "animated": true,
+      "md5": "20676644cda5f2a75ec6a374a861d238"
+    },
+    {
+      "id": "bluefish-wx-3b13dff5",
+      "file": "stickers/blue-fish/bluefish-wx-3b13dff5.gif",
+      "thumb": "thumbs/blue-fish/bluefish-wx-3b13dff5.jpg",
+      "character": "blue-fish",
+      "tags": [
+        "大肥鱼"
+      ],
+      "source": "wechat-search",
+      "added": "2026-11-11",
+      "format": "gif",
+      "width": 500,
+      "height": 500,
+      "animated": true,
+      "md5": "3b13dff5aecab984e953e25f9c700516"
+    },
+    {
+      "id": "bluefish-wx-3d5ff3e9",
+      "file": "stickers/blue-fish/bluefish-wx-3d5ff3e9.gif",
+      "thumb": "thumbs/blue-fish/bluefish-wx-3d5ff3e9.jpg",
+      "character": "blue-fish",
+      "tags": [
+        "大肥鱼"
+      ],
+      "source": "wechat-search",
+      "added": "2026-11-11",
+      "format": "gif",
+      "width": 140,
+      "height": 140,
+      "animated": false,
+      "md5": "3d5ff3e994eea116f3ad8869f2f2f69f"
+    },
+    {
+      "id": "bluefish-wx-759af101",
+      "file": "stickers/blue-fish/bluefish-wx-759af101.gif",
+      "thumb": "thumbs/blue-fish/bluefish-wx-759af101.jpg",
+      "character": "blue-fish",
+      "tags": [
+        "大肥鱼"
+      ],
+      "source": "wechat-search",
+      "added": "2026-11-11",
+      "format": "gif",
+      "width": 500,
+      "height": 500,
+      "animated": true,
+      "md5": "759af10156d87f73ae9fd803c7b01ae7"
+    },
+    {
+      "id": "bluefish-wx-7b9a11a1",
+      "file": "stickers/blue-fish/bluefish-wx-7b9a11a1.gif",
+      "thumb": "thumbs/blue-fish/bluefish-wx-7b9a11a1.jpg",
+      "character": "blue-fish",
+      "tags": [
+        "大肥鱼"
+      ],
+      "source": "wechat-search",
+      "added": "2026-11-11",
+      "format": "gif",
+      "width": 140,
+      "height": 140,
+      "animated": false,
+      "md5": "7b9a11a14011eecc3a09affe43c69cd9"
+    },
+    {
+      "id": "bluefish-wx-8298f7fe",
+      "file": "stickers/blue-fish/bluefish-wx-8298f7fe.gif",
+      "thumb": "thumbs/blue-fish/bluefish-wx-8298f7fe.jpg",
+      "character": "blue-fish",
+      "tags": [
+        "大肥鱼"
+      ],
+      "source": "wechat-search",
+      "added": "2026-11-11",
+      "format": "gif",
+      "width": 140,
+      "height": 140,
+      "animated": false,
+      "md5": "8298f7fe858e6434981f048374cfb214"
+    },
+    {
+      "id": "bluefish-wx-2e4d1f4b",
+      "file": "stickers/blue-fish/bluefish-wx-2e4d1f4b.gif",
+      "thumb": "thumbs/blue-fish/bluefish-wx-2e4d1f4b.jpg",
+      "character": "blue-fish",
+      "tags": [
+        "大肥鱼"
+      ],
+      "source": "wechat-search",
+      "added": "2026-11-11",
+      "format": "gif",
+      "width": 140,
+      "height": 140,
+      "animated": false,
+      "md5": "2e4d1f4b9a3a287fc21493f613e80da6"
+    },
+    {
+      "id": "bluefish-wx-331aa197",
+      "file": "stickers/blue-fish/bluefish-wx-331aa197.gif",
+      "thumb": "thumbs/blue-fish/bluefish-wx-331aa197.jpg",
+      "character": "blue-fish",
+      "tags": [
+        "大肥鱼"
+      ],
+      "source": "wechat-search",
+      "added": "2026-11-11",
+      "format": "gif",
+      "width": 140,
+      "height": 140,
+      "animated": false,
+      "md5": "331aa19790bece69c1a6f914377ee98d"
+    },
+    {
+      "id": "bluefish-wx-ec9c59b8",
+      "file": "stickers/blue-fish/bluefish-wx-ec9c59b8.gif",
+      "thumb": "thumbs/blue-fish/bluefish-wx-ec9c59b8.jpg",
+      "character": "blue-fish",
+      "tags": [
+        "大肥鱼"
+      ],
+      "source": "wechat-search",
+      "added": "2026-11-11",
+      "format": "gif",
+      "width": 500,
+      "height": 500,
+      "animated": true,
+      "md5": "ec9c59b88ff7d669a2d0a5ab525404bc"
+    },
+    {
+      "id": "bluefish-wx-e9d638cc",
+      "file": "stickers/blue-fish/bluefish-wx-e9d638cc.gif",
+      "thumb": "thumbs/blue-fish/bluefish-wx-e9d638cc.jpg",
+      "character": "blue-fish",
+      "tags": [
+        "大肥鱼"
+      ],
+      "source": "wechat-search",
+      "added": "2026-11-11",
+      "format": "gif",
+      "width": 500,
+      "height": 500,
+      "animated": true,
+      "md5": "e9d638ccfc8dd3acdee7fd81bde3f6e3"
+    },
+    {
+      "id": "bluefish-wx-409aea1f",
+      "file": "stickers/blue-fish/bluefish-wx-409aea1f.gif",
+      "thumb": "thumbs/blue-fish/bluefish-wx-409aea1f.jpg",
+      "character": "blue-fish",
+      "tags": [
+        "大肥鱼"
+      ],
+      "source": "wechat-search",
+      "added": "2026-11-11",
+      "format": "gif",
+      "width": 140,
+      "height": 140,
+      "animated": false,
+      "md5": "409aea1f71a02bb87e0594917f149882"
+    },
+    {
+      "id": "bluefish-wx-526b4e5d",
+      "file": "stickers/blue-fish/bluefish-wx-526b4e5d.gif",
+      "thumb": "thumbs/blue-fish/bluefish-wx-526b4e5d.jpg",
+      "character": "blue-fish",
+      "tags": [
+        "大肥鱼"
+      ],
+      "source": "wechat-search",
+      "added": "2026-11-11",
+      "format": "gif",
+      "width": 140,
+      "height": 140,
+      "animated": false,
+      "md5": "526b4e5ddc59aae11fe19a8feee26878"
+    },
+    {
+      "id": "bluefish-wx-40fb43b3",
+      "file": "stickers/blue-fish/bluefish-wx-40fb43b3.gif",
+      "thumb": "thumbs/blue-fish/bluefish-wx-40fb43b3.jpg",
+      "character": "blue-fish",
+      "tags": [
+        "大肥鱼"
+      ],
+      "source": "wechat-search",
+      "added": "2026-11-11",
+      "format": "gif",
+      "width": 500,
+      "height": 500,
+      "animated": true,
+      "md5": "40fb43b35284c475643fa7102ca63871"
+    },
+    {
+      "id": "bluefish-wx-5807cd82",
+      "file": "stickers/blue-fish/bluefish-wx-5807cd82.gif",
+      "thumb": "thumbs/blue-fish/bluefish-wx-5807cd82.jpg",
+      "character": "blue-fish",
+      "tags": [
+        "大肥鱼"
+      ],
+      "source": "wechat-search",
+      "added": "2026-11-11",
+      "format": "gif",
+      "width": 140,
+      "height": 140,
+      "animated": false,
+      "md5": "5807cd826a27b1c389a2883053a4ccc8"
+    },
+    {
+      "id": "bluefish-wx-1d7e3b0c",
+      "file": "stickers/blue-fish/bluefish-wx-1d7e3b0c.gif",
+      "thumb": "thumbs/blue-fish/bluefish-wx-1d7e3b0c.jpg",
+      "character": "blue-fish",
+      "tags": [
+        "大肥鱼"
+      ],
+      "source": "wechat-search",
+      "added": "2026-11-11",
+      "format": "gif",
+      "width": 500,
+      "height": 500,
+      "animated": true,
+      "md5": "1d7e3b0c0f53d20653d2d15062c77d52"
+    },
+    {
+      "id": "bluefish-wx-1ed73679",
+      "file": "stickers/blue-fish/bluefish-wx-1ed73679.gif",
+      "thumb": "thumbs/blue-fish/bluefish-wx-1ed73679.jpg",
+      "character": "blue-fish",
+      "tags": [
+        "大肥鱼"
+      ],
+      "source": "wechat-search",
+      "added": "2026-11-11",
+      "format": "gif",
+      "width": 512,
+      "height": 512,
+      "animated": true,
+      "md5": "1ed736796ed2a0bba3936ba1588d8261"
+    },
+    {
+      "id": "bluefish-wx-5a81a316",
+      "file": "stickers/blue-fish/bluefish-wx-5a81a316.gif",
+      "thumb": "thumbs/blue-fish/bluefish-wx-5a81a316.jpg",
+      "character": "blue-fish",
+      "tags": [
+        "大肥鱼"
+      ],
+      "source": "wechat-search",
+      "added": "2026-11-11",
+      "format": "gif",
+      "width": 286,
+      "height": 305,
+      "animated": true,
+      "md5": "5a81a316e04d8eaea0b48f75b5880ce0"
+    },
+    {
+      "id": "bluefish-wx-bda3cc65",
+      "file": "stickers/blue-fish/bluefish-wx-bda3cc65.gif",
+      "thumb": "thumbs/blue-fish/bluefish-wx-bda3cc65.jpg",
+      "character": "blue-fish",
+      "tags": [
+        "大肥鱼"
+      ],
+      "source": "wechat-search",
+      "added": "2026-11-11",
+      "format": "gif",
+      "width": 140,
+      "height": 140,
+      "animated": false,
+      "md5": "bda3cc6547915ccba5803f9e802558d4"
+    },
+    {
+      "id": "bluefish-wx-4fda0a4f",
+      "file": "stickers/blue-fish/bluefish-wx-4fda0a4f.gif",
+      "thumb": "thumbs/blue-fish/bluefish-wx-4fda0a4f.jpg",
+      "character": "blue-fish",
+      "tags": [
+        "大肥鱼"
+      ],
+      "source": "wechat-search",
+      "added": "2026-11-11",
+      "format": "gif",
+      "width": 500,
+      "height": 500,
+      "animated": true,
+      "md5": "4fda0a4ff57b2d255d21c42c4dfe32c5"
+    },
+    {
+      "id": "bluefish-wx-2e53e4d5",
+      "file": "stickers/blue-fish/bluefish-wx-2e53e4d5.gif",
+      "thumb": "thumbs/blue-fish/bluefish-wx-2e53e4d5.jpg",
+      "character": "blue-fish",
+      "tags": [
+        "大肥鱼"
+      ],
+      "source": "wechat-search",
+      "added": "2026-11-11",
+      "format": "gif",
+      "width": 480,
+      "height": 480,
+      "animated": true,
+      "md5": "2e53e4d5bb6cfbeee2b589bab402a7dd"
+    },
+    {
+      "id": "bluefish-wx-941d960e",
+      "file": "stickers/blue-fish/bluefish-wx-941d960e.gif",
+      "thumb": "thumbs/blue-fish/bluefish-wx-941d960e.jpg",
+      "character": "blue-fish",
+      "tags": [
+        "大肥鱼"
+      ],
+      "source": "wechat-search",
+      "added": "2026-11-11",
+      "format": "gif",
+      "width": 140,
+      "height": 140,
+      "animated": false,
+      "md5": "941d960ede0ff1f2f42389746119e074"
+    },
+    {
+      "id": "bluefish-wx-0174ede5",
+      "file": "stickers/blue-fish/bluefish-wx-0174ede5.gif",
+      "thumb": "thumbs/blue-fish/bluefish-wx-0174ede5.jpg",
+      "character": "blue-fish",
+      "tags": [
+        "大肥鱼"
+      ],
+      "source": "wechat-search",
+      "added": "2026-11-11",
+      "format": "gif",
+      "width": 322,
+      "height": 300,
+      "animated": true,
+      "md5": "0174ede566bf269dfd6a26f6e55922bf"
+    },
+    {
+      "id": "bluefish-wx-80c6e913",
+      "file": "stickers/blue-fish/bluefish-wx-80c6e913.gif",
+      "thumb": "thumbs/blue-fish/bluefish-wx-80c6e913.jpg",
+      "character": "blue-fish",
+      "tags": [
+        "大肥鱼"
+      ],
+      "source": "wechat-search",
+      "added": "2026-11-11",
+      "format": "gif",
+      "width": 140,
+      "height": 130,
+      "animated": false,
+      "md5": "80c6e9137f5cf2966204db84380d1c0d"
+    },
+    {
+      "id": "bluefish-wx-2dc2432c",
+      "file": "stickers/blue-fish/bluefish-wx-2dc2432c.gif",
+      "thumb": "thumbs/blue-fish/bluefish-wx-2dc2432c.jpg",
+      "character": "blue-fish",
+      "tags": [
+        "大肥鱼"
+      ],
+      "source": "wechat-search",
+      "added": "2026-11-11",
+      "format": "gif",
+      "width": 500,
+      "height": 500,
+      "animated": true,
+      "md5": "2dc2432c3c3ef58812c87f22991335ac"
+    },
+    {
+      "id": "bluefish-wx-a3dd1fe9",
+      "file": "stickers/blue-fish/bluefish-wx-a3dd1fe9.gif",
+      "thumb": "thumbs/blue-fish/bluefish-wx-a3dd1fe9.jpg",
+      "character": "blue-fish",
+      "tags": [
+        "大肥鱼"
+      ],
+      "source": "wechat-search",
+      "added": "2026-11-11",
+      "format": "gif",
+      "width": 140,
+      "height": 140,
+      "animated": false,
+      "md5": "a3dd1fe91e1bce7e255001e9af2b3bea"
+    },
+    {
+      "id": "bluefish-wx-130a1b65",
+      "file": "stickers/blue-fish/bluefish-wx-130a1b65.gif",
+      "thumb": "thumbs/blue-fish/bluefish-wx-130a1b65.jpg",
+      "character": "blue-fish",
+      "tags": [
+        "大肥鱼"
+      ],
+      "source": "wechat-search",
+      "added": "2026-11-11",
+      "format": "gif",
+      "width": 140,
+      "height": 140,
+      "animated": false,
+      "md5": "130a1b655c76c579da6da588585671f2"
+    },
+    {
+      "id": "bluefish-wx-86a9738b",
+      "file": "stickers/blue-fish/bluefish-wx-86a9738b.gif",
+      "thumb": "thumbs/blue-fish/bluefish-wx-86a9738b.jpg",
+      "character": "blue-fish",
+      "tags": [
+        "大肥鱼"
+      ],
+      "source": "wechat-search",
+      "added": "2026-11-11",
+      "format": "gif",
+      "width": 500,
+      "height": 500,
+      "animated": true,
+      "md5": "86a9738be0ceb0bfeb2b4608068fb007"
+    },
+    {
+      "id": "bluefish-wx-3ac87137",
+      "file": "stickers/blue-fish/bluefish-wx-3ac87137.gif",
+      "thumb": "thumbs/blue-fish/bluefish-wx-3ac87137.jpg",
+      "character": "blue-fish",
+      "tags": [
+        "大肥鱼"
+      ],
+      "source": "wechat-search",
+      "added": "2026-11-11",
+      "format": "gif",
+      "width": 140,
+      "height": 140,
+      "animated": false,
+      "md5": "3ac8713719b1fb9c65909ae036bae585"
+    },
+    {
+      "id": "bluefish-wx-4b7614df",
+      "file": "stickers/blue-fish/bluefish-wx-4b7614df.gif",
+      "thumb": "thumbs/blue-fish/bluefish-wx-4b7614df.jpg",
+      "character": "blue-fish",
+      "tags": [
+        "大肥鱼"
+      ],
+      "source": "wechat-search",
+      "added": "2026-11-11",
+      "format": "gif",
+      "width": 500,
+      "height": 500,
+      "animated": true,
+      "md5": "4b7614df6c0006bd90f003652c66b5d3"
+    },
+    {
+      "id": "bluefish-wx-54a5560a",
+      "file": "stickers/blue-fish/bluefish-wx-54a5560a.gif",
+      "thumb": "thumbs/blue-fish/bluefish-wx-54a5560a.jpg",
+      "character": "blue-fish",
+      "tags": [
+        "大肥鱼"
+      ],
+      "source": "wechat-search",
+      "added": "2026-11-11",
+      "format": "gif",
+      "width": 240,
+      "height": 240,
+      "animated": true,
+      "md5": "54a5560acf1957dcfe2e42a9030bfc62"
+    },
+    {
+      "id": "bluefish-wx-b4b91171",
+      "file": "stickers/blue-fish/bluefish-wx-b4b91171.gif",
+      "thumb": "thumbs/blue-fish/bluefish-wx-b4b91171.jpg",
+      "character": "blue-fish",
+      "tags": [
+        "大肥鱼"
+      ],
+      "source": "wechat-search",
+      "added": "2026-11-11",
+      "format": "gif",
+      "width": 293,
+      "height": 293,
+      "animated": true,
+      "md5": "b4b911711e8f16e829bc258f32283b7d"
+    },
+    {
+      "id": "bluefish-wx-c6b0a1f8",
+      "file": "stickers/blue-fish/bluefish-wx-c6b0a1f8.gif",
+      "thumb": "thumbs/blue-fish/bluefish-wx-c6b0a1f8.jpg",
+      "character": "blue-fish",
+      "tags": [
+        "大肥鱼"
+      ],
+      "source": "wechat-search",
+      "added": "2026-11-11",
+      "format": "gif",
+      "width": 140,
+      "height": 140,
+      "animated": false,
+      "md5": "c6b0a1f8434ee2794607c9b45c6e3d0b"
+    },
+    {
+      "id": "bluefish-wx-725765a4",
+      "file": "stickers/blue-fish/bluefish-wx-725765a4.gif",
+      "thumb": "thumbs/blue-fish/bluefish-wx-725765a4.jpg",
+      "character": "blue-fish",
+      "tags": [
+        "大肥鱼"
+      ],
+      "source": "wechat-search",
+      "added": "2026-11-11",
+      "format": "gif",
+      "width": 250,
+      "height": 250,
+      "animated": true,
+      "md5": "725765a4b6431b109d75c8a44615cb1b"
+    },
+    {
+      "id": "bluefish-wx-ca1370a1",
+      "file": "stickers/blue-fish/bluefish-wx-ca1370a1.gif",
+      "thumb": "thumbs/blue-fish/bluefish-wx-ca1370a1.jpg",
+      "character": "blue-fish",
+      "tags": [
+        "大肥鱼"
+      ],
+      "source": "wechat-search",
+      "added": "2026-11-11",
+      "format": "gif",
+      "width": 311,
+      "height": 300,
+      "animated": true,
+      "md5": "ca1370a12f15cb655845f9362353282f"
+    },
+    {
+      "id": "bluefish-wx-63b0fdfb",
+      "file": "stickers/blue-fish/bluefish-wx-63b0fdfb.gif",
+      "thumb": "thumbs/blue-fish/bluefish-wx-63b0fdfb.jpg",
+      "character": "blue-fish",
+      "tags": [
+        "大肥鱼"
+      ],
+      "source": "wechat-search",
+      "added": "2026-11-11",
+      "format": "gif",
+      "width": 300,
+      "height": 317,
+      "animated": true,
+      "md5": "63b0fdfb2bcd507f4a1b8b62e98dcb47"
+    },
+    {
+      "id": "bluefish-wx-e7ef0169",
+      "file": "stickers/blue-fish/bluefish-wx-e7ef0169.gif",
+      "thumb": "thumbs/blue-fish/bluefish-wx-e7ef0169.jpg",
+      "character": "blue-fish",
+      "tags": [
+        "大肥鱼"
+      ],
+      "source": "wechat-search",
+      "added": "2026-11-11",
+      "format": "gif",
+      "width": 400,
+      "height": 400,
+      "animated": true,
+      "md5": "e7ef016913bf07f35c43554b0507bdda"
+    },
+    {
+      "id": "bluefish-wx-e8d144bf",
+      "file": "stickers/blue-fish/bluefish-wx-e8d144bf.gif",
+      "thumb": "thumbs/blue-fish/bluefish-wx-e8d144bf.jpg",
+      "character": "blue-fish",
+      "tags": [
+        "大肥鱼"
+      ],
+      "source": "wechat-search",
+      "added": "2026-11-11",
+      "format": "gif",
+      "width": 300,
+      "height": 317,
+      "animated": true,
+      "md5": "e8d144bfd19faba9d47fc77cd398d124"
+    },
+    {
+      "id": "bluefish-wx-2b1d526a",
+      "file": "stickers/blue-fish/bluefish-wx-2b1d526a.gif",
+      "thumb": "thumbs/blue-fish/bluefish-wx-2b1d526a.jpg",
+      "character": "blue-fish",
+      "tags": [
+        "大肥鱼"
+      ],
+      "source": "wechat-search",
+      "added": "2026-11-11",
+      "format": "gif",
+      "width": 140,
+      "height": 140,
+      "animated": false,
+      "md5": "2b1d526a00587fb932e01dcf8a1d2dd9"
+    },
+    {
+      "id": "bluefish-wx-63179370",
+      "file": "stickers/blue-fish/bluefish-wx-63179370.gif",
+      "thumb": "thumbs/blue-fish/bluefish-wx-63179370.jpg",
+      "character": "blue-fish",
+      "tags": [
+        "大肥鱼"
+      ],
+      "source": "wechat-search",
+      "added": "2026-11-11",
+      "format": "gif",
+      "width": 140,
+      "height": 140,
+      "animated": false,
+      "md5": "63179370eeb5fea2f56908e2e27447e9"
+    },
+    {
+      "id": "bluefish-wx-a7808416",
+      "file": "stickers/blue-fish/bluefish-wx-a7808416.gif",
+      "thumb": "thumbs/blue-fish/bluefish-wx-a7808416.jpg",
+      "character": "blue-fish",
+      "tags": [
+        "大肥鱼"
+      ],
+      "source": "wechat-search",
+      "added": "2026-11-11",
+      "format": "gif",
+      "width": 110,
+      "height": 117,
+      "animated": true,
+      "md5": "a7808416fca754e0bfbb15ff42d563a8"
+    },
+    {
+      "id": "bluefish-wx-439fb833",
+      "file": "stickers/blue-fish/bluefish-wx-439fb833.gif",
+      "thumb": "thumbs/blue-fish/bluefish-wx-439fb833.jpg",
+      "character": "blue-fish",
+      "tags": [
+        "大肥鱼"
+      ],
+      "source": "wechat-search",
+      "added": "2026-11-11",
+      "format": "gif",
+      "width": 462,
+      "height": 496,
+      "animated": true,
+      "md5": "439fb833dd8286a61f54cf5aad2e1431"
     }
   ]
 }
