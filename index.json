@@ -1,0 +1,324 @@
+{
+  "name": "meme-library",
+  "updated": "2026-11-11",
+  "characters": [
+    "naiwa"
+  ],
+  "count": 19,
+  "items": [
+    {
+      "id": "naiwa-abstract",
+      "file": "stickers/naiwa/naiwa-abstract.gif",
+      "character": "naiwa",
+      "tags": [
+        "抽象"
+      ],
+      "source": "memecub",
+      "added": "2026-11-11",
+      "format": "gif",
+      "width": 250,
+      "height": 334,
+      "animated": true,
+      "md5": "1b47e166d1150f58f4aff3a43992b8c7"
+    },
+    {
+      "id": "naiwa-bike-slip",
+      "file": "stickers/naiwa/naiwa-bike-slip.gif",
+      "character": "naiwa",
+      "tags": [
+        "骑车",
+        "滑倒",
+        "抽象"
+      ],
+      "source": "memecub",
+      "added": "2026-11-11",
+      "format": "gif",
+      "width": 240,
+      "height": 352,
+      "animated": true,
+      "md5": "9de033dcf63ab64c8ce32a908c8d9142"
+    },
+    {
+      "id": "naiwa-confused",
+      "file": "stickers/naiwa/naiwa-confused.png",
+      "character": "naiwa",
+      "tags": [
+        "疑惑"
+      ],
+      "source": "orliss/nailong",
+      "added": "2026-11-11",
+      "format": "png",
+      "width": 824,
+      "height": 864,
+      "animated": false,
+      "md5": "2db5fa5c6dc4f7f51fd8caf2bc41f17a"
+    },
+    {
+      "id": "naiwa-cooking",
+      "file": "stickers/naiwa/naiwa-cooking.gif",
+      "character": "naiwa",
+      "tags": [
+        "做饭",
+        "厨房"
+      ],
+      "source": "user-sample",
+      "added": "2026-11-11",
+      "format": "jpeg",
+      "width": 320,
+      "height": 320,
+      "animated": false,
+      "md5": "c1de22f8f859fa362993bc2bca4441af"
+    },
+    {
+      "id": "naiwa-fishing",
+      "file": "stickers/naiwa/naiwa-fishing.gif",
+      "character": "naiwa",
+      "tags": [
+        "钓鱼",
+        "水边",
+        "悠闲"
+      ],
+      "source": "moezone",
+      "added": "2026-11-11",
+      "format": "gif",
+      "width": 240,
+      "height": 250,
+      "animated": true,
+      "md5": "42355216dd45edc1a15b5f25ff998d35"
+    },
+    {
+      "id": "naiwa-four-dance",
+      "file": "stickers/naiwa/naiwa-four-dance.gif",
+      "character": "naiwa",
+      "tags": [
+        "跳舞",
+        "四只",
+        "舞台"
+      ],
+      "source": "user-sample",
+      "added": "2026-11-11",
+      "format": "jpeg",
+      "width": 510,
+      "height": 300,
+      "animated": false,
+      "md5": "14943af9e43e3d0f102ed32e007df67f"
+    },
+    {
+      "id": "naiwa-grin",
+      "file": "stickers/naiwa/naiwa-grin.png",
+      "character": "naiwa",
+      "tags": [
+        "露齿",
+        "大笑"
+      ],
+      "source": "orliss/nailong",
+      "added": "2026-11-11",
+      "format": "png",
+      "width": 690,
+      "height": 622,
+      "animated": false,
+      "md5": "de373a01847ca992d43c0273a9acaec1"
+    },
+    {
+      "id": "naiwa-handstand-heart",
+      "file": "stickers/naiwa/naiwa-handstand-heart.jpg",
+      "character": "naiwa",
+      "tags": [
+        "倒立",
+        "爱心"
+      ],
+      "source": "user-sample",
+      "added": "2026-11-11",
+      "format": "jpeg",
+      "width": 1235,
+      "height": 1355,
+      "animated": false,
+      "md5": "b78acc99379a4e0131554980c665c33e"
+    },
+    {
+      "id": "naiwa-hug-laugh",
+      "file": "stickers/naiwa/naiwa-hug-laugh.jpg",
+      "character": "naiwa",
+      "tags": [
+        "拥抱",
+        "大笑",
+        "两只"
+      ],
+      "source": "user-sample",
+      "added": "2026-11-11",
+      "format": "jpeg",
+      "width": 1292,
+      "height": 1387,
+      "animated": false,
+      "md5": "99e80f7853a4048282f8b29e9f932d42"
+    },
+    {
+      "id": "naiwa-kick-bucket",
+      "file": "stickers/naiwa/naiwa-kick-bucket.gif",
+      "character": "naiwa",
+      "tags": [
+        "踢水桶",
+        "卡脚",
+        "生气",
+        "抽象"
+      ],
+      "source": "memecub",
+      "added": "2026-11-11",
+      "format": "gif",
+      "width": 240,
+      "height": 240,
+      "animated": true,
+      "md5": "8db9adcd2d441e4c0f3aa4adfc333a0e"
+    },
+    {
+      "id": "naiwa-laugh-arms",
+      "file": "stickers/naiwa/naiwa-laugh-arms.png",
+      "character": "naiwa",
+      "tags": [
+        "大笑",
+        "举手"
+      ],
+      "source": "user-sample",
+      "added": "2026-11-11",
+      "format": "jpeg",
+      "width": 324,
+      "height": 240,
+      "animated": false,
+      "md5": "e21a11dbb2fb6dae3a15fc0c68e72e40"
+    },
+    {
+      "id": "naiwa-laugh",
+      "file": "stickers/naiwa/naiwa-laugh.gif",
+      "character": "naiwa",
+      "tags": [
+        "大笑",
+        "狂笑",
+        "嘲笑"
+      ],
+      "source": "memecub",
+      "added": "2026-11-11",
+      "format": "gif",
+      "width": 240,
+      "height": 240,
+      "animated": true,
+      "md5": "0b62c72cb050abac0aed36e46ca54f1a"
+    },
+    {
+      "id": "naiwa-phone",
+      "file": "stickers/naiwa/naiwa-phone.gif",
+      "character": "naiwa",
+      "tags": [
+        "手机",
+        "夜晚",
+        "背影"
+      ],
+      "source": "user-sample",
+      "added": "2026-11-11",
+      "format": "jpeg",
+      "width": 240,
+      "height": 240,
+      "animated": false,
+      "md5": "a16cc9d68c8659279ca7dcf5ce7bf05f"
+    },
+    {
+      "id": "naiwa-pouty",
+      "file": "stickers/naiwa/naiwa-pouty.png",
+      "character": "naiwa",
+      "tags": [
+        "气鼓鼓",
+        "生气"
+      ],
+      "source": "orliss/nailong",
+      "added": "2026-11-11",
+      "format": "png",
+      "width": 690,
+      "height": 610,
+      "animated": false,
+      "md5": "34d30e9f5bb303ef16860fc4a758a63a"
+    },
+    {
+      "id": "naiwa-run-fall",
+      "file": "stickers/naiwa/naiwa-run-fall.gif",
+      "character": "naiwa",
+      "tags": [
+        "跑步",
+        "摔倒",
+        "抽象"
+      ],
+      "source": "memecub",
+      "added": "2026-11-11",
+      "format": "gif",
+      "width": 300,
+      "height": 382,
+      "animated": true,
+      "md5": "04f0713e525053fd8d770da9bf5317fc"
+    },
+    {
+      "id": "naiwa-sea-float",
+      "file": "stickers/naiwa/naiwa-sea-float.png",
+      "character": "naiwa",
+      "tags": [
+        "海里",
+        "漂浮",
+        "闭眼",
+        "悠闲"
+      ],
+      "source": "user-sample",
+      "added": "2026-11-11",
+      "format": "jpeg",
+      "width": 1143,
+      "height": 2048,
+      "animated": false,
+      "md5": "ffeaa3e485475ab9a8f14153c4809f3c"
+    },
+    {
+      "id": "naiwa-thinking",
+      "file": "stickers/naiwa/naiwa-thinking.png",
+      "character": "naiwa",
+      "tags": [
+        "托腮",
+        "思考"
+      ],
+      "source": "orliss/nailong",
+      "added": "2026-11-11",
+      "format": "png",
+      "width": 690,
+      "height": 655,
+      "animated": false,
+      "md5": "c67e37de6a102ea5ca5dc2319493fa1f"
+    },
+    {
+      "id": "naiwa-tongue-heart",
+      "file": "stickers/naiwa/naiwa-tongue-heart.png",
+      "character": "naiwa",
+      "tags": [
+        "吐舌",
+        "比心",
+        "可爱"
+      ],
+      "source": "orliss/nailong",
+      "added": "2026-11-11",
+      "format": "png",
+      "width": 474,
+      "height": 502,
+      "animated": false,
+      "md5": "ddd8afbf659d467f460e13b22472e86f"
+    },
+    {
+      "id": "naiwa-two-in-bed",
+      "file": "stickers/naiwa/naiwa-two-in-bed.jpg",
+      "character": "naiwa",
+      "tags": [
+        "床上",
+        "两只"
+      ],
+      "source": "user-sample",
+      "added": "2026-11-11",
+      "format": "jpeg",
+      "width": 1121,
+      "height": 988,
+      "animated": false,
+      "md5": "415bcf78b3a034148521a7d88a659689"
+    }
+  ]
+}
