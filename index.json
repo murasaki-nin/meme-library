@@ -7,7 +7,7 @@
       "name": "奶蛙"
     }
   ],
-  "count": 19,
+  "count": 18,
   "items": [
     {
       "id": "naiwa-abstract",
@@ -75,24 +75,6 @@
       "height": 320,
       "animated": false,
       "md5": "c1de22f8f859fa362993bc2bca4441af"
-    },
-    {
-      "id": "naiwa-fishing",
-      "file": "stickers/naiwa/naiwa-fishing.gif",
-      "thumb": "thumbs/naiwa/naiwa-fishing.jpg",
-      "character": "naiwa",
-      "tags": [
-        "钓鱼",
-        "水边",
-        "悠闲"
-      ],
-      "source": "moezone",
-      "added": "2026-11-11",
-      "format": "gif",
-      "width": 240,
-      "height": 250,
-      "animated": true,
-      "md5": "42355216dd45edc1a15b5f25ff998d35"
     },
     {
       "id": "naiwa-four-dance",

@@ -77,7 +77,7 @@
 </div>
 <div id="syncBar">
   <span id="syncText"></span>
-  <button id="exportBtn">复制给 Konata</button>
+  <button id="exportBtn">提交给 Konata</button>
   <button id="dismissSyncBtn">稍后再说</button>
 </div>
 <div id="toast"></div>
@@ -209,7 +209,7 @@ document.getElementById('addTagBtn').onclick = () => {
   input.value = '';
   renderTagList(current);
   render();
-  toast('标签已加上，记得点底下“复制给 Konata”同步');
+  toast('标签已加上，记得点底下“提交给 Konata”同步');
 };
 
 document.getElementById('tagInput').addEventListener('keydown', (e) => {
@@ -235,23 +235,31 @@ document.getElementById('saveBtn').onclick = () => {
 };
 
 document.getElementById('exportBtn').onclick = () => {
-  const payload = { tags: myTags(), disliked: disliked() };
-  const text = JSON.stringify(payload);
-  const done = () => toast('已复制，发给 Konata 就行');
-  if (navigator.clipboard && navigator.clipboard.writeText) {
-    navigator.clipboard.writeText(text).then(done, () => fallbackCopy(text, done));
-  } else {
-    fallbackCopy(text, done);
+  const tags = myTags();
+  const bad = disliked();
+  const lines = [];
+  const badIds = Object.keys(bad);
+  const tagIds = Object.keys(tags);
+  if (badIds.length) {
+    lines.push('不喜欢（请删掉）：');
+    for (const id of badIds) {
+      lines.push('- ' + id + ' (' + (bad[id].file || '') + ')');
+    }
   }
+  if (tagIds.length) {
+    lines.push('');
+    lines.push('加标签：');
+    for (const id of tagIds) {
+      lines.push('- ' + id + ': ' + (tags[id] || []).join('、'));
+    }
+  }
+  const title = '[同步] ' + (badIds.length ? badIds.length + ' 张不喜欢' : '') + (badIds.length && tagIds.length ? '，' : '') + (tagIds.length ? tagIds.length + ' 张加标签' : '');
+  const body = lines.join('\n') + '\n\n```json\n' + JSON.stringify({ tags, disliked: bad }) + '\n```';
+  const url = 'https://github.com/murasaki-nin/meme-library/issues/new?title='
+    + encodeURIComponent(title) + '&body=' + encodeURIComponent(body);
+  window.open(url, '_blank');
+  toast('已打开 GitHub，点一下 Submit 就行');
 };
-function fallbackCopy(text, done) {
-  const ta = document.createElement('textarea');
-  ta.value = text;
-  document.body.appendChild(ta);
-  ta.select();
-  try { document.execCommand('copy'); done(); } catch (e) { toast('复制失败，长按手动复制'); }
-  document.body.removeChild(ta);
-}
 document.getElementById('dismissSyncBtn').onclick = () => {
   document.getElementById('syncBar').style.display = 'none';
 };
@@ -266,18 +274,22 @@ document.getElementById('search').oninput = render;
 document.getElementById('character').onchange = render;
 document.getElementById('type').onchange = render;
 
-fetch('index.json')
+fetch('index.json', { cache: 'no-store' })
   .then(r => r.json())
   .then(data => {
     items = data.items || [];
     charNames = {};
-    for (const c of (data.characters || [])) {
-      charNames[c.id] = c.name || c.id;
+    const chars = (data.characters || []).map(c => {
+      if (typeof c === 'string') return { id: c, name: c };
+      return { id: c.id, name: c.name || c.id };
+    });
+    for (const c of chars) {
+      charNames[c.id] = c.name;
     }
     const sel = document.getElementById('character');
-    for (const c of (data.characters || [])) {
+    for (const c of chars) {
       const opt = document.createElement('option');
-      opt.value = c.id; opt.textContent = c.name || c.id;
+      opt.value = c.id; opt.textContent = c.name;
       sel.appendChild(opt);
     }
     render();
