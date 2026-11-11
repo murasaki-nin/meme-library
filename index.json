@@ -2,13 +2,17 @@
   "name": "meme-library",
   "updated": "2026-11-11",
   "characters": [
-    "naiwa"
+    {
+      "id": "naiwa",
+      "name": "奶蛙"
+    }
   ],
   "count": 19,
   "items": [
     {
       "id": "naiwa-abstract",
       "file": "stickers/naiwa/naiwa-abstract.gif",
+      "thumb": "thumbs/naiwa/naiwa-abstract.jpg",
       "character": "naiwa",
       "tags": [
         "抽象"
@@ -24,6 +28,7 @@
     {
       "id": "naiwa-bike-slip",
       "file": "stickers/naiwa/naiwa-bike-slip.gif",
+      "thumb": "thumbs/naiwa/naiwa-bike-slip.jpg",
       "character": "naiwa",
       "tags": [
         "骑车",
@@ -41,6 +46,7 @@
     {
       "id": "naiwa-confused",
       "file": "stickers/naiwa/naiwa-confused.png",
+      "thumb": "thumbs/naiwa/naiwa-confused.jpg",
       "character": "naiwa",
       "tags": [
         "疑惑"
@@ -55,7 +61,8 @@
     },
     {
       "id": "naiwa-cooking",
-      "file": "stickers/naiwa/naiwa-cooking.gif",
+      "file": "stickers/naiwa/naiwa-cooking.jpg",
+      "thumb": "thumbs/naiwa/naiwa-cooking.jpg",
       "character": "naiwa",
       "tags": [
         "做饭",
@@ -72,6 +79,7 @@
     {
       "id": "naiwa-fishing",
       "file": "stickers/naiwa/naiwa-fishing.gif",
+      "thumb": "thumbs/naiwa/naiwa-fishing.jpg",
       "character": "naiwa",
       "tags": [
         "钓鱼",
@@ -88,7 +96,8 @@
     },
     {
       "id": "naiwa-four-dance",
-      "file": "stickers/naiwa/naiwa-four-dance.gif",
+      "file": "stickers/naiwa/naiwa-four-dance.jpg",
+      "thumb": "thumbs/naiwa/naiwa-four-dance.jpg",
       "character": "naiwa",
       "tags": [
         "跳舞",
@@ -106,6 +115,7 @@
     {
       "id": "naiwa-grin",
       "file": "stickers/naiwa/naiwa-grin.png",
+      "thumb": "thumbs/naiwa/naiwa-grin.jpg",
       "character": "naiwa",
       "tags": [
         "露齿",
@@ -122,6 +132,7 @@
     {
       "id": "naiwa-handstand-heart",
       "file": "stickers/naiwa/naiwa-handstand-heart.jpg",
+      "thumb": "thumbs/naiwa/naiwa-handstand-heart.jpg",
       "character": "naiwa",
       "tags": [
         "倒立",
@@ -138,6 +149,7 @@
     {
       "id": "naiwa-hug-laugh",
       "file": "stickers/naiwa/naiwa-hug-laugh.jpg",
+      "thumb": "thumbs/naiwa/naiwa-hug-laugh.jpg",
       "character": "naiwa",
       "tags": [
         "拥抱",
@@ -155,6 +167,7 @@
     {
       "id": "naiwa-kick-bucket",
       "file": "stickers/naiwa/naiwa-kick-bucket.gif",
+      "thumb": "thumbs/naiwa/naiwa-kick-bucket.jpg",
       "character": "naiwa",
       "tags": [
         "踢水桶",
@@ -173,6 +186,7 @@
     {
       "id": "naiwa-laugh-arms",
       "file": "stickers/naiwa/naiwa-laugh-arms.png",
+      "thumb": "thumbs/naiwa/naiwa-laugh-arms.jpg",
       "character": "naiwa",
       "tags": [
         "大笑",
@@ -189,6 +203,7 @@
     {
       "id": "naiwa-laugh",
       "file": "stickers/naiwa/naiwa-laugh.gif",
+      "thumb": "thumbs/naiwa/naiwa-laugh.jpg",
       "character": "naiwa",
       "tags": [
         "大笑",
@@ -205,7 +220,8 @@
     },
     {
       "id": "naiwa-phone",
-      "file": "stickers/naiwa/naiwa-phone.gif",
+      "file": "stickers/naiwa/naiwa-phone.jpg",
+      "thumb": "thumbs/naiwa/naiwa-phone.jpg",
       "character": "naiwa",
       "tags": [
         "手机",
@@ -223,6 +239,7 @@
     {
       "id": "naiwa-pouty",
       "file": "stickers/naiwa/naiwa-pouty.png",
+      "thumb": "thumbs/naiwa/naiwa-pouty.jpg",
       "character": "naiwa",
       "tags": [
         "气鼓鼓",
@@ -239,6 +256,7 @@
     {
       "id": "naiwa-run-fall",
       "file": "stickers/naiwa/naiwa-run-fall.gif",
+      "thumb": "thumbs/naiwa/naiwa-run-fall.jpg",
       "character": "naiwa",
       "tags": [
         "跑步",
@@ -256,6 +274,7 @@
     {
       "id": "naiwa-sea-float",
       "file": "stickers/naiwa/naiwa-sea-float.png",
+      "thumb": "thumbs/naiwa/naiwa-sea-float.jpg",
       "character": "naiwa",
       "tags": [
         "海里",
@@ -274,6 +293,7 @@
     {
       "id": "naiwa-thinking",
       "file": "stickers/naiwa/naiwa-thinking.png",
+      "thumb": "thumbs/naiwa/naiwa-thinking.jpg",
       "character": "naiwa",
       "tags": [
         "托腮",
@@ -290,6 +310,7 @@
     {
       "id": "naiwa-tongue-heart",
       "file": "stickers/naiwa/naiwa-tongue-heart.png",
+      "thumb": "thumbs/naiwa/naiwa-tongue-heart.jpg",
       "character": "naiwa",
       "tags": [
         "吐舌",
@@ -307,6 +328,7 @@
     {
       "id": "naiwa-two-in-bed",
       "file": "stickers/naiwa/naiwa-two-in-bed.jpg",
+      "thumb": "thumbs/naiwa/naiwa-two-in-bed.jpg",
       "character": "naiwa",
       "tags": [
         "床上",

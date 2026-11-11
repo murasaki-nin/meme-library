@@ -12,6 +12,7 @@
   .row { display: flex; gap: 8px; flex-wrap: wrap; align-items: center; }
   input[type="search"] { flex: 1; min-width: 140px; padding: 8px 10px; font-size: 15px; border: 1px solid #ddd; border-radius: 8px; }
   select { padding: 8px; font-size: 15px; border: 1px solid #ddd; border-radius: 8px; background: #fff; }
+  button { padding: 8px 12px; font-size: 14px; border: 1px solid #ddd; border-radius: 8px; background: #fff; cursor: pointer; }
   #count { font-size: 13px; color: #888; }
   main { padding: 12px; }
   .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(120px, 1fr)); gap: 10px; }
@@ -19,13 +20,25 @@
   .card img { width: 100%; height: 120px; object-fit: cover; display: block; background: #f2f2f2; }
   .card .tags { padding: 6px 8px; font-size: 12px; color: #666; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
   .card .gif-badge { display: inline-block; background: #222; color: #fff; font-size: 10px; border-radius: 4px; padding: 1px 5px; margin-right: 4px; }
-  #viewer { display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.85); z-index: 20; align-items: center; justify-content: center; flex-direction: column; padding: 16px; }
+  .card .my-tag { color: #b3541e; }
+  #viewer { display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.88); z-index: 20; align-items: center; justify-content: center; flex-direction: column; padding: 16px; overflow-y: auto; }
   #viewer.open { display: flex; }
-  #viewer img { max-width: 100%; max-height: 70vh; border-radius: 10px; background: #fff; }
-  #viewer .info { color: #fff; margin-top: 12px; font-size: 14px; text-align: center; }
-  #viewer a { color: #fff; }
+  #viewer img { max-width: 100%; max-height: 60vh; border-radius: 10px; background: #fff; }
+  #viewer .info { color: #fff; margin-top: 12px; font-size: 14px; text-align: center; line-height: 1.8; }
+  #viewer .info a { color: #fff; }
   #viewer .close { position: absolute; top: 12px; right: 16px; color: #fff; font-size: 28px; cursor: pointer; background: none; border: none; }
+  #viewer .actions { display: flex; gap: 8px; margin-top: 10px; flex-wrap: wrap; justify-content: center; }
+  #viewer .actions button { background: #fff; color: #222; }
+  #viewer .actions button.danger { background: #c0392b; color: #fff; border-color: #c0392b; }
+  #viewer .tag-edit { display: flex; gap: 6px; margin-top: 10px; justify-content: center; }
+  #viewer .tag-edit input { padding: 7px 10px; font-size: 14px; border: 1px solid #ddd; border-radius: 8px; width: 160px; }
+  #viewer .tag-list { margin-top: 8px; }
+  #viewer .tag-chip { display: inline-block; background: rgba(255,255,255,0.18); color: #fff; border-radius: 12px; padding: 2px 8px; margin: 2px; font-size: 13px; cursor: pointer; }
+  #viewer .tag-chip.mine { background: #b3541e; }
   #empty { text-align: center; color: #999; padding: 40px 0; display: none; }
+  #syncBar { display: none; position: fixed; left: 0; right: 0; bottom: 0; background: #fff3cd; border-top: 1px solid #e6c87a; padding: 10px 14px; font-size: 14px; z-index: 30; text-align: center; }
+  #syncBar button { margin-left: 8px; }
+  #toast { display: none; position: fixed; left: 50%; bottom: 70px; transform: translateX(-50%); background: #222; color: #fff; padding: 8px 14px; border-radius: 8px; font-size: 14px; z-index: 40; }
 </style>
 </head>
 <body>
@@ -34,6 +47,11 @@
   <div class="row">
     <select id="character">
       <option value="">全部角色</option>
+    </select>
+    <select id="type">
+      <option value="">全部类型</option>
+      <option value="gif">动图 GIF</option>
+      <option value="static">静态图</option>
     </select>
     <input id="search" type="search" placeholder="搜标签，比如：跳舞、大笑、抽象">
     <span id="count"></span>
@@ -47,20 +65,58 @@
   <button class="close" id="closeBtn" aria-label="关闭">&times;</button>
   <img id="viewerImg" alt="">
   <div class="info" id="viewerInfo"></div>
+  <div class="tag-list" id="tagList"></div>
+  <div class="tag-edit">
+    <input id="tagInput" type="text" placeholder="加个标签，比如：摸鱼">
+    <button id="addTagBtn">加标签</button>
+  </div>
+  <div class="actions">
+    <button id="saveBtn">保存到相册（长按图片也能存）</button>
+    <button id="dislikeBtn" class="danger">不喜欢，下次删掉</button>
+  </div>
 </div>
+<div id="syncBar">
+  <span id="syncText"></span>
+  <button id="exportBtn">复制给 Konata</button>
+  <button id="dismissSyncBtn">稍后再说</button>
+</div>
+<div id="toast"></div>
 <script>
 let items = [];
+let charNames = {};
+let current = null;
+const LS_TAGS = 'meme-library-my-tags-v1';
+const LS_DISLIKE = 'meme-library-disliked-v1';
+
+function loadJSON(key) {
+  try { return JSON.parse(localStorage.getItem(key) || '{}'); } catch (e) { return {}; }
+}
+function saveJSON(key, obj) {
+  localStorage.setItem(key, JSON.stringify(obj));
+}
+function myTags() { return loadJSON(LS_TAGS); }
+function disliked() { return loadJSON(LS_DISLIKE); }
+
+function allTags(it) {
+  const mine = (myTags()[it.id] || []);
+  return (it.tags || []).concat(mine);
+}
 
 function render() {
   const char = document.getElementById('character').value;
+  const type = document.getElementById('type').value;
   const q = document.getElementById('search').value.trim();
   const grid = document.getElementById('grid');
   const empty = document.getElementById('empty');
+  const bad = disliked();
   grid.innerHTML = '';
   const shown = items.filter(it => {
+    if (bad[it.id]) return false;
     if (char && it.character !== char) return false;
+    if (type === 'gif' && !it.animated) return false;
+    if (type === 'static' && it.animated) return false;
     if (q) {
-      const hay = (it.tags || []).join(' ') + ' ' + it.id;
+      const hay = allTags(it).join(' ') + ' ' + it.id + ' ' + (charNames[it.character] || it.character);
       if (!hay.includes(q)) return false;
     }
     return true;
@@ -71,19 +127,134 @@ function render() {
     const card = document.createElement('div');
     card.className = 'card';
     const badge = it.animated ? '<span class="gif-badge">GIF</span>' : '';
-    card.innerHTML = '<img loading="lazy" src="' + it.file + '" alt="' + it.id + '">'
-      + '<div class="tags">' + badge + (it.tags || []).join(' · ') + '</div>';
+    const mine = (myTags()[it.id] || []).map(t => '<span class="my-tag">' + t + '</span>').join(' · ');
+    const tagText = (it.tags || []).join(' · ') + (mine ? ' · ' + mine : '');
+    card.innerHTML = '<img loading="lazy" src="' + (it.thumb || it.file) + '" alt="' + it.id + '">'
+      + '<div class="tags">' + badge + tagText + '</div>';
     card.onclick = () => openViewer(it);
     grid.appendChild(card);
   }
+  updateSyncBar();
 }
 
 function openViewer(it) {
+  current = it;
   document.getElementById('viewerImg').src = it.file;
   document.getElementById('viewerInfo').innerHTML =
-    (it.tags || []).join(' · ') + '<br><a href="' + it.file + '" download>保存原图</a>';
+    (charNames[it.character] || it.character) + ' · ' + (it.tags || []).join(' · ')
+    + '<br><a href="' + it.file + '" download>保存原图</a>';
+  renderTagList(it);
+  document.getElementById('tagInput').value = '';
   document.getElementById('viewer').classList.add('open');
 }
+
+function renderTagList(it) {
+  const box = document.getElementById('tagList');
+  box.innerHTML = '';
+  const mine = myTags()[it.id] || [];
+  for (const t of (it.tags || [])) {
+    const chip = document.createElement('span');
+    chip.className = 'tag-chip';
+    chip.textContent = t;
+    box.appendChild(chip);
+  }
+  for (const t of mine) {
+    const chip = document.createElement('span');
+    chip.className = 'tag-chip mine';
+    chip.textContent = t + ' ×';
+    chip.title = '点一下删掉我加的这个标签';
+    chip.onclick = () => {
+      const all = myTags();
+      all[it.id] = (all[it.id] || []).filter(x => x !== t);
+      if (!all[it.id].length) delete all[it.id];
+      saveJSON(LS_TAGS, all);
+      renderTagList(it);
+      render();
+    };
+    box.appendChild(chip);
+  }
+}
+
+function toast(msg) {
+  const el = document.getElementById('toast');
+  el.textContent = msg;
+  el.style.display = 'block';
+  setTimeout(() => { el.style.display = 'none'; }, 2000);
+}
+
+function updateSyncBar() {
+  const tags = myTags();
+  const bad = disliked();
+  const nTag = Object.keys(tags).length;
+  const nBad = Object.keys(bad).length;
+  const bar = document.getElementById('syncBar');
+  if (!nTag && !nBad) { bar.style.display = 'none'; return; }
+  const parts = [];
+  if (nTag) parts.push(nTag + ' 张加了标签');
+  if (nBad) parts.push(nBad + ' 张标了不喜欢');
+  document.getElementById('syncText').textContent = '你有未同步的改动：' + parts.join('，') + '。';
+  bar.style.display = 'block';
+}
+
+document.getElementById('addTagBtn').onclick = () => {
+  if (!current) return;
+  const input = document.getElementById('tagInput');
+  const t = input.value.trim();
+  if (!t) return;
+  const all = myTags();
+  const list = all[current.id] || [];
+  if (!list.includes(t)) list.push(t);
+  all[current.id] = list;
+  saveJSON(LS_TAGS, all);
+  input.value = '';
+  renderTagList(current);
+  render();
+  toast('标签已加上，记得点底下“复制给 Konata”同步');
+};
+
+document.getElementById('tagInput').addEventListener('keydown', (e) => {
+  if (e.key === 'Enter') document.getElementById('addTagBtn').click();
+});
+
+document.getElementById('dislikeBtn').onclick = () => {
+  if (!current) return;
+  const bad = disliked();
+  bad[current.id] = { file: current.file, tags: current.tags || [], at: new Date().toISOString().slice(0, 10) };
+  saveJSON(LS_DISLIKE, bad);
+  document.getElementById('viewer').classList.remove('open');
+  render();
+  toast('已标不喜欢，下次同步我会删掉它');
+};
+
+document.getElementById('saveBtn').onclick = () => {
+  if (!current) return;
+  const a = document.createElement('a');
+  a.href = current.file;
+  a.download = current.id;
+  a.click();
+};
+
+document.getElementById('exportBtn').onclick = () => {
+  const payload = { tags: myTags(), disliked: disliked() };
+  const text = JSON.stringify(payload);
+  const done = () => toast('已复制，发给 Konata 就行');
+  if (navigator.clipboard && navigator.clipboard.writeText) {
+    navigator.clipboard.writeText(text).then(done, () => fallbackCopy(text, done));
+  } else {
+    fallbackCopy(text, done);
+  }
+};
+function fallbackCopy(text, done) {
+  const ta = document.createElement('textarea');
+  ta.value = text;
+  document.body.appendChild(ta);
+  ta.select();
+  try { document.execCommand('copy'); done(); } catch (e) { toast('复制失败，长按手动复制'); }
+  document.body.removeChild(ta);
+}
+document.getElementById('dismissSyncBtn').onclick = () => {
+  document.getElementById('syncBar').style.display = 'none';
+};
 
 document.getElementById('closeBtn').onclick = () => {
   document.getElementById('viewer').classList.remove('open');
@@ -93,16 +264,20 @@ document.getElementById('viewer').onclick = (e) => {
 };
 document.getElementById('search').oninput = render;
 document.getElementById('character').onchange = render;
+document.getElementById('type').onchange = render;
 
 fetch('index.json')
   .then(r => r.json())
   .then(data => {
     items = data.items || [];
-    const chars = [...new Set(items.map(i => i.character))];
+    charNames = {};
+    for (const c of (data.characters || [])) {
+      charNames[c.id] = c.name || c.id;
+    }
     const sel = document.getElementById('character');
-    for (const c of chars) {
+    for (const c of (data.characters || [])) {
       const opt = document.createElement('option');
-      opt.value = c; opt.textContent = c;
+      opt.value = c.id; opt.textContent = c.name || c.id;
       sel.appendChild(opt);
     }
     render();
