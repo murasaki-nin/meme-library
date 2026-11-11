@@ -6231,6 +6231,22 @@
       "height": 1461,
       "animated": false,
       "md5": "6407c56d7110e4519bd2d8bf44141399"
+    },
+    {
+      "id": "naiwa-user-f9455c77",
+      "file": "stickers/naiwa/naiwa-user-f9455c77.jpg",
+      "thumb": "thumbs/naiwa/naiwa-user-f9455c77.jpg",
+      "character": "naiwa",
+      "tags": [
+        "奶龙"
+      ],
+      "source": "user-sample",
+      "added": "2026-11-11",
+      "format": "jpg",
+      "width": 1086,
+      "height": 1448,
+      "animated": false,
+      "md5": "f9455c7736d4dc88454e20a6394c0ad8"
     }
   ]
 }
