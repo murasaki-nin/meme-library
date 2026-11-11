@@ -4,14 +4,14 @@
   "characters": [
     {
       "id": "naiwa",
-      "name": "奶蛙"
+      "name": "奶龙"
     },
     {
       "id": "blue-fish",
       "name": "大肥鱼"
     }
   ],
-  "count": 463,
+  "count": 464,
   "items": [
     {
       "id": "naiwa-abstract",
@@ -7447,6 +7447,22 @@
       "height": 496,
       "animated": true,
       "md5": "439fb833dd8286a61f54cf5aad2e1431"
+    },
+    {
+      "id": "naiwa-user-6407c56d",
+      "file": "stickers/naiwa/naiwa-user-6407c56d.png",
+      "thumb": "thumbs/naiwa/naiwa-user-6407c56d.jpg",
+      "character": "naiwa",
+      "tags": [
+        "奶龙"
+      ],
+      "source": "user-sample",
+      "added": "2026-11-11",
+      "format": "png",
+      "width": 1290,
+      "height": 1461,
+      "animated": false,
+      "md5": "6407c56d7110e4519bd2d8bf44141399"
     }
   ]
 }
