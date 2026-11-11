@@ -278,6 +278,21 @@ fetch('index.json', { cache: 'no-store' })
   .then(r => r.json())
   .then(data => {
     items = data.items || [];
+    // Drop local marks for items already deleted from the repo,
+    // so the sync bar stops re-reporting them after a refresh.
+    const validIds = new Set(items.map(it => it.id));
+    const cleanMarks = (key) => {
+      const obj = loadJSON(key);
+      const kept = {};
+      let changed = false;
+      for (const k of Object.keys(obj)) {
+        if (validIds.has(k)) kept[k] = obj[k];
+        else changed = true;
+      }
+      if (changed) saveJSON(key, kept);
+    };
+    cleanMarks(LS_DISLIKE);
+    cleanMarks(LS_TAGS);
     charNames = {};
     const chars = (data.characters || []).map(c => {
       if (typeof c === 'string') return { id: c, name: c };
