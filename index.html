@@ -41,6 +41,20 @@
   #syncBar { display: none; position: fixed; left: 0; right: 0; bottom: 0; background: #fff3cd; border-top: 1px solid #e6c87a; padding: 10px 14px; font-size: 14px; z-index: 30; text-align: center; }
   #syncBar button { margin-left: 8px; }
   #toast { display: none; position: fixed; left: 50%; bottom: 70px; transform: translateX(-50%); background: #222; color: #fff; padding: 8px 14px; border-radius: 8px; font-size: 14px; z-index: 40; }
+  #uploadPanel { background: #fff; border: 1px solid #eee; border-radius: 12px; padding: 14px; margin: 12px 12px 0; }
+  #uploadPanel h2 { font-size: 16px; margin: 0 0 10px; }
+  .dropzone { border: 2px dashed #ccc; border-radius: 10px; padding: 26px 12px; text-align: center; color: #666; font-size: 15px; cursor: pointer; }
+  .dropzone.over { border-color: #222; background: #f6f6f6; }
+  .up-row { display: flex; gap: 8px; flex-wrap: wrap; align-items: center; margin-top: 10px; }
+  .up-row input[type="text"], .up-row input[type="password"] { flex: 1; min-width: 160px; padding: 8px 10px; font-size: 15px; border: 1px solid #ddd; border-radius: 8px; }
+  .up-note { font-size: 13px; color: #888; line-height: 1.6; margin: 8px 0 0; }
+  .up-note a { color: #666; }
+  #upPreview { margin-top: 10px; }
+  .up-file { font-size: 13px; padding: 6px 0; border-bottom: 1px solid #f0f0f0; display: flex; justify-content: space-between; gap: 8px; align-items: center; }
+  .up-file .up-dup { color: #b3541e; }
+  #upLog { white-space: pre-wrap; word-break: break-word; background: #f6f6f6; border-radius: 8px; padding: 10px; font-size: 13px; max-height: 220px; overflow-y: auto; margin: 10px 0 0; min-height: 20px; }
+  #patHint { font-size: 13px; color: #888; }
+  #uploadBtn { background: #222; color: #fff; border-color: #222; }
 </style>
 </head>
 <body>
@@ -56,9 +70,33 @@
       <option value="static">静态图</option>
     </select>
     <input id="search" type="search" placeholder="搜标签，比如：跳舞、大笑、抽象">
+    <button id="uploadToggleBtn">上传图片</button>
     <span id="count"></span>
   </div>
 </header>
+<section id="uploadPanel" style="display:none">
+  <h2>上传图片</h2>
+  <div class="dropzone" id="dropZone">把图片拖到这里，或点一下从手机里选<input id="fileInput" type="file" accept="image/*" multiple hidden></div>
+  <div class="up-row">
+    <select id="upChar"></select>
+    <input id="upTags" type="text" placeholder="标签，逗号隔开，不填就用角色名">
+  </div>
+  <div class="up-row">
+    <input id="patInput" type="password" placeholder="GitHub 密钥（只存这个浏览器里）" autocomplete="off">
+    <button id="savePatBtn">保存密钥</button>
+    <span id="patHint"></span>
+  </div>
+  <p class="up-note">第一次用：去 <a href="https://github.com/settings/tokens?type=beta" target="_blank">GitHub 建一把细粒度密钥</a>，只给 meme-library 仓库，权限开 Contents 读写 + Issues 读写，建好粘到上面保存一次就行。密钥只存在你这个浏览器里，不会发给别人；传上去的图片检测格式、去重、生成小图都在本地做。</p>
+  <div class="up-row">
+    <button id="uploadBtn">上传到相册</button>
+    <button id="clearFilesBtn">清空待传</button>
+    <button id="clearPatBtn">清除密钥</button>
+    <button id="reloadBtn" style="display:none">刷新相册</button>
+    <span id="upCount"></span>
+  </div>
+  <div id="upPreview"></div>
+  <pre id="upLog"></pre>
+</section>
 <main>
   <div class="grid" id="grid"></div>
   <div id="empty">没有匹配的表情包，换个词试试。</div>
@@ -304,11 +342,18 @@ fetch('index.json', { cache: 'no-store' })
       charNames[c.id] = c.name;
     }
     const sel = document.getElementById('character');
+    const upSel = document.getElementById('upChar');
     for (const c of chars) {
       const opt = document.createElement('option');
       opt.value = c.id; opt.textContent = c.name;
       sel.appendChild(opt);
+      const opt2 = document.createElement('option');
+      opt2.value = c.id; opt2.textContent = c.name;
+      upSel.appendChild(opt2);
     }
+    // 给上传功能用：去重和角色名
+    window.__memeItems = items;
+    window.__memeCharNames = charNames;
     render();
   })
   .catch(() => {
@@ -316,5 +361,7 @@ fetch('index.json', { cache: 'no-store' })
     document.getElementById('empty').style.display = 'block';
   });
 </script>
+<script src="spark-md5.min.js"></script>
+<script src="upload.js"></script>
 </body>
 </html>
