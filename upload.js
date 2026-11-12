@@ -195,6 +195,7 @@
     renderPending();
   }
 
+  var uploading = false; // 上传进行中时，标签同步先让路
   async function doUpload() {
     var pat = getPat();
     if (!pat) {
@@ -214,6 +215,7 @@
     var tags = tagText ? tagText.split(/[,，、\s]+/).filter(function (t) { return t; }) : [charName];
     var btn = $('uploadBtn');
     btn.disabled = true;
+    uploading = true;
     try {
       log('正在连 GitHub…');
       var ref = await gh('/git/ref/heads/main', 'GET');
@@ -290,7 +292,158 @@
       if (/Bad credentials/i.test(e.message)) log('密钥不对或过期了：重新建一把粘进来再试。');
       if (/404/.test(e.message)) log('仓库或密钥权限不对：确认密钥给了 meme-library 的 Contents 读写权限。');
     } finally {
+      uploading = false;
       btn.disabled = false;
+    }
+  }
+
+  // —— 标签 / 不喜欢自动同步：用已存的密钥直接写回 index.json，不用再手动发 Issue ——
+  // 打标签、标不喜欢后 5 秒自动同步一次（多次改动会合并成一次提交）。
+  // 同步成功后本地标记就清掉，提示条只在失败 / 没存密钥时才出现。
+  var LS_TAGS_SYNC = 'meme-library-my-tags-v1';
+  var LS_DISLIKE_SYNC = 'meme-library-disliked-v1';
+  var syncState = { phase: 'idle', error: '' };
+  window.__memeSyncState = syncState;
+  var syncTimer = null;
+
+  function loadJSONObj(key) {
+    try { return JSON.parse(localStorage.getItem(key) || '{}'); } catch (e) { return {}; }
+  }
+  function saveJSONObj(key, obj) {
+    localStorage.setItem(key, JSON.stringify(obj));
+  }
+  function notifySyncBar() {
+    if (typeof window.__memeUpdateSyncBar === 'function') window.__memeUpdateSyncBar();
+    if (typeof window.__memeResetSyncDismiss === 'function' && syncState.phase === 'failed') {
+      window.__memeResetSyncDismiss();
+    }
+  }
+  function scheduleSync() {
+    if (syncTimer) clearTimeout(syncTimer);
+    syncTimer = setTimeout(function () { syncTimer = null; doTagSync(); }, 5000);
+    if (syncState.phase === 'idle') syncState.phase = 'pending';
+    notifySyncBar();
+  }
+  function syncNow() {
+    if (syncTimer) { clearTimeout(syncTimer); syncTimer = null; }
+    doTagSync();
+  }
+  window.__memeScheduleSync = scheduleSync;
+  window.__memeSyncNow = syncNow;
+
+  async function applyTagSyncOnce(tags, bad) {
+    var ref = await gh('/git/ref/heads/main', 'GET');
+    var commitSha = ref.object.sha;
+    var commit = await gh('/git/commits/' + commitSha, 'GET');
+    var baseTree = commit.tree.sha;
+    var idxFile = await gh('/contents/index.json', 'GET');
+    var raw = new TextDecoder('utf-8').decode(Uint8Array.from(atob(idxFile.content.replace(/\n/g, '')), function (c) { return c.charCodeAt(0); }));
+    var indexData = JSON.parse(raw);
+    var items = indexData.items || [];
+    var byId = {};
+    items.forEach(function (it) { byId[it.id] = it; });
+    var changed = false;
+    var nTagged = 0, nRemoved = 0;
+    Object.keys(tags).forEach(function (id) {
+      var list = tags[id] || [];
+      if (!list.length) return;
+      var it = byId[id];
+      if (!it) return;
+      var repoTags = it.tags || [];
+      var added = list.filter(function (t) { return repoTags.indexOf(t) === -1; });
+      if (added.length) { it.tags = repoTags.concat(added); changed = true; nTagged++; }
+    });
+    var deleteIds = {};
+    Object.keys(bad).forEach(function (id) {
+      if (byId[id]) { deleteIds[id] = true; nRemoved++; }
+    });
+    var deletedPaths = [];
+    Object.keys(deleteIds).forEach(function (id) {
+      var it = byId[id];
+      if (it.file) deletedPaths.push(it.file);
+      if (it.thumb) deletedPaths.push(it.thumb);
+    });
+    if (Object.keys(deleteIds).length) changed = true;
+    if (!changed) return { tagged: nTagged, removed: nRemoved };
+    indexData.items = items.filter(function (it) { return !deleteIds[it.id]; });
+    indexData.count = indexData.items.length;
+    indexData.updated = todayLocal();
+    var entries = [];
+    var idxBlob = await gh('/git/blobs', 'POST', { content: JSON.stringify(indexData, null, 2) + '\n', encoding: 'utf-8' });
+    entries.push({ path: 'index.json', mode: '100644', type: 'blob', sha: idxBlob.sha });
+    deletedPaths.forEach(function (p) {
+      entries.push({ path: p, mode: '100644', type: 'blob', sha: null });
+    });
+    var tree = await gh('/git/trees', 'POST', { base_tree: baseTree, tree: entries });
+    var msgParts = [];
+    if (nTagged) msgParts.push(nTagged + ' 项加标签');
+    if (nRemoved) msgParts.push(nRemoved + ' 项删掉');
+    var newCommit = await gh('/git/commits', 'POST', {
+      message: 'gallery sync: ' + (msgParts.join('，') || '无改动'),
+      tree: tree.sha, parents: [commitSha]
+    });
+    await gh('/git/refs/heads/main', 'PATCH', { sha: newCommit.sha, force: false });
+    return { tagged: nTagged, removed: nRemoved };
+  }
+
+  async function doTagSync() {
+    var tags = loadJSONObj(LS_TAGS_SYNC);
+    var bad = loadJSONObj(LS_DISLIKE_SYNC);
+    var tagIds = Object.keys(tags).filter(function (id) { return (tags[id] || []).length; });
+    var badIds = Object.keys(bad);
+    if (!tagIds.length && !badIds.length) {
+      syncState.phase = 'idle'; syncState.error = '';
+      notifySyncBar();
+      return;
+    }
+    if (!getPat()) {
+      syncState.phase = 'no-pat'; syncState.error = '';
+      notifySyncBar();
+      return;
+    }
+    if (uploading) {
+      // 上传进行中，先让路，过 15 秒再试
+      syncState.phase = 'pending';
+      if (syncTimer) clearTimeout(syncTimer);
+      syncTimer = setTimeout(function () { syncTimer = null; doTagSync(); }, 15000);
+      notifySyncBar();
+      return;
+    }
+    syncState.phase = 'syncing'; syncState.error = '';
+    notifySyncBar();
+    var result = null, lastErr = null;
+    for (var attempt = 0; attempt < 2; attempt++) {
+      try {
+        result = await applyTagSyncOnce(tags, bad);
+        lastErr = null;
+        break;
+      } catch (e) {
+        lastErr = e;
+      }
+    }
+    if (lastErr) {
+      syncState.phase = 'failed';
+      syncState.error = lastErr.message || String(lastErr);
+      log('标签同步失败：' + syncState.error + '（可以点底下的重试，或用“提交给 Konata”走 Issue）');
+      notifySyncBar();
+      return;
+    }
+    // 成功：只清掉这次同步快照里的标签（同步中途新加的标签要留着，等下一次同步）
+    var tags2 = loadJSONObj(LS_TAGS_SYNC);
+    tagIds.forEach(function (id) {
+      var cur = tags2[id] || [];
+      var snap = tags[id] || [];
+      var remaining = cur.filter(function (t) { return snap.indexOf(t) === -1; });
+      if (remaining.length) tags2[id] = remaining; else delete tags2[id];
+    });
+    var bad2 = loadJSONObj(LS_DISLIKE_SYNC);
+    badIds.forEach(function (id) { delete bad2[id]; });
+    saveJSONObj(LS_TAGS_SYNC, tags2);
+    saveJSONObj(LS_DISLIKE_SYNC, bad2);
+    syncState.phase = 'idle'; syncState.error = '';
+    notifySyncBar();
+    if (typeof window.__memeAfterSync === 'function') {
+      window.__memeAfterSync({ tags: tags, badIds: badIds });
     }
   }
 
@@ -367,6 +520,7 @@
     $('patInput').value = '';
     refreshPatHint();
     log('密钥已保存在你这个浏览器里。');
+    scheduleSync();
   };
   $('clearPatBtn').onclick = function () {
     localStorage.removeItem(LS_PAT);

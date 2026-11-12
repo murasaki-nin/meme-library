@@ -123,6 +123,7 @@
 </div>
 <div id="syncBar">
   <span id="syncText"></span>
+  <button id="retrySyncBtn" style="display:none">重试同步</button>
   <button id="exportBtn">提交给 Konata</button>
   <button id="dismissSyncBtn">稍后再说</button>
 </div>
@@ -231,6 +232,7 @@ function renderTagList(it) {
       saveJSON(LS_TAGS, all);
       renderTagList(it);
       render();
+      if (window.__memeScheduleSync) window.__memeScheduleSync();
     };
     box.appendChild(chip);
   }
@@ -243,18 +245,83 @@ function toast(msg) {
   setTimeout(() => { el.style.display = 'none'; }, 2000);
 }
 
+function toastAction(msg, btnLabel, onClick, ms) {
+  const el = document.getElementById('toast');
+  el.innerHTML = '';
+  const span = document.createElement('span');
+  span.textContent = msg + ' ';
+  const btn = document.createElement('button');
+  btn.textContent = btnLabel;
+  btn.style.cssText = 'background:#fff;color:#222;border:none;border-radius:6px;padding:2px 10px;margin-left:6px;cursor:pointer;font-size:14px;';
+  btn.onclick = () => { el.style.display = 'none'; if (onClick) onClick(); };
+  el.appendChild(span);
+  el.appendChild(btn);
+  el.style.display = 'block';
+  setTimeout(() => { el.style.display = 'none'; }, ms || 5000);
+}
+
+let syncBarDismissed = false;
+window.__memeRerender = render;
+window.__memeUpdateSyncBar = updateSyncBar;
+window.__memeResetSyncDismiss = function () { syncBarDismissed = false; };
+window.__memeAfterSync = function (synced) {
+  const tags = synced.tags || {};
+  const badIds = synced.badIds || [];
+  for (const id of Object.keys(tags)) {
+    const it = items.find(x => x.id === id);
+    if (!it) continue;
+    const list = tags[id] || [];
+    it.tags = (it.tags || []).concat(list.filter(t => (it.tags || []).indexOf(t) === -1));
+  }
+  if (badIds.length) {
+    items = items.filter(it => badIds.indexOf(it.id) === -1);
+    window.__memeItems = items;
+  }
+  render();
+  const parts = [];
+  if (Object.keys(tags).length) parts.push('标签已同步 ✓');
+  if (badIds.length) parts.push('已删掉 ' + badIds.length + ' 张 ✓');
+  if (parts.length) toast(parts.join('，'));
+};
+
 function updateSyncBar() {
   const tags = myTags();
   const bad = disliked();
   const nTag = Object.keys(tags).length;
   const nBad = Object.keys(bad).length;
   const bar = document.getElementById('syncBar');
-  if (!nTag && !nBad) { bar.style.display = 'none'; return; }
-  const parts = [];
-  if (nTag) parts.push(nTag + ' 张加了标签');
-  if (nBad) parts.push(nBad + ' 张标了不喜欢');
-  document.getElementById('syncText').textContent = '你有未同步的改动：' + parts.join('，') + '。';
-  bar.style.display = 'block';
+  const retryBtn = document.getElementById('retrySyncBtn');
+  if (!nTag && !nBad) { bar.style.display = 'none'; syncBarDismissed = false; return; }
+  if (syncBarDismissed) { bar.style.display = 'none'; return; }
+  const st = window.__memeSyncState || { phase: 'idle', error: '' };
+  if (st.phase === 'pending' || st.phase === 'syncing') { bar.style.display = 'none'; return; }
+  if (!window.__memeScheduleSync) {
+    // 自动同步代码没加载（旧缓存）：走原来的手动发送
+    const parts = [];
+    if (nTag) parts.push(nTag + ' 张加了标签');
+    if (nBad) parts.push(nBad + ' 张标了不喜欢');
+    document.getElementById('syncText').textContent = '你有未同步的改动：' + parts.join('，') + '。';
+    retryBtn.style.display = 'none';
+    bar.style.display = 'block';
+    return;
+  }
+  if (st.phase === 'no-pat') {
+    document.getElementById('syncText').textContent = '标签还没同步：先在上传面板里保存 GitHub 密钥，保存后会自动同步。';
+    retryBtn.style.display = '';
+    retryBtn.textContent = '去保存密钥';
+    bar.style.display = 'block';
+    return;
+  }
+  if (st.phase === 'failed') {
+    const hint = /credential|密钥|401/i.test(st.error || '') ? '密钥可能不对或过期了，重新保存一次再试。' : '';
+    document.getElementById('syncText').textContent = '自动同步失败：' + (st.error || '未知错误') + hint;
+    retryBtn.style.display = '';
+    retryBtn.textContent = '重试同步';
+    bar.style.display = 'block';
+    return;
+  }
+  // idle 但有未同步的改动（同步还没排上）：先藏起来，等同步排期
+  bar.style.display = 'none';
 }
 
 document.getElementById('addTagBtn').onclick = () => {
@@ -270,7 +337,8 @@ document.getElementById('addTagBtn').onclick = () => {
   input.value = '';
   renderTagList(current);
   render();
-  toast('标签已加上，记得点底下“提交给 Konata”同步');
+  if (window.__memeScheduleSync) window.__memeScheduleSync();
+  toast('标签已加上，正在自动同步…');
 };
 
 document.getElementById('tagInput').addEventListener('keydown', (e) => {
@@ -279,12 +347,19 @@ document.getElementById('tagInput').addEventListener('keydown', (e) => {
 
 document.getElementById('dislikeBtn').onclick = () => {
   if (!current) return;
+  const id = current.id;
   const bad = disliked();
-  bad[current.id] = { file: current.file, tags: current.tags || [], at: new Date().toISOString().slice(0, 10) };
+  bad[id] = { file: current.file, tags: current.tags || [], at: new Date().toISOString().slice(0, 10) };
   saveJSON(LS_DISLIKE, bad);
   closeViewer();
   render();
-  toast('已标不喜欢，下次同步我会删掉它');
+  if (window.__memeScheduleSync) window.__memeScheduleSync();
+  toastAction('已标不喜欢，5 秒后删掉', '撤销', () => {
+    const b2 = disliked();
+    delete b2[id];
+    saveJSON(LS_DISLIKE, b2);
+    render();
+  }, 5000);
 };
 
 document.getElementById('saveBtn').onclick = () => {
@@ -322,7 +397,18 @@ document.getElementById('exportBtn').onclick = () => {
   toast('已打开 GitHub，点一下 Submit 就行');
 };
 document.getElementById('dismissSyncBtn').onclick = () => {
+  syncBarDismissed = true;
   document.getElementById('syncBar').style.display = 'none';
+};
+document.getElementById('retrySyncBtn').onclick = () => {
+  const st = window.__memeSyncState || { phase: 'idle' };
+  if (st.phase === 'no-pat') {
+    const p = document.getElementById('uploadPanel');
+    p.style.display = 'block';
+    p.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  } else if (window.__memeSyncNow) {
+    window.__memeSyncNow();
+  }
 };
 
 function closeViewer() {
@@ -394,6 +480,13 @@ fetch('index.json', { cache: 'no-store' })
     window.__memeItems = items;
     window.__memeCharNames = charNames;
     render();
+    // 上次没同步完的标记（比如关页面时正好在同步），打开相册后自动补同步
+    if (window.__memeScheduleSync) {
+      const t = myTags(), b = disliked();
+      if (Object.keys(t).length || Object.keys(b).length) {
+        setTimeout(() => window.__memeScheduleSync(), 2000);
+      }
+    }
   })
   .catch(() => {
     document.getElementById('empty').textContent = 'index.json 加载失败，请检查网络。';
