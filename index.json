@@ -1,6 +1,6 @@
 {
   "name": "meme-library",
-  "updated": "2026-11-11",
+  "updated": "2026-11-12",
   "characters": [
     {
       "id": "naiwa",
@@ -11,7 +11,7 @@
       "name": "大肥鱼"
     }
   ],
-  "count": 387,
+  "count": 389,
   "items": [
     {
       "id": "naiwa-abstract",
@@ -6247,6 +6247,22 @@
       "height": 1448,
       "animated": false,
       "md5": "f9455c7736d4dc88454e20a6394c0ad8"
+    },
+    {
+      "id": "naiwa-upload-7533b1b0",
+      "file": "stickers/naiwa/naiwa-upload-7533b1b0.png",
+      "thumb": "thumbs/naiwa/naiwa-upload-7533b1b0.jpg",
+      "character": "naiwa",
+      "tags": [
+        "痔疮"
+      ],
+      "source": "user-upload",
+      "added": "2026-11-12",
+      "format": "png",
+      "width": 1098,
+      "height": 1920,
+      "animated": false,
+      "md5": "7533b1b019c7d9b9fe0ac03f93dd6d37"
     }
   ]
 }
