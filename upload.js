@@ -45,6 +45,7 @@
     if (b.length >= 8 && b[0] === 0x89 && b[1] === 0x50 && b[2] === 0x4E && b[3] === 0x47) return 'png';
     if (b.length >= 3 && b[0] === 0xFF && b[1] === 0xD8 && b[2] === 0xFF) return 'jpg';
     if (b.length >= 12 && strAt(b, 0, 4) === 'RIFF' && strAt(b, 8, 4) === 'WEBP') return 'webp';
+    if (b.length >= 8 && strAt(b, 4, 4) === 'ftyp') return 'mp4';
     return null;
   }
   function loadImageSize(blob) {
@@ -71,6 +72,41 @@
         if (!b) { resolve(null); return; }
         b.arrayBuffer().then(function (buf) { resolve(bufToB64(buf)); });
       }, 'image/jpeg', 0.8);
+    });
+  }
+
+  function loadVideoMeta(blob) {
+    return new Promise(function (resolve, reject) {
+      var url = URL.createObjectURL(blob);
+      var v = document.createElement('video');
+      v.muted = true;
+      v.playsInline = true;
+      v.preload = 'metadata';
+      v.onloadedmetadata = function () {
+        var dur = v.duration;
+        v.currentTime = Math.min(0.1, Math.max(0, (isFinite(dur) ? dur : 1) * 0.05));
+      };
+      v.onseeked = function () {
+        try {
+          var scale = Math.min(1, 240 / v.videoWidth);
+          var canvas = document.createElement('canvas');
+          canvas.width = Math.max(1, Math.round(v.videoWidth * scale));
+          canvas.height = Math.max(1, Math.round(v.videoHeight * scale));
+          canvas.getContext('2d').drawImage(v, 0, 0, canvas.width, canvas.height);
+          canvas.toBlob(function (b) {
+            URL.revokeObjectURL(url);
+            if (!b) { resolve({ width: v.videoWidth, height: v.videoHeight, duration: v.duration, thumbB64: null }); return; }
+            b.arrayBuffer().then(function (buf) {
+              resolve({ width: v.videoWidth, height: v.videoHeight, duration: v.duration, thumbB64: bufToB64(buf) });
+            });
+          }, 'image/jpeg', 0.8);
+        } catch (e) {
+          URL.revokeObjectURL(url);
+          resolve({ width: v.videoWidth, height: v.videoHeight, duration: v.duration, thumbB64: null });
+        }
+      };
+      v.onerror = function () { URL.revokeObjectURL(url); reject(new Error('视频打不开')); };
+      v.src = url;
     });
   }
 
@@ -113,8 +149,11 @@
   async function addFiles(fileList) {
     for (var i = 0; i < fileList.length; i++) {
       var file = fileList[i];
-      if (!file.type || file.type.indexOf('image/') !== 0) {
-        log('跳过：' + file.name + ' 不是图片');
+      var isMp4Name = /\.mp4$/i.test(file.name);
+      var isImage = !!file.type && file.type.indexOf('image/') === 0;
+      var isMp4Type = file.type === 'video/mp4';
+      if (!isImage && !isMp4Type && !isMp4Name) {
+        log('跳过：' + file.name + ' 不是图片或 MP4');
         continue;
       }
       if (file.size > MAX_MB * 1024 * 1024) {
@@ -130,18 +169,25 @@
           log('跳过：' + file.name + ' 和这一批里的另一张重复');
           continue;
         }
-        var size = await loadImageSize(file);
-        var thumbB64 = await makeThumb(size.img, 240);
+        var width, height, thumbB64, duration = null;
+        if (fmt === 'mp4') {
+          var meta = await loadVideoMeta(file);
+          width = meta.width; height = meta.height; duration = meta.duration; thumbB64 = meta.thumbB64;
+        } else {
+          var size = await loadImageSize(file);
+          width = size.width; height = size.height;
+          thumbB64 = await makeThumb(size.img, 240);
+        }
         var dup = false;
         if (window.__memeItems && window.__memeItems.length) {
           dup = window.__memeItems.some(function (it) { return it.md5 === md5; });
         }
         pending.push({
           name: file.name, buf: buf, format: fmt, md5: md5,
-          width: size.width, height: size.height, thumbB64: thumbB64,
+          width: width, height: height, thumbB64: thumbB64, duration: duration,
           ext: fmt === 'jpg' ? 'jpg' : fmt, duplicate: dup
         });
-        log('已加入：' + file.name + '（' + fmt + '）' + (dup ? ' —— 库里已有这张，会跳过' : ''));
+        log('已加入：' + file.name + '（' + fmt + '）' + (dup ? ' —— 库里已有这张，会跳过' : '') + (fmt === 'mp4' ? ' —— 传上去后会自动转成 GIF' : ''));
       } catch (e) {
         log('失败：' + file.name + ' —— ' + e.message);
       }
@@ -196,12 +242,17 @@
           var tblob = await gh('/git/blobs', 'POST', { content: f.thumbB64, encoding: 'base64' });
           entries.push({ path: thumbPath, mode: '100644', type: 'blob', sha: tblob.sha });
         }
-        added.push({
+        var entry = {
           id: id, file: filePath, thumb: thumbPath, character: char,
           tags: tags, source: 'user-upload', added: todayLocal(),
           format: f.format, width: f.width, height: f.height,
-          animated: f.format === 'gif', md5: f.md5
-        });
+          animated: f.format === 'gif' || f.format === 'mp4', md5: f.md5
+        };
+        if (f.format === 'mp4') {
+          entry.converting = true;
+          if (f.duration) entry.duration = Math.round(f.duration * 10) / 10;
+        }
+        added.push(entry);
       }
       if (!added.length) { log('没有新图入库。'); return; }
 
@@ -220,8 +271,10 @@
       log('已入库 ' + added.length + ' 张：' + added.map(function (a) { return a.id; }).join('、'));
 
       try {
-        var body = '用户通过相册上传了 ' + added.length + ' 张新图（角色：' + charName + '，标签：' + tags.join('、') + '）。\n\n'
-          + added.map(function (a) { return '- ' + a.id + ' (' + a.file + ')'; }).join('\n')
+        var body = '用户通过相册上传了 ' + added.length + ' 张新图（角色：' + charName + '，标签：' + tags.join('、') + '）。\n\n';
+        var nMp4 = added.filter(function (a) { return a.format === 'mp4'; }).length;
+        if (nMp4) body += '其中 ' + nMp4 + ' 个是 MP4，GitHub Action 会在后台自动转成 GIF，转好后相册里自动变成 GIF。\n\n';
+        body += added.map(function (a) { return '- ' + a.id + ' (' + a.file + ')'; }).join('\n')
           + '\n\n```json\n' + JSON.stringify(added, null, 2) + '\n```';
         await gh('/issues', 'POST', { title: '[上传] ' + todayLocal() + ' ' + added.length + ' 张新图（' + charName + '）', body: body });
         log('已发 Issue 通知 Konata 同步。');

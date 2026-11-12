@@ -26,6 +26,8 @@
   #viewer { display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.88); z-index: 20; align-items: center; justify-content: center; flex-direction: column; padding: 16px; overflow-y: auto; }
   #viewer.open { display: flex; }
   #viewer img { max-width: 100%; max-height: 60vh; border-radius: 10px; background: #fff; }
+  #viewer video { max-width: 100%; max-height: 60vh; border-radius: 10px; background: #000; display: none; }
+  .card .mp4-badge { background: #b3541e; }
   #viewer .info { color: #fff; margin-top: 12px; font-size: 14px; text-align: center; line-height: 1.8; }
   #viewer .info a { color: #fff; }
   #viewer .close { position: absolute; top: 12px; right: 16px; color: #fff; font-size: 28px; cursor: pointer; background: none; border: none; }
@@ -69,7 +71,7 @@
     </select>
     <select id="type">
       <option value="">全部类型</option>
-      <option value="gif">动图 GIF</option>
+      <option value="gif">动图</option>
       <option value="static">静态图</option>
     </select>
     <input id="search" type="search" placeholder="搜标签，比如：跳舞、大笑、抽象">
@@ -79,7 +81,7 @@
 </header>
 <section id="uploadPanel" style="display:none">
   <h2>上传图片</h2>
-  <div class="dropzone" id="dropZone">把图片拖到这里，或点一下从手机里选<input id="fileInput" type="file" accept="image/*" multiple hidden></div>
+  <div class="dropzone" id="dropZone">把图片或 MP4 拖到这里，或点一下从手机里选<input id="fileInput" type="file" accept="image/*,video/mp4,.mp4" multiple hidden></div>
   <div class="up-row">
     <select id="upChar"></select>
     <input id="upTags" type="text" placeholder="标签，逗号隔开，不填就用角色名">
@@ -89,7 +91,7 @@
     <button id="savePatBtn">保存密钥</button>
     <span id="patHint"></span>
   </div>
-  <p class="up-note">第一次用：去 <a href="https://github.com/settings/tokens?type=beta" target="_blank">GitHub 建一把细粒度密钥</a>，只给 meme-library 仓库，权限开 Contents 读写 + Issues 读写，建好粘到上面保存一次就行。密钥只存在你这个浏览器里，不会发给别人；传上去的图片检测格式、去重、生成小图都在本地做。</p>
+  <p class="up-note">第一次用：去 <a href="https://github.com/settings/tokens?type=beta" target="_blank">GitHub 建一把细粒度密钥</a>，只给 meme-library 仓库，权限开 Contents 读写 + Issues 读写，建好粘到上面保存一次就行。密钥只存在你这个浏览器里，不会发给别人；传上去的图片检测格式、去重、生成小图都在本地做。MP4 也能传，传上去后 GitHub 会在后台自动转成 GIF（一般一两分钟），转好后相册里自动变成 GIF。</p>
   <div class="up-row">
     <button id="uploadBtn">上传到相册</button>
     <button id="clearFilesBtn">清空待传</button>
@@ -107,6 +109,7 @@
 <div id="viewer">
   <button class="close" id="closeBtn" aria-label="关闭">&times;</button>
   <img id="viewerImg" alt="">
+  <video id="viewerVideo" autoplay loop muted playsinline controls></video>
   <div class="info" id="viewerInfo"></div>
   <div class="tag-list" id="tagList"></div>
   <div class="tag-edit">
@@ -124,7 +127,7 @@
   <button id="dismissSyncBtn">稍后再说</button>
 </div>
 <div id="toast"></div>
-<div id="dropOverlay"><div>松开鼠标，上传图片</div></div>
+<div id="dropOverlay"><div>松开鼠标，上传图片或 MP4</div></div>
 <script>
 let items = [];
 let charNames = {};
@@ -170,7 +173,9 @@ function render() {
   for (const it of shown) {
     const card = document.createElement('div');
     card.className = 'card';
-    const badge = it.animated ? '<span class="gif-badge">GIF</span>' : '';
+    const badge = it.animated
+      ? (it.format === 'mp4' ? '<span class="gif-badge mp4-badge">MP4·转GIF中</span>' : '<span class="gif-badge">GIF</span>')
+      : '';
     const mine = (myTags()[it.id] || []).map(t => '<span class="my-tag">' + t + '</span>').join(' · ');
     const tagText = (it.tags || []).join(' · ') + (mine ? ' · ' + mine : '');
     card.innerHTML = '<img loading="lazy" src="' + (it.thumb || it.file) + '" alt="' + it.id + '">'
@@ -183,7 +188,19 @@ function render() {
 
 function openViewer(it) {
   current = it;
-  document.getElementById('viewerImg').src = it.file;
+  const img = document.getElementById('viewerImg');
+  const vid = document.getElementById('viewerVideo');
+  if (it.format === 'mp4') {
+    img.style.display = 'none';
+    vid.style.display = 'block';
+    vid.src = it.file;
+  } else {
+    vid.pause();
+    vid.removeAttribute('src');
+    vid.style.display = 'none';
+    img.style.display = '';
+    img.src = it.file;
+  }
   document.getElementById('viewerInfo').innerHTML =
     (charNames[it.character] || it.character) + ' · ' + (it.tags || []).join(' · ')
     + '<br><a href="' + it.file + '" download>保存原图</a>';
@@ -265,7 +282,7 @@ document.getElementById('dislikeBtn').onclick = () => {
   const bad = disliked();
   bad[current.id] = { file: current.file, tags: current.tags || [], at: new Date().toISOString().slice(0, 10) };
   saveJSON(LS_DISLIKE, bad);
-  document.getElementById('viewer').classList.remove('open');
+  closeViewer();
   render();
   toast('已标不喜欢，下次同步我会删掉它');
 };
@@ -308,11 +325,14 @@ document.getElementById('dismissSyncBtn').onclick = () => {
   document.getElementById('syncBar').style.display = 'none';
 };
 
-document.getElementById('closeBtn').onclick = () => {
+function closeViewer() {
   document.getElementById('viewer').classList.remove('open');
-};
+  const vid = document.getElementById('viewerVideo');
+  if (vid) vid.pause();
+}
+document.getElementById('closeBtn').onclick = closeViewer;
 document.getElementById('viewer').onclick = (e) => {
-  if (e.target.id === 'viewer') document.getElementById('viewer').classList.remove('open');
+  if (e.target.id === 'viewer') closeViewer();
 };
 document.getElementById('search').oninput = render;
 document.getElementById('character').onchange = render;
