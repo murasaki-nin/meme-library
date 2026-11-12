@@ -241,6 +241,50 @@
     }
   }
 
+  // —— 全页面拖拽：把图片拖进浏览器任意处，自动打开上传面板 ——
+  var dragDepth = 0;
+  function dragHasFiles(e) {
+    var dt = e.dataTransfer;
+    if (!dt || !dt.types) return false;
+    for (var i = 0; i < dt.types.length; i++) {
+      if (dt.types[i] === 'Files') return true;
+    }
+    return false;
+  }
+  window.addEventListener('dragenter', function (e) {
+    if (!dragHasFiles(e)) return;
+    e.preventDefault();
+    dragDepth++;
+    $('dropOverlay').classList.add('show');
+  });
+  window.addEventListener('dragover', function (e) {
+    if (!dragHasFiles(e)) return;
+    e.preventDefault();
+  });
+  window.addEventListener('dragleave', function (e) {
+    if (!dragHasFiles(e)) return;
+    dragDepth = Math.max(0, dragDepth - 1);
+    if (dragDepth === 0) $('dropOverlay').classList.remove('show');
+  });
+  window.addEventListener('drop', function (e) {
+    if (!dragHasFiles(e)) return;
+    e.preventDefault();
+    dragDepth = 0;
+    $('dropOverlay').classList.remove('show');
+    // 落在上传面板自己的拖放区里时，让面板自己的处理接手，避免重复加入
+    var t = e.target;
+    if (t && t.closest && t.closest('#uploadPanel')) return;
+    var files = e.dataTransfer.files;
+    if (!files || !files.length) return;
+    var p = $('uploadPanel');
+    if (p.style.display === 'none') {
+      p.style.display = 'block';
+      refreshPatHint();
+    }
+    addFiles(files);
+    p.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  });
+
   // —— 绑定 UI ——
   $('uploadToggleBtn').onclick = function () {
     var p = $('uploadPanel');

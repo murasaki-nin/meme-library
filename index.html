@@ -55,6 +55,9 @@
   #upLog { white-space: pre-wrap; word-break: break-word; background: #f6f6f6; border-radius: 8px; padding: 10px; font-size: 13px; max-height: 220px; overflow-y: auto; margin: 10px 0 0; min-height: 20px; }
   #patHint { font-size: 13px; color: #888; }
   #uploadBtn { background: #222; color: #fff; border-color: #222; }
+  #dropOverlay { display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.55); z-index: 50; align-items: center; justify-content: center; pointer-events: none; }
+  #dropOverlay.show { display: flex; }
+  #dropOverlay div { background: #fff; border: 3px dashed #222; border-radius: 16px; padding: 28px 36px; font-size: 20px; font-weight: bold; }
 </style>
 </head>
 <body>
@@ -121,6 +124,7 @@
   <button id="dismissSyncBtn">稍后再说</button>
 </div>
 <div id="toast"></div>
+<div id="dropOverlay"><div>松开鼠标，上传图片</div></div>
 <script>
 let items = [];
 let charNames = {};
@@ -333,6 +337,21 @@ fetch('index.json', { cache: 'no-store' })
     };
     cleanMarks(LS_DISLIKE);
     cleanMarks(LS_TAGS);
+    // Drop local tags that are already in the repo (Konata applied them),
+    // so the sync bar clears after a sync instead of showing them forever.
+    (function cleanSyncedTags() {
+      const all = loadJSON(LS_TAGS);
+      const byId = {};
+      for (const it of items) byId[it.id] = new Set(it.tags || []);
+      let changed = false;
+      for (const id of Object.keys(all)) {
+        if (!byId[id]) { delete all[id]; changed = true; continue; }
+        const remaining = (all[id] || []).filter(t => !byId[id].has(t));
+        if (!remaining.length) { delete all[id]; changed = true; }
+        else if (remaining.length !== all[id].length) { all[id] = remaining; changed = true; }
+      }
+      if (changed) saveJSON(LS_TAGS, all);
+    })();
     charNames = {};
     const chars = (data.characters || []).map(c => {
       if (typeof c === 'string') return { id: c, name: c };
