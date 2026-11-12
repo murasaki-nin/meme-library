@@ -6299,7 +6299,7 @@
     },
     {
       "id": "naiwa-upload-e5db7db1",
-      "file": "stickers/naiwa/naiwa-upload-e5db7db1.mp4",
+      "file": "stickers/naiwa/naiwa-upload-e5db7db1.gif",
       "thumb": "thumbs/naiwa/naiwa-upload-e5db7db1.jpg",
       "character": "naiwa",
       "tags": [
@@ -6307,17 +6307,16 @@
       ],
       "source": "user-upload",
       "added": "2026-11-12",
-      "format": "mp4",
-      "width": 290,
-      "height": 298,
+      "format": "gif",
+      "width": 480,
+      "height": 493,
       "animated": true,
       "md5": "e5db7db1a556ae22f744b0d57d82429c",
-      "converting": true,
       "duration": 4.3
     },
     {
       "id": "naiwa-upload-3d41a135",
-      "file": "stickers/naiwa/naiwa-upload-3d41a135.mp4",
+      "file": "stickers/naiwa/naiwa-upload-3d41a135.gif",
       "thumb": "thumbs/naiwa/naiwa-upload-3d41a135.jpg",
       "character": "naiwa",
       "tags": [
@@ -6325,12 +6324,11 @@
       ],
       "source": "user-upload",
       "added": "2026-11-12",
-      "format": "mp4",
-      "width": 410,
-      "height": 320,
+      "format": "gif",
+      "width": 480,
+      "height": 375,
       "animated": true,
       "md5": "3d41a135b4bcb66008199de5dbf2e779",
-      "converting": true,
       "duration": 3.1
     }
   ]
