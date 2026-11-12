@@ -8,6 +8,7 @@ on:
     branches: [main]
     paths:
       - 'stickers/**/*.mp4'
+  workflow_dispatch:
 
 permissions:
   contents: write
@@ -21,6 +22,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      - name: Install ffmpeg
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
       - name: Convert MP4 files to GIF
         run: python3 scripts/convert-mp4.py
       - name: Commit converted GIFs
