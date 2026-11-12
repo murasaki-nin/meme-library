@@ -11,7 +11,7 @@
       "name": "大肥鱼"
     }
   ],
-  "count": 388,
+  "count": 389,
   "items": [
     {
       "id": "naiwa-abstract",
@@ -6248,6 +6248,22 @@
       "height": 1920,
       "animated": false,
       "md5": "7533b1b019c7d9b9fe0ac03f93dd6d37"
+    },
+    {
+      "id": "naiwa-upload-fd7f12e6",
+      "file": "stickers/naiwa/naiwa-upload-fd7f12e6.jpg",
+      "thumb": "thumbs/naiwa/naiwa-upload-fd7f12e6.jpg",
+      "character": "naiwa",
+      "tags": [
+        "特朗普"
+      ],
+      "source": "user-upload",
+      "added": "2026-11-12",
+      "format": "jpg",
+      "width": 400,
+      "height": 400,
+      "animated": false,
+      "md5": "fd7f12e6a35f4897bf48e4f48e313a30"
     }
   ]
 }
