@@ -1,6 +1,6 @@
 {
   "name": "meme-library",
-  "updated": "2026-11-12",
+  "updated": "2026-11-13",
   "characters": [
     {
       "id": "naiwa",
@@ -6207,7 +6207,8 @@
       "thumb": "thumbs/naiwa/naiwa-user-6407c56d.jpg",
       "character": "naiwa",
       "tags": [
-        "奶龙"
+        "奶龙",
+        "奶杯"
       ],
       "source": "user-sample",
       "added": "2026-11-11",
