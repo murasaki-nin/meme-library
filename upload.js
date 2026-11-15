@@ -147,6 +147,9 @@
   }
 
   async function addFiles(fileList) {
+    // FileList 是“活”的：onchange 里 this.value='' 会把它清空，所以先快照成普通数组。
+    // 不快照的话，异步循环读到第二张时 fileList.length 已经是 0，只会留下第一张。
+    fileList = Array.prototype.slice.call(fileList);
     for (var i = 0; i < fileList.length; i++) {
       var file = fileList[i];
       var isMp4Name = /\.mp4$/i.test(file.name);
