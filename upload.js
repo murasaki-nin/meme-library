@@ -497,7 +497,7 @@
     p.style.display = p.style.display === 'none' ? 'block' : 'none';
     if (p.style.display === 'block') refreshPatHint();
   };
-  $('dropZone').onclick = function () { $('fileInput').click(); };
+  // 点选文件由 label[for=fileInput] 原生触发（iOS 上 JS .click() 一个藏起来的 input 会丢掉多选），这里不再用 JS 点 input。
   $('fileInput').onchange = function () { addFiles(this.files); this.value = ''; };
   var dz = $('dropZone');
   dz.ondragover = function (e) { e.preventDefault(); dz.classList.add('over'); };
