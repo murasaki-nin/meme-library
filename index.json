@@ -1,6 +1,6 @@
 {
   "name": "meme-library",
-  "updated": "2026-11-15",
+  "updated": "2026-11-16",
   "characters": [
     {
       "id": "naiwa",
@@ -11,7 +11,7 @@
       "name": "大肥鱼"
     }
   ],
-  "count": 410,
+  "count": 430,
   "items": [
     {
       "id": "naiwa-abstract",
@@ -6603,6 +6603,346 @@
       "height": 1169,
       "animated": false,
       "md5": "45c5f0b444c31c6443bab639be78970f"
+    },
+    {
+      "id": "naiwa-x-490658fb",
+      "file": "stickers/naiwa/naiwa-x-490658fb.jpg",
+      "thumb": "thumbs/naiwa/naiwa-x-490658fb.jpg",
+      "character": "naiwa",
+      "tags": [
+        "战斗模式",
+        "模式"
+      ],
+      "source": "x-NovaUnsent404",
+      "added": "2026-11-16",
+      "format": "jpg",
+      "width": 1852,
+      "height": 1725,
+      "animated": false,
+      "md5": "490658fbe39bc57bf12daf66400a2db7"
+    },
+    {
+      "id": "naiwa-x-477e6fe1",
+      "file": "stickers/naiwa/naiwa-x-477e6fe1.jpg",
+      "thumb": "thumbs/naiwa/naiwa-x-477e6fe1.jpg",
+      "character": "naiwa",
+      "tags": [
+        "愤怒模式",
+        "模式"
+      ],
+      "source": "x-NovaUnsent404",
+      "added": "2026-11-16",
+      "format": "jpg",
+      "width": 1852,
+      "height": 1857,
+      "animated": false,
+      "md5": "477e6fe1f0faede2c05a641d42cfb5ba"
+    },
+    {
+      "id": "naiwa-x-6dee9f63",
+      "file": "stickers/naiwa/naiwa-x-6dee9f63.jpg",
+      "thumb": "thumbs/naiwa/naiwa-x-6dee9f63.jpg",
+      "character": "naiwa",
+      "tags": [
+        "温柔模式",
+        "模式"
+      ],
+      "source": "x-NovaUnsent404",
+      "added": "2026-11-16",
+      "format": "jpg",
+      "width": 1852,
+      "height": 1840,
+      "animated": false,
+      "md5": "6dee9f63f39e9d892bc4506c6843e266"
+    },
+    {
+      "id": "naiwa-x-f98c2d08",
+      "file": "stickers/naiwa/naiwa-x-f98c2d08.jpg",
+      "thumb": "thumbs/naiwa/naiwa-x-f98c2d08.jpg",
+      "character": "naiwa",
+      "tags": [
+        "平静模式",
+        "模式"
+      ],
+      "source": "x-NovaUnsent404",
+      "added": "2026-11-16",
+      "format": "jpg",
+      "width": 1852,
+      "height": 1854,
+      "animated": false,
+      "md5": "f98c2d0825f8f0ef4d820f49d42bbe79"
+    },
+    {
+      "id": "naiwa-x-e6e7674c",
+      "file": "stickers/naiwa/naiwa-x-e6e7674c.jpg",
+      "thumb": "thumbs/naiwa/naiwa-x-e6e7674c.jpg",
+      "character": "naiwa",
+      "tags": [
+        "忧郁模式",
+        "模式"
+      ],
+      "source": "x-NovaUnsent404",
+      "added": "2026-11-16",
+      "format": "jpg",
+      "width": 1852,
+      "height": 1848,
+      "animated": false,
+      "md5": "e6e7674c8247cdad8dd328531c6ba71f"
+    },
+    {
+      "id": "naiwa-x-b435ad5e",
+      "file": "stickers/naiwa/naiwa-x-b435ad5e.jpg",
+      "thumb": "thumbs/naiwa/naiwa-x-b435ad5e.jpg",
+      "character": "naiwa",
+      "tags": [
+        "虚空模式",
+        "模式"
+      ],
+      "source": "x-NovaUnsent404",
+      "added": "2026-11-16",
+      "format": "jpg",
+      "width": 1852,
+      "height": 1836,
+      "animated": false,
+      "md5": "b435ad5e2868a116abb200a235b979ed"
+    },
+    {
+      "id": "naiwa-x-7c6010f8",
+      "file": "stickers/naiwa/naiwa-x-7c6010f8.jpg",
+      "thumb": "thumbs/naiwa/naiwa-x-7c6010f8.jpg",
+      "character": "naiwa",
+      "tags": [
+        "天使模式",
+        "模式"
+      ],
+      "source": "x-NovaUnsent404",
+      "added": "2026-11-16",
+      "format": "jpg",
+      "width": 1852,
+      "height": 1839,
+      "animated": false,
+      "md5": "7c6010f8db3cdac7bfdc99dc6a7cc11e"
+    },
+    {
+      "id": "naiwa-x-e2225d2a",
+      "file": "stickers/naiwa/naiwa-x-e2225d2a.jpg",
+      "thumb": "thumbs/naiwa/naiwa-x-e2225d2a.jpg",
+      "character": "naiwa",
+      "tags": [
+        "恶魔模式",
+        "模式"
+      ],
+      "source": "x-NovaUnsent404",
+      "added": "2026-11-16",
+      "format": "jpg",
+      "width": 1852,
+      "height": 1854,
+      "animated": false,
+      "md5": "e2225d2a1a7817e45736a456cf60108e"
+    },
+    {
+      "id": "naiwa-x-601fa602",
+      "file": "stickers/naiwa/naiwa-x-601fa602.jpg",
+      "thumb": "thumbs/naiwa/naiwa-x-601fa602.jpg",
+      "character": "naiwa",
+      "tags": [
+        "灭霸模式",
+        "模式"
+      ],
+      "source": "x-NovaUnsent404",
+      "added": "2026-11-16",
+      "format": "jpg",
+      "width": 1852,
+      "height": 1852,
+      "animated": false,
+      "md5": "601fa602c3cef5d8c6f72f8f83d9a91f"
+    },
+    {
+      "id": "naiwa-x-52f83578",
+      "file": "stickers/naiwa/naiwa-x-52f83578.jpg",
+      "thumb": "thumbs/naiwa/naiwa-x-52f83578.jpg",
+      "character": "naiwa",
+      "tags": [
+        "霸者模式",
+        "模式"
+      ],
+      "source": "x-NovaUnsent404",
+      "added": "2026-11-16",
+      "format": "jpg",
+      "width": 1852,
+      "height": 1841,
+      "animated": false,
+      "md5": "52f8357877c0a174a659ff41ebad9b13"
+    },
+    {
+      "id": "naiwa-x-dda189b5",
+      "file": "stickers/naiwa/naiwa-x-dda189b5.jpg",
+      "thumb": "thumbs/naiwa/naiwa-x-dda189b5.jpg",
+      "character": "naiwa",
+      "tags": [
+        "灭霸模式",
+        "模式"
+      ],
+      "source": "x-NovaUnsent404",
+      "added": "2026-11-16",
+      "format": "jpg",
+      "width": 1852,
+      "height": 1844,
+      "animated": false,
+      "md5": "dda189b595a90b4cfbe1266943c38496"
+    },
+    {
+      "id": "naiwa-x-4f34b234",
+      "file": "stickers/naiwa/naiwa-x-4f34b234.jpg",
+      "thumb": "thumbs/naiwa/naiwa-x-4f34b234.jpg",
+      "character": "naiwa",
+      "tags": [
+        "空虚模式",
+        "模式"
+      ],
+      "source": "x-NovaUnsent404",
+      "added": "2026-11-16",
+      "format": "jpg",
+      "width": 1852,
+      "height": 1854,
+      "animated": false,
+      "md5": "4f34b234392d238f36cfc6385063c2de"
+    },
+    {
+      "id": "naiwa-x-b327ea89",
+      "file": "stickers/naiwa/naiwa-x-b327ea89.jpg",
+      "thumb": "thumbs/naiwa/naiwa-x-b327ea89.jpg",
+      "character": "naiwa",
+      "tags": [
+        "战斗模式",
+        "模式"
+      ],
+      "source": "x-NovaUnsent404",
+      "added": "2026-11-16",
+      "format": "jpg",
+      "width": 1852,
+      "height": 1668,
+      "animated": false,
+      "md5": "b327ea89fda95053b09d4733a7848d03"
+    },
+    {
+      "id": "naiwa-x-78be7e25",
+      "file": "stickers/naiwa/naiwa-x-78be7e25.jpg",
+      "thumb": "thumbs/naiwa/naiwa-x-78be7e25.jpg",
+      "character": "naiwa",
+      "tags": [
+        "深度思考模式",
+        "模式"
+      ],
+      "source": "x-NovaUnsent404",
+      "added": "2026-11-16",
+      "format": "jpg",
+      "width": 1852,
+      "height": 1504,
+      "animated": false,
+      "md5": "78be7e25a056ebac26663faa2fa1110b"
+    },
+    {
+      "id": "naiwa-x-66b663b3",
+      "file": "stickers/naiwa/naiwa-x-66b663b3.jpg",
+      "thumb": "thumbs/naiwa/naiwa-x-66b663b3.jpg",
+      "character": "naiwa",
+      "tags": [
+        "慈爱模式",
+        "模式"
+      ],
+      "source": "x-NovaUnsent404",
+      "added": "2026-11-16",
+      "format": "jpg",
+      "width": 1852,
+      "height": 1752,
+      "animated": false,
+      "md5": "66b663b300caf46e0749bf029cccb260"
+    },
+    {
+      "id": "naiwa-x-023c782d",
+      "file": "stickers/naiwa/naiwa-x-023c782d.jpg",
+      "thumb": "thumbs/naiwa/naiwa-x-023c782d.jpg",
+      "character": "naiwa",
+      "tags": [
+        "金古古模式",
+        "模式"
+      ],
+      "source": "x-NovaUnsent404",
+      "added": "2026-11-16",
+      "format": "jpg",
+      "width": 1852,
+      "height": 1745,
+      "animated": false,
+      "md5": "023c782da5d13020e241c4b2faa36d9f"
+    },
+    {
+      "id": "naiwa-x-4077fd94",
+      "file": "stickers/naiwa/naiwa-x-4077fd94.jpg",
+      "thumb": "thumbs/naiwa/naiwa-x-4077fd94.jpg",
+      "character": "naiwa",
+      "tags": [
+        "安卓模式",
+        "模式"
+      ],
+      "source": "x-NovaUnsent404",
+      "added": "2026-11-16",
+      "format": "jpg",
+      "width": 1852,
+      "height": 1851,
+      "animated": false,
+      "md5": "4077fd94fbb2d594ddbd3c9736fb5321"
+    },
+    {
+      "id": "naiwa-x-a51aa7a2",
+      "file": "stickers/naiwa/naiwa-x-a51aa7a2.jpg",
+      "thumb": "thumbs/naiwa/naiwa-x-a51aa7a2.jpg",
+      "character": "naiwa",
+      "tags": [
+        "苹果模式",
+        "模式"
+      ],
+      "source": "x-NovaUnsent404",
+      "added": "2026-11-16",
+      "format": "jpg",
+      "width": 1852,
+      "height": 1833,
+      "animated": false,
+      "md5": "a51aa7a297349093e021b01f8fc3fe20"
+    },
+    {
+      "id": "naiwa-x-6fbec6e4",
+      "file": "stickers/naiwa/naiwa-x-6fbec6e4.jpg",
+      "thumb": "thumbs/naiwa/naiwa-x-6fbec6e4.jpg",
+      "character": "naiwa",
+      "tags": [
+        "鸿蒙模式",
+        "模式"
+      ],
+      "source": "x-NovaUnsent404",
+      "added": "2026-11-16",
+      "format": "jpg",
+      "width": 1852,
+      "height": 1829,
+      "animated": false,
+      "md5": "6fbec6e4a529b8e8c64a32d8231e07bd"
+    },
+    {
+      "id": "naiwa-x-65458f4c",
+      "file": "stickers/naiwa/naiwa-x-65458f4c.jpg",
+      "thumb": "thumbs/naiwa/naiwa-x-65458f4c.jpg",
+      "character": "naiwa",
+      "tags": [
+        "回响模式",
+        "模式"
+      ],
+      "source": "x-NovaUnsent404",
+      "added": "2026-11-16",
+      "format": "jpg",
+      "width": 1830,
+      "height": 2048,
+      "animated": false,
+      "md5": "65458f4cd5a9748a135daa1299ad8807"
     }
   ]
 }
