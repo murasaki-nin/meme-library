@@ -11,7 +11,7 @@
       "name": "大肥鱼"
     }
   ],
-  "count": 436,
+  "count": 437,
   "items": [
     {
       "id": "naiwa-abstract",
@@ -7039,6 +7039,22 @@
       "height": 1024,
       "animated": false,
       "md5": "15a96f9cc372c55caaf2489bdf032b79"
+    },
+    {
+      "id": "naiwa-thumbsup",
+      "file": "stickers/naiwa/naiwa-thumbsup.png",
+      "thumb": "thumbs/naiwa/naiwa-thumbsup.jpg",
+      "character": "naiwa",
+      "tags": [
+        "点赞"
+      ],
+      "source": "ai-remaster",
+      "added": "2026-11-24",
+      "format": "png",
+      "width": 1024,
+      "height": 1024,
+      "animated": false,
+      "md5": "0bc7275a344398e8014c65d6a92a574f"
     }
   ]
 }
