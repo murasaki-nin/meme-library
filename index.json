@@ -11,7 +11,7 @@
       "name": "大肥鱼"
     }
   ],
-  "count": 438,
+  "count": 436,
   "items": [
     {
       "id": "naiwa-abstract",
@@ -6993,22 +6993,6 @@
       "md5": "f0524da112bc20d8b6d2a065077191a5"
     },
     {
-      "id": "naiwa-upload-a074b8a2",
-      "file": "stickers/naiwa/naiwa-upload-a074b8a2.webp",
-      "thumb": "thumbs/naiwa/naiwa-upload-a074b8a2.jpg",
-      "character": "naiwa",
-      "tags": [
-        "奶龙"
-      ],
-      "source": "user-upload",
-      "added": "2026-11-24",
-      "format": "webp",
-      "width": 1024,
-      "height": 1024,
-      "animated": false,
-      "md5": "a074b8a229f1f1ac11935c9242018e9a"
-    },
-    {
       "id": "naiwa-upload-cb4d6655",
       "file": "stickers/naiwa/naiwa-upload-cb4d6655.webp",
       "thumb": "thumbs/naiwa/naiwa-upload-cb4d6655.jpg",
@@ -7023,22 +7007,6 @@
       "height": 1024,
       "animated": false,
       "md5": "cb4d66559c28d344fd0c911da7b47ec3"
-    },
-    {
-      "id": "naiwa-upload-15a96f9c",
-      "file": "stickers/naiwa/naiwa-upload-15a96f9c.webp",
-      "thumb": "thumbs/naiwa/naiwa-upload-15a96f9c.jpg",
-      "character": "naiwa",
-      "tags": [
-        "奶龙"
-      ],
-      "source": "user-upload",
-      "added": "2026-11-24",
-      "format": "webp",
-      "width": 1024,
-      "height": 1024,
-      "animated": false,
-      "md5": "15a96f9cc372c55caaf2489bdf032b79"
     },
     {
       "id": "naiwa-thumbsup",
