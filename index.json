@@ -11,7 +11,7 @@
       "name": "大肥鱼"
     }
   ],
-  "count": 436,
+  "count": 437,
   "items": [
     {
       "id": "naiwa-abstract",
@@ -7040,6 +7040,23 @@
       "height": 1440,
       "animated": false,
       "md5": "c305d65f7596c598b0c196b2e352ef5a"
+    },
+    {
+      "id": "naiwa-cry-phone",
+      "file": "stickers/naiwa/naiwa-cry-phone.png",
+      "thumb": "thumbs/naiwa/naiwa-cry-phone.jpg",
+      "character": "naiwa",
+      "tags": [
+        "哭",
+        "玩手机"
+      ],
+      "source": "ai-remaster",
+      "added": "2026-11-24",
+      "format": "png",
+      "width": 1648,
+      "height": 1536,
+      "animated": false,
+      "md5": "e8a15b767efd3bbb477620c6faedc306"
     }
   ]
 }
