@@ -1,6 +1,6 @@
 {
   "name": "meme-library",
-  "updated": "2026-11-24",
+  "updated": "2026-11-25",
   "characters": [
     {
       "id": "naiwa",
@@ -11,7 +11,7 @@
       "name": "大肥鱼"
     }
   ],
-  "count": 437,
+  "count": 440,
   "items": [
     {
       "id": "naiwa-abstract",
@@ -7057,6 +7057,54 @@
       "height": 1536,
       "animated": false,
       "md5": "e8a15b767efd3bbb477620c6faedc306"
+    },
+    {
+      "id": "naiwa-upload-7ddc9d89",
+      "file": "stickers/naiwa/naiwa-upload-7ddc9d89.jpg",
+      "thumb": "thumbs/naiwa/naiwa-upload-7ddc9d89.jpg",
+      "character": "naiwa",
+      "tags": [
+        "奶龙"
+      ],
+      "source": "user-upload",
+      "added": "2026-11-25",
+      "format": "jpg",
+      "width": 1179,
+      "height": 1153,
+      "animated": false,
+      "md5": "7ddc9d8984ff8ed46a36fd758747e5b6"
+    },
+    {
+      "id": "naiwa-upload-97e742d5",
+      "file": "stickers/naiwa/naiwa-upload-97e742d5.jpg",
+      "thumb": "thumbs/naiwa/naiwa-upload-97e742d5.jpg",
+      "character": "naiwa",
+      "tags": [
+        "奶龙"
+      ],
+      "source": "user-upload",
+      "added": "2026-11-25",
+      "format": "jpg",
+      "width": 960,
+      "height": 960,
+      "animated": false,
+      "md5": "97e742d595546106dac8ab39fd70fff3"
+    },
+    {
+      "id": "naiwa-upload-2cd7d6e1",
+      "file": "stickers/naiwa/naiwa-upload-2cd7d6e1.jpg",
+      "thumb": "thumbs/naiwa/naiwa-upload-2cd7d6e1.jpg",
+      "character": "naiwa",
+      "tags": [
+        "奶龙"
+      ],
+      "source": "user-upload",
+      "added": "2026-11-25",
+      "format": "jpg",
+      "width": 1152,
+      "height": 1152,
+      "animated": false,
+      "md5": "2cd7d6e189f8778c83380b178f1e653d"
     }
   ]
 }
