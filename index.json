@@ -11,7 +11,7 @@
       "name": "大肥鱼"
     }
   ],
-  "count": 437,
+  "count": 438,
   "items": [
     {
       "id": "naiwa-abstract",
@@ -7055,6 +7055,23 @@
       "height": 1024,
       "animated": false,
       "md5": "0bc7275a344398e8014c65d6a92a574f"
+    },
+    {
+      "id": "naiwa-pray",
+      "file": "stickers/naiwa/naiwa-pray.png",
+      "thumb": "thumbs/naiwa/naiwa-pray.jpg",
+      "character": "naiwa",
+      "tags": [
+        "拜拜",
+        "吐舌"
+      ],
+      "source": "ai-remaster",
+      "added": "2026-11-24",
+      "format": "png",
+      "width": 1520,
+      "height": 1440,
+      "animated": false,
+      "md5": "c305d65f7596c598b0c196b2e352ef5a"
     }
   ]
 }
