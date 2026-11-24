@@ -1,6 +1,6 @@
 {
   "name": "meme-library",
-  "updated": "2026-11-21",
+  "updated": "2026-11-24",
   "characters": [
     {
       "id": "naiwa",
@@ -11,7 +11,7 @@
       "name": "大肥鱼"
     }
   ],
-  "count": 432,
+  "count": 433,
   "items": [
     {
       "id": "naiwa-abstract",
@@ -6975,6 +6975,22 @@
       "height": 2048,
       "animated": false,
       "md5": "069271a6e1e85c5b566d143386e6aec6"
+    },
+    {
+      "id": "naiwa-upload-f0524da1",
+      "file": "stickers/naiwa/naiwa-upload-f0524da1.gif",
+      "thumb": "thumbs/naiwa/naiwa-upload-f0524da1.jpg",
+      "character": "naiwa",
+      "tags": [
+        "奶龙"
+      ],
+      "source": "user-upload",
+      "added": "2026-11-24",
+      "format": "gif",
+      "width": 640,
+      "height": 360,
+      "animated": true,
+      "md5": "f0524da112bc20d8b6d2a065077191a5"
     }
   ]
 }
