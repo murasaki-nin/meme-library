@@ -11,7 +11,7 @@
       "name": "大肥鱼"
     }
   ],
-  "count": 447,
+  "count": 448,
   "items": [
     {
       "id": "naiwa-abstract",
@@ -7217,6 +7217,22 @@
       "height": 1712,
       "animated": false,
       "md5": "6f0728a40fe89f398fb7d79615b767f5"
+    },
+    {
+      "id": "naiwa-two-in-bed-dim",
+      "file": "stickers/naiwa/naiwa-two-in-bed-dim.png",
+      "thumb": "thumbs/naiwa/naiwa-two-in-bed-dim.jpg",
+      "character": "naiwa",
+      "tags": [
+        "奶棒"
+      ],
+      "source": "ai-remaster",
+      "added": "2026-11-25",
+      "format": "png",
+      "width": 1632,
+      "height": 1440,
+      "animated": false,
+      "md5": "5f6a97f9daa15db1642ae95f1c75bead"
     }
   ]
 }
