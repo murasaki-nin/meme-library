@@ -220,6 +220,57 @@
     btn.disabled = true;
     uploading = true;
     try {
+      // 上传是“读-改-写”：先取 HEAD，再传图、建提交，最后推 HEAD。
+      // 传图要花时间，期间别人（或标签同步）推了新提交，HEAD 就变了，
+      // 这时再推就会报“Update is not a fast forward”。所以失败就用最新 HEAD 重试。
+      var added = null;
+      var lastErr = null;
+      for (var attempt = 0; attempt < 3; attempt++) {
+        try {
+          added = await attemptUploadOnce();
+          lastErr = null;
+          break;
+        } catch (e) {
+          lastErr = e;
+          // 只有“HEAD 已变”（fast-forward 冲突）或 GitHub 临时 500 才重试；
+          // 密钥错、权限错这类问题重试也没用，直接报错。
+          if (/not a fast forward/i.test(e.message) || /HTTP 500/.test(e.message)) {
+            log('第 ' + (attempt + 1) + ' 次提交没赶上最新仓库（' + e.message + '），用最新状态重试…');
+            continue;
+          }
+          throw e;
+        }
+      }
+      if (lastErr) throw lastErr;
+      if (!added || !added.length) { log('没有新图入库。'); return; }
+      log('已入库 ' + added.length + ' 张：' + added.map(function (a) { return a.id; }).join('、'));
+
+      try {
+        var body = '用户通过相册上传了 ' + added.length + ' 张新图（角色：' + charName + '，标签：' + tags.join('、') + '）。\n\n';
+        var nMp4 = added.filter(function (a) { return a.format === 'mp4'; }).length;
+        if (nMp4) body += '其中 ' + nMp4 + ' 个是 MP4，GitHub Action 会在后台自动转成 GIF，转好后相册里自动变成 GIF。\n\n';
+        body += added.map(function (a) { return '- ' + a.id + ' (' + a.file + ')'; }).join('\n')
+          + '\n\n```json\n' + JSON.stringify(added, null, 2) + '\n```';
+        await gh('/issues', 'POST', { title: '[上传] ' + todayLocal() + ' ' + added.length + ' 张新图（' + charName + '）', body: body });
+        log('已发 Issue 通知 Konata 同步。');
+      } catch (e2) {
+        log('注意：文件已入库，但通知 Konata 的 Issue 没发出去（' + e2.message + '），你告诉我一声就行。');
+      }
+      pending = [];
+      renderPending();
+      log('完成！点“刷新相册”就能看到新图了。');
+      $('reloadBtn').style.display = '';
+    } catch (e) {
+      log('上传失败：' + e.message);
+      if (/Bad credentials/i.test(e.message)) log('密钥不对或过期了：重新建一把粘进来再试。');
+      if (/404/.test(e.message)) log('仓库或密钥权限不对：确认密钥给了 meme-library 的 Contents 读写权限。');
+    } finally {
+      uploading = false;
+      btn.disabled = false;
+    }
+
+    // 一次上传尝试：取最新 HEAD + index.json，传图建提交并推 HEAD。返回新入库的条目。
+    async function attemptUploadOnce() {
       log('正在连 GitHub…');
       var ref = await gh('/git/ref/heads/main', 'GET');
       var commitSha = ref.object.sha;
@@ -259,7 +310,7 @@
         }
         added.push(entry);
       }
-      if (!added.length) { log('没有新图入库。'); return; }
+      if (!added.length) return [];
 
       indexData.items = (indexData.items || []).concat(added);
       indexData.count = indexData.items.length;
@@ -273,30 +324,7 @@
         tree: tree.sha, parents: [commitSha]
       });
       await gh('/git/refs/heads/main', 'PATCH', { sha: newCommit.sha, force: false });
-      log('已入库 ' + added.length + ' 张：' + added.map(function (a) { return a.id; }).join('、'));
-
-      try {
-        var body = '用户通过相册上传了 ' + added.length + ' 张新图（角色：' + charName + '，标签：' + tags.join('、') + '）。\n\n';
-        var nMp4 = added.filter(function (a) { return a.format === 'mp4'; }).length;
-        if (nMp4) body += '其中 ' + nMp4 + ' 个是 MP4，GitHub Action 会在后台自动转成 GIF，转好后相册里自动变成 GIF。\n\n';
-        body += added.map(function (a) { return '- ' + a.id + ' (' + a.file + ')'; }).join('\n')
-          + '\n\n```json\n' + JSON.stringify(added, null, 2) + '\n```';
-        await gh('/issues', 'POST', { title: '[上传] ' + todayLocal() + ' ' + added.length + ' 张新图（' + charName + '）', body: body });
-        log('已发 Issue 通知 Konata 同步。');
-      } catch (e2) {
-        log('注意：文件已入库，但通知 Konata 的 Issue 没发出去（' + e2.message + '），你告诉我一声就行。');
-      }
-      pending = [];
-      renderPending();
-      log('完成！点“刷新相册”就能看到新图了。');
-      $('reloadBtn').style.display = '';
-    } catch (e) {
-      log('上传失败：' + e.message);
-      if (/Bad credentials/i.test(e.message)) log('密钥不对或过期了：重新建一把粘进来再试。');
-      if (/404/.test(e.message)) log('仓库或密钥权限不对：确认密钥给了 meme-library 的 Contents 读写权限。');
-    } finally {
-      uploading = false;
-      btn.disabled = false;
+      return added;
     }
   }
 
@@ -537,3 +565,4 @@
   }
   refreshPatHint();
 })();
+
