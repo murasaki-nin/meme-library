@@ -11,7 +11,7 @@
       "name": "大肥鱼"
     }
   ],
-  "count": 446,
+  "count": 447,
   "items": [
     {
       "id": "naiwa-abstract",
@@ -7201,6 +7201,22 @@
       "height": 680,
       "animated": false,
       "md5": "cb9f9532cadd20e8dcc774f0f4cfed37"
+    },
+    {
+      "id": "naiwa-upload-6f0728a4",
+      "file": "stickers/naiwa/naiwa-upload-6f0728a4.png",
+      "thumb": "thumbs/naiwa/naiwa-upload-6f0728a4.jpg",
+      "character": "naiwa",
+      "tags": [
+        "奶棒"
+      ],
+      "source": "user-upload",
+      "added": "2026-11-25",
+      "format": "png",
+      "width": 1232,
+      "height": 1712,
+      "animated": false,
+      "md5": "6f0728a40fe89f398fb7d79615b767f5"
     }
   ]
 }
