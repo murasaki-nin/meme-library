@@ -15,7 +15,7 @@
       "name": "其他"
     }
   ],
-  "count": 454,
+  "count": 455,
   "items": [
     {
       "id": "naiwa-abstract",
@@ -7337,6 +7337,23 @@
       "height": 1600,
       "animated": false,
       "md5": "9ffe12b641b79d85d0ceeb71fc11b52b"
+    },
+    {
+      "id": "naiwa-poop-matcha",
+      "file": "stickers/naiwa/naiwa-poop-matcha.webp",
+      "thumb": "thumbs/naiwa/naiwa-poop-matcha.jpg",
+      "character": "naiwa",
+      "tags": [
+        "奶屎",
+        "抹茶"
+      ],
+      "source": "ai-remaster",
+      "added": "2026-11-26",
+      "format": "webp",
+      "width": 1600,
+      "height": 1600,
+      "animated": false,
+      "md5": "3b7fac4e2911df9ea81aa7a13c15c2e0"
     }
   ]
 }
