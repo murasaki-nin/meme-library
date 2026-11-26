@@ -15,7 +15,7 @@
       "name": "其他"
     }
   ],
-  "count": 455,
+  "count": 456,
   "items": [
     {
       "id": "naiwa-abstract",
@@ -7354,6 +7354,22 @@
       "height": 1600,
       "animated": false,
       "md5": "3b7fac4e2911df9ea81aa7a13c15c2e0"
+    },
+    {
+      "id": "naiwa-burger",
+      "file": "stickers/naiwa/naiwa-burger.webp",
+      "thumb": "thumbs/naiwa/naiwa-burger.jpg",
+      "character": "naiwa",
+      "tags": [
+        "食物"
+      ],
+      "source": "ai-remaster",
+      "added": "2026-11-26",
+      "format": "webp",
+      "width": 1232,
+      "height": 1712,
+      "animated": false,
+      "md5": "ed31f70c459557bf06de0b18dbe9ff00"
     }
   ]
 }
