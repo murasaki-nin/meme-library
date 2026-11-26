@@ -30,7 +30,7 @@ index.json           # 总目录：每条记录带角色、标签、来源、日
 index.html           # 手机相册页
 ```
 
-新角色直接加一个文件夹，再往 `index.json` 里加记录，结构不用动。角色的中文名写在 `index.json` 的 `characters` 里。
+新角色直接加一个文件夹，再往 `index.json` 里加记录，结构不用动。角色的中文名写在 `index.json` 的 `characters` 里。「其他」是个兜底角色，不属于任何角色的散图都放这里。
 
 ## index.json 字段
 

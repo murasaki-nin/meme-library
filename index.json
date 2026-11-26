@@ -9,6 +9,10 @@
     {
       "id": "blue-fish",
       "name": "大肥鱼"
+    },
+    {
+      "id": "other",
+      "name": "其他"
     }
   ],
   "count": 452,
