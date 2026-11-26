@@ -4,7 +4,7 @@
 
 ## 相册页
 
-打开 GitHub Pages 就能看：按角色筛、按类型（动图 / 静态）筛、按标签搜，点开看大图，长按保存到手机相册。
+打开 GitHub Pages 就能看：按角色筛、按类型（动图 / 静态 / 视频）筛、按标签搜，点开看大图，长按保存到手机相册。视频点开后直接播放，带播放控制。
 
 列表里显示的是轻量缩略图，打开快；点开后才加载原图动图。
 
@@ -20,6 +20,9 @@
 stickers/
   <角色>/            # 一个角色一个文件夹，比如 naiwa、blue-fish
     <名字>.gif
+videos/
+  <角色>/            # 保留为视频的 MP4（不转 GIF，适合 10 秒以上的长视频）
+    <名字>.mp4
 thumbs/
   <角色>/            # 列表用的轻量缩略图（首帧，JPEG）
     <名字>.jpg
@@ -31,7 +34,9 @@ index.html           # 手机相册页
 
 ## index.json 字段
 
-每条记录：`id`、`file`（相对路径）、`thumb`（缩略图）、`character`（角色）、`tags`（标签数组）、`source`（来源）、`added`（日期）、`format`、`width`、`height`、`animated`、`md5`（去重用）。
+每条记录：`id`、`file`（相对路径）、`thumb`（缩略图）、`character`（角色）、`tags`（标签数组）、`source`（来源）、`added`（日期）、`format`、`width`、`height`、`animated`、`md5`（去重用）。视频多两个字段：`type: "video"`（标记为保留视频）、`duration`（秒数）。
+
+视频和动图的区别：传 MP4 时默认走 `stickers/`，GitHub Action 会自动转成 GIF；勾上「保留为视频」就放进 `videos/`，一直是 MP4，不转 GIF。转换脚本只扫 `stickers/`，所以 `videos/` 里的 MP4 不会被转掉。
 
 ## 更新流程
 

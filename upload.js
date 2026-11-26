@@ -23,6 +23,10 @@
     return d.getFullYear() + '-' + (m < 10 ? '0' : '') + m + '-' + (day < 10 ? '0' : '') + day;
   }
   function getPat() { return (localStorage.getItem(LS_PAT) || '').trim(); }
+  function isKeepVideo() {
+    var chk = document.getElementById('keepVideoChk');
+    return !!(chk && chk.checked);
+  }
 
   function bufToB64(buf) {
     var bytes = new Uint8Array(buf), out = '', i;
@@ -190,7 +194,7 @@
           width: width, height: height, thumbB64: thumbB64, duration: duration,
           ext: fmt === 'jpg' ? 'jpg' : fmt, duplicate: dup
         });
-        log('已加入：' + file.name + '（' + fmt + '）' + (dup ? ' —— 库里已有这张，会跳过' : '') + (fmt === 'mp4' ? ' —— 传上去后会自动转成 GIF' : ''));
+        log('已加入：' + file.name + '（' + fmt + '）' + (dup ? ' —— 库里已有这张，会跳过' : '') + (fmt === 'mp4' ? (isKeepVideo() ? ' —— 会保留为视频' : ' —— 传上去后会自动转成 GIF') : ''));
       } catch (e) {
         log('失败：' + file.name + ' —— ' + e.message);
       }
@@ -247,7 +251,9 @@
 
       try {
         var body = '用户通过相册上传了 ' + added.length + ' 张新图（角色：' + charName + '，标签：' + tags.join('、') + '）。\n\n';
-        var nMp4 = added.filter(function (a) { return a.format === 'mp4'; }).length;
+        var nVideo = added.filter(function (a) { return a.type === 'video'; }).length;
+        var nMp4 = added.filter(function (a) { return a.format === 'mp4' && a.type !== 'video'; }).length;
+        if (nVideo) body += '其中 ' + nVideo + ' 个是视频（保留为 MP4，不转 GIF）。\n\n';
         if (nMp4) body += '其中 ' + nMp4 + ' 个是 MP4，GitHub Action 会在后台自动转成 GIF，转好后相册里自动变成 GIF。\n\n';
         body += added.map(function (a) { return '- ' + a.id + ' (' + a.file + ')'; }).join('\n')
           + '\n\n```json\n' + JSON.stringify(added, null, 2) + '\n```';
@@ -289,7 +295,8 @@
         var f = fresh[i];
         if (existingMd5.has(f.md5)) { log('跳过（库里已有）：' + f.name); continue; }
         var id = prefix + '-upload-' + f.md5.slice(0, 8);
-        var filePath = 'stickers/' + char + '/' + id + '.' + f.ext;
+        var keepVideo = f.format === 'mp4' && isKeepVideo();
+        var filePath = (keepVideo ? 'videos/' : 'stickers/') + char + '/' + id + '.' + f.ext;
         var thumbPath = 'thumbs/' + char + '/' + id + '.jpg';
         log('正在传：' + f.name + ' → ' + filePath);
         var blob = await gh('/git/blobs', 'POST', { content: bufToB64(f.buf), encoding: 'base64' });
@@ -305,8 +312,12 @@
           animated: f.format === 'gif' || f.format === 'mp4', md5: f.md5
         };
         if (f.format === 'mp4') {
-          entry.converting = true;
           if (f.duration) entry.duration = Math.round(f.duration * 10) / 10;
+          if (keepVideo) {
+            entry.type = 'video';
+          } else {
+            entry.converting = true;
+          }
         }
         added.push(entry);
       }
@@ -319,8 +330,9 @@
       entries.push({ path: 'index.json', mode: '100644', type: 'blob', sha: idxBlob.sha });
 
       var tree = await gh('/git/trees', 'POST', { base_tree: baseTree, tree: entries });
+      var hasVideo = added.some(function (a) { return a.type === 'video'; });
       var newCommit = await gh('/git/commits', 'POST', {
-        message: 'upload: ' + added.length + ' 张新图 (' + charName + ') via 相册上传',
+        message: 'upload: ' + added.length + (hasVideo ? ' 个新内容（含视频）' : ' 张新图') + ' (' + charName + ') via 相册上传',
         tree: tree.sha, parents: [commitSha]
       });
       await gh('/git/refs/heads/main', 'PATCH', { sha: newCommit.sha, force: false });
