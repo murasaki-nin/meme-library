@@ -15,7 +15,7 @@
       "name": "其他"
     }
   ],
-  "count": 453,
+  "count": 454,
   "items": [
     {
       "id": "naiwa-abstract",
@@ -7321,6 +7321,22 @@
       "height": 1584,
       "animated": false,
       "md5": "cc5d0b0d46503b9aab3cf79080721f7e"
+    },
+    {
+      "id": "naiwa-poop-donut-sprinkles",
+      "file": "stickers/naiwa/naiwa-poop-donut-sprinkles.png",
+      "thumb": "thumbs/naiwa/naiwa-poop-donut-sprinkles.jpg",
+      "character": "naiwa",
+      "tags": [
+        "奶屎"
+      ],
+      "source": "ai-remaster",
+      "added": "2026-11-26",
+      "format": "png",
+      "width": 1600,
+      "height": 1600,
+      "animated": false,
+      "md5": "9ffe12b641b79d85d0ceeb71fc11b52b"
     }
   ]
 }
