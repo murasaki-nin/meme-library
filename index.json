@@ -11,7 +11,7 @@
    "name": "大肥鱼"
   }
  ],
- "count": 450,
+ "count": 451,
  "items": [
   {
    "id": "naiwa-abstract",
@@ -7265,6 +7265,22 @@
    "height": 2240,
    "animated": false,
    "md5": "365ca278e4df75e43a8fb1fc416fa5a4"
+  },
+  {
+   "id": "naiwa-tadpole-horizontal",
+   "file": "stickers/naiwa/naiwa-tadpole-horizontal.webp",
+   "thumb": "thumbs/naiwa/naiwa-tadpole-horizontal.jpg",
+   "character": "naiwa",
+   "tags": [
+    "蝌蚪"
+   ],
+   "source": "ai-remaster",
+   "added": "2026-11-26",
+   "format": "webp",
+   "width": 2240,
+   "height": 1120,
+   "animated": false,
+   "md5": "6b1870fe4c641bfb2aba8c4064cc46cc"
   }
  ]
 }
