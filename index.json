@@ -15,7 +15,7 @@
       "name": "其他"
     }
   ],
-  "count": 452,
+  "count": 453,
   "items": [
     {
       "id": "naiwa-abstract",
@@ -7305,6 +7305,22 @@
       "md5": "65cc65564c5769868130b6c5d848658b",
       "type": "video",
       "duration": 30.1
+    },
+    {
+      "id": "naiwa-usbc",
+      "file": "stickers/naiwa/naiwa-usbc.webp",
+      "thumb": "thumbs/naiwa/naiwa-usbc.jpg",
+      "character": "naiwa",
+      "tags": [
+        "奶福"
+      ],
+      "source": "ai-remaster",
+      "added": "2026-11-26",
+      "format": "webp",
+      "width": 1616,
+      "height": 1584,
+      "animated": false,
+      "md5": "cc5d0b0d46503b9aab3cf79080721f7e"
     }
   ]
 }
