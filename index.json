@@ -15,7 +15,7 @@
       "name": "其他"
     }
   ],
-  "count": 435,
+  "count": 436,
   "items": [
     {
       "id": "naiwa-abstract",
@@ -7037,6 +7037,24 @@
       "height": 1600,
       "animated": false,
       "md5": "76a21ff4544b9ac8c82c6a42cf20dd04"
+    },
+    {
+      "id": "naiwa-poop-milk-strawberry-bloodshot",
+      "file": "stickers/naiwa/naiwa-poop-milk-strawberry-bloodshot.webp",
+      "thumb": "thumbs/naiwa/naiwa-poop-milk-strawberry-bloodshot.jpg",
+      "character": "naiwa",
+      "tags": [
+        "奶屎",
+        "草莓",
+        "血丝"
+      ],
+      "source": "ai-remaster",
+      "added": "2026-11-28",
+      "format": "webp",
+      "width": 1600,
+      "height": 1600,
+      "animated": false,
+      "md5": "2ee058d52a6e0921fe4e397de89c1d11"
     }
   ]
 }
