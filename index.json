@@ -1,6 +1,6 @@
 {
   "name": "meme-library",
-  "updated": "2026-11-27",
+  "updated": "2026-11-28",
   "characters": [
     {
       "id": "naiwa",
@@ -15,7 +15,7 @@
       "name": "其他"
     }
   ],
-  "count": 434,
+  "count": 435,
   "items": [
     {
       "id": "naiwa-abstract",
@@ -7020,6 +7020,23 @@
       "height": 1600,
       "animated": false,
       "md5": "4f1b9c666ad33640eae561e6c9000bb2"
+    },
+    {
+      "id": "naiwa-poop-milk-strawberry",
+      "file": "stickers/naiwa/naiwa-poop-milk-strawberry.webp",
+      "thumb": "thumbs/naiwa/naiwa-poop-milk-strawberry.jpg",
+      "character": "naiwa",
+      "tags": [
+        "奶屎",
+        "草莓"
+      ],
+      "source": "ai-remaster",
+      "added": "2026-11-28",
+      "format": "webp",
+      "width": 1600,
+      "height": 1600,
+      "animated": false,
+      "md5": "76a21ff4544b9ac8c82c6a42cf20dd04"
     }
   ]
 }
