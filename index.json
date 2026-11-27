@@ -1,6 +1,6 @@
 {
   "name": "meme-library",
-  "updated": "2026-11-26",
+  "updated": "2026-11-27",
   "characters": [
     {
       "id": "naiwa",
@@ -15,7 +15,7 @@
       "name": "其他"
     }
   ],
-  "count": 433,
+  "count": 434,
   "items": [
     {
       "id": "naiwa-abstract",
@@ -7002,6 +7002,24 @@
       "height": 1712,
       "animated": false,
       "md5": "ed31f70c459557bf06de0b18dbe9ff00"
+    },
+    {
+      "id": "naiwa-poop-matcha-chocolate",
+      "file": "stickers/naiwa/naiwa-poop-matcha-chocolate.webp",
+      "thumb": "thumbs/naiwa/naiwa-poop-matcha-chocolate.jpg",
+      "character": "naiwa",
+      "tags": [
+        "奶屎",
+        "抹茶",
+        "巧克力"
+      ],
+      "source": "ai-remaster",
+      "added": "2026-11-27",
+      "format": "webp",
+      "width": 1600,
+      "height": 1600,
+      "animated": false,
+      "md5": "4f1b9c666ad33640eae561e6c9000bb2"
     }
   ]
 }
